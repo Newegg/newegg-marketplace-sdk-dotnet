@@ -74,10 +74,10 @@ var orderstatus = await ordercall.GetOrderStatus("105137040", 304);
     * SellerID :  The 4-character Seller ID. Required.
     * Credentials.Authorization: The API Key get from datafeeds@newegg.com. Required.
     * Credentials.SecretKey: The Secret Key get from datafeeds@newegg.com. Required.
-    * Connection.RequestTimeoutMs: The number of milliseconds the system connection timed out. Optional, Default:
-    * Connection.AttemptsTimes: Number of retries after a failed connection. Optional, Default:
-    * Connection.RetryIntervalMs: The number of milliseconds between retry attempts. Optional, Default:
-    * BaseUrl: The base url of the Newegg marketplace API. Optional, Default: https://apis.newegg.com/marketplace/
+    * Connection.RequestTimeoutMs: The number of milliseconds the system connection timed out. Optional, Default:5000.
+    * Connection.AttemptsTimes: Number of retries after a failed connection. Optional, Default:5.
+    * Connection.RetryIntervalMs: The number of milliseconds between retry attempts. Optional, Default:1000.
+    * BaseUrl: The base url of the Newegg marketplace API. Optional, Default: "https://apis.newegg.com/marketplace/"
     * APIFormat: Content type used to call API.  The options are XML and Json. Optional, Default: XML.
     * Platform: The platfrom of seller: There are three options: 
         * USA: seller on www.newegg.com

@@ -138,7 +138,7 @@ namespace Newegg.Marketplace.SDK.Base
                         ret.Connection.RetryIntervalMs = (int)c.Property("RetryIntervalMs").Value;
                     continue;
                 }
-                if(p.Name == "LogLevel")
+                if (p.Name == "LogLevel")
                 {
                     ret.LogLevel = LogLevel.FromString(p.Value.ToString());
                     continue;
@@ -151,7 +151,7 @@ namespace Newegg.Marketplace.SDK.Base
                     {
                         pro.SetValue(ret, p.Value.ToObject(pro.PropertyType));
                     }
-                    catch {}
+                    catch { }
                 }
             }
 
@@ -193,8 +193,8 @@ namespace Newegg.Marketplace.SDK.Base
     /// </summary>
     public class ConnectSetting
     {
-        public int RequestTimeoutMs { get; set; }
-        public int AttemptsTimes { get; set; }
-        public int RetryIntervalMs { get; set; }
+        public int RequestTimeoutMs { get; set; } = 5000;
+        public int AttemptsTimes { get; set; } = 5;
+        public int RetryIntervalMs { get; set; } = 1000;
     }
 }
