@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetManufacturerResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <PageInfo>…</PageInfo>
+    <ManufacturerList>
+      <Manufacturer>
+        <Name>
+          <![CDATA[test2013 2]]>
+        </Name>
+        <IsRestricted>1</IsRestricted>
+        <RestrictedSubcategoryList/>
+        <MappedNameList>
+          <MappedName/>
+        </MappedNameList>
+      </Manufacturer>
+      <Manufacturer>
+        <Name>
+          <![CDATA[test2013 2]]>
+        </Name>
+        <IsRestricted>0</IsRestricted>
+        <RestrictedSubcategoryList/>
+        <MappedNameList>
+          <MappedName/>
+        </MappedNameList>
+      </Manufacturer>
+    </ManufacturerList>
+  </ResponseBody>
+  <ResponseDate>02/14/2019 19:48:55</ResponseDate>
+  <Memo/>
+</NeweggAPIResponse>

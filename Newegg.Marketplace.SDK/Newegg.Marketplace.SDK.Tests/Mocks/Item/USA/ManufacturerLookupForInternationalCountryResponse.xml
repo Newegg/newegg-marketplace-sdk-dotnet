@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A006</SellerID>
+  <OperationType>GetManufacturerResponse</OperationType>
+  <ResponseDate>2/22/2012 16:51:03</ResponseDate>
+  <Memo />
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>1</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageSize>10</PageSize>
+      <PageIndex>1</PageIndex>
+    </PageInfo>
+    <ManufacturerList>
+      <Manufacturer>
+        <Name>
+          <![CDATA[sony & wonder]]>
+        </Name>
+        <IsRestricted>0</IsRestricted>
+        <CountryCode>USA</CountryCode>
+        <RestrictedSubcategoryList/>
+        <MappedNameList>
+          <MappedName>wonder</MappedName>
+        </MappedNameList>
+      </Manufacturer>
+      <Manufacturer>
+        <Name>
+          <![CDATA[newegg]]>
+        </Name>
+        <IsRestricted>1</IsRestricted>
+        <CountryCode>USA</CountryCode>
+        <RestrictedSubcategoryList>
+          <Subcategory>
+            <SubcategoryID>1508</SubcategoryID>
+            <SubcategoryName>
+              <![CDATA[Belts & Suspenders]]>
+            </SubcategoryName>
+          </Subcategory>
+          <Subcategory>
+            <SubcategoryID>153</SubcategoryID>
+            <SubcategoryName>
+              <![CDATA[Buckles]]>
+            </SubcategoryName>
+          </Subcategory>
+        </RestrictedSubcategoryList>
+        <MappedNameList>
+          <MappedName>test_newegg</MappedName>
+        </MappedNameList>
+      </Manufacturer>
+    </ManufacturerList>
+  </ResponseBody>
+</NeweggAPIResponse>

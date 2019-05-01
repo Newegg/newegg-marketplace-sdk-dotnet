@@ -1,0 +1,33 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>ItemLookupResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>1</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>23A628IKC7YWW</RequestID>
+    <RequestDate>03/10/2019 19:49:48</RequestDate>
+    <ItemList>
+      <Item>
+        <NeweggItemNumber>117-002G-00001</NeweggItemNumber>
+        <UPC>886111563425</UPC>
+        <Condition>1</Condition>
+        <PacksOrSets>1</PacksOrSets>
+        <ManufacturerName>
+          <![CDATA[HP]]>
+        </ManufacturerName>
+        <ManufacturerPartNumber>
+          <![CDATA[652241-B21]]>
+        </ManufacturerPartNumber>
+        <WebsiteShortTitle>
+          <![CDATA[Hewlett Packard Enterprise 9.5mm SATA DVD RW JackBlack Optical Drive]]>
+        </WebsiteShortTitle>
+      </Item>
+    </ItemList>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:48:33</ResponseDate>
+</NeweggAPIResponse>

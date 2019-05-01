@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitShippingResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <RequestID>24EAGWN4XBE0P</RequestID>
+    <RequestDate>02/20/2019 18:25:39</RequestDate>
+    <RequestStatus>ESTIMATING</RequestStatus>
+  </ResponseBody>
+</NeweggAPIResponse>

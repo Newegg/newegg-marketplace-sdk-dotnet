@@ -1,0 +1,141 @@
+{
+  "IsSuccess": "true",
+  "OperationType": "GetSellerIndustryResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "IndustryList": [
+      {
+        "IndustryCode": "MI",
+        "IndustryName": "Musical Instruments"
+      },
+      {
+        "IndustryCode": "CE",
+        "IndustryName": "Consumer Electronics"
+      },
+      {
+        "IndustryCode": "OT",
+        "IndustryName": "Other"
+      },
+      {
+        "IndustryCode": "BE",
+        "IndustryName": "Beauty"
+      },
+      {
+        "IndustryCode": "SP",
+        "IndustryName": "Sports Goods"
+      },
+      {
+        "IndustryCode": "PS",
+        "IndustryName": "Pet Supplies"
+      },
+      {
+        "IndustryCode": "WG",
+        "IndustryName": "Food & Gifts"
+      },
+      {
+        "IndustryCode": "HE",
+        "IndustryName": "Health & Personal care"
+      },
+      {
+        "IndustryCode": "CH",
+        "IndustryName": "Computer Hardware  "
+      },
+      {
+        "IndustryCode": "AU",
+        "IndustryName": "Auto & Hardware"
+      },
+      {
+        "IndustryCode": "IN",
+        "IndustryName": "Industrial Supplies"
+      },
+      {
+        "IndustryCode": "TY",
+        "IndustryName": "Toys Games & Hobbies"
+      },
+      {
+        "IndustryCode": "JW",
+        "IndustryName": "Jewelry"
+      },
+      {
+        "IndustryCode": "AR",
+        "IndustryName": "Arts & Crafts"
+      },
+      {
+        "IndustryCode": "OD",
+        "IndustryName": "Outdoor & Garden"
+      },
+      {
+        "IndustryCode": "AC",
+        "IndustryName": "Accessories"
+      },
+      {
+        "IndustryCode": "AL",
+        "IndustryName": "Appliance          "
+      },
+      {
+        "IndustryCode": "SW",
+        "IndustryName": "Software           "
+      },
+      {
+        "IndustryCode": "LU",
+        "IndustryName": "Bags & Luggage"
+      },
+      {
+        "IndustryCode": "DV",
+        "IndustryName": "DVD & Videos       "
+      },
+      {
+        "IndustryCode": "BA",
+        "IndustryName": "Baby"
+      },
+      {
+        "IndustryCode": "CP",
+        "IndustryName": "Camera & Photo"
+      },
+      {
+        "IndustryCode": "UC",
+        "IndustryName": "Cell Phones"
+      },
+      {
+        "IndustryCode": "CA",
+        "IndustryName": "Cell Phone Accessories"
+      },
+      {
+        "IndustryCode": "BK",
+        "IndustryName": "Books, Media & Entertainment"
+      },
+      {
+        "IndustryCode": "VC",
+        "IndustryName": "Video Game Consoles"
+      },
+      {
+        "IndustryCode": "HI",
+        "IndustryName": "Home Improvement"
+      },
+      {
+        "IndustryCode": "OS",
+        "IndustryName": "Office Equipment & Supplies"
+      },
+      {
+        "IndustryCode": "HO",
+        "IndustryName": "Home & Living"
+      },
+      {
+        "IndustryCode": "BT",
+        "IndustryName": "Marine & Aviation"
+      },
+      {
+        "IndustryCode": "WA",
+        "IndustryName": "Watches"
+      },
+      {
+        "IndustryCode": "AP",
+        "IndustryName": "Apparel"
+      },
+      {
+        "IndustryCode": "MT",
+        "IndustryName": "Motorcycles & Powersports"
+      }
+    ]
+  }
+}

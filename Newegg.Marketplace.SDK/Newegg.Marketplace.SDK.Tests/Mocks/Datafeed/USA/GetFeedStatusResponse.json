@@ -1,0 +1,15 @@
+{
+    "IsSuccess": true,
+    "OperationType": "GetFeedStatusResponse",
+    "ResponseBody": {
+        "ResponseList": [
+          {
+            "RequestDate": "2/22/2012 17:25:10",
+            "RequestId": "2PQCX3SPZ3QBF",
+            "RequestStatus": "FINISHED",
+            "RequestType": "ITEM_DATA"
+          }
+        ]
+    },
+    "SellerID": "A006"
+}

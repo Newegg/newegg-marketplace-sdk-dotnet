@@ -1,0 +1,130 @@
+{
+    "IsSuccess": "true",
+    "OperationType": "GetShippingDetailResponse",
+    "SellerID": "A006",
+    "ResponseBody": {
+        "OrderNumber": "2135751360",
+        "RequestList": {
+            "Request": [
+              {
+                "RequestID": "2PQBYWH4V68ZP",
+                "RequestDate": "12/10/2015 14:38:17",
+                "Shipment": {
+                  "CustomerName": "WY SD",
+                  "CustomerPhoneNumber": "123-223-3223",
+                  "CustomerEmailAddress": "gdv6l0viwo4l7j1d@marketplace.newegg.com",
+                  "ShipToAddress1": "149 Kenwood Dr",
+                  "ShipToCityName": "Newcastle",
+                  "ShipToStateCode": "WY",
+                  "ShipToZipCode": "82701",
+                  "ShipToCountryCode": "UNITED STATES",
+                  "ShippingCarrierCode": "100",
+                  "ShippingServiceCode": "101",
+                  "ShipmentStatus": "CONFIRMED",
+                  "ShipDate": "12/25/2015",
+                  "PartneredEstimate": {
+                    "BillableWeight": "6.5",
+                    "EstimatedDeliveryDay": "12/29/2015",
+                    "EstimatedChargeAmount": "21.94"
+                  },
+                  "ShipFromFirstName": "Jon",
+                  "ShipFromLastName": "Doe",
+                  "ShipFromPhoneNumber": "6266171420",
+                  "ShipFromAddress1": "18045 Rowland Street",
+                  "ShipFromCityName": "City Of Industry",
+                  "ShipFromStateCode": "CA",
+                  "ShipFromZipCode": "91748",
+                  "ShipFromCountryCode": "USA",
+                  "PackageList": {
+                    "Package": [
+                      {
+                        "TrackingNumber": "1Z8V016A0377769652",
+                        "ItemList": {
+                          "Item": [
+                            {
+                              "SellerPartNumber": "201307220000101",
+                              "Quantity": "4"
+                            },
+                            {
+                              "SellerPartNumber": "SARATEST0118",
+                              "Quantity": "1"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "TrackingNumber": "1Z8V016A0360430477",
+                        "ItemList": {
+                          "Item": {
+                            "SellerPartNumber": "201307220000102",
+                            "Quantity": "3"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+                {
+                    "RequestID": "2PQBYWH4V68ZP",
+                    "RequestDate": "12/10/2015 14:38:17",
+                    "Shipment": {
+                        "CustomerName": "WY SD",
+                        "CustomerPhoneNumber": "123-223-3223",
+                        "CustomerEmailAddress": "gdv6l0viwo4l7j1d@marketplace.newegg.com",
+                        "ShipToAddress1": "149 Kenwood Dr",
+                        "ShipToCityName": "Newcastle",
+                        "ShipToStateCode": "WY",
+                        "ShipToZipCode": "82701",
+                        "ShipToCountryCode": "UNITED STATES",
+                        "ShippingCarrierCode": "100",
+                        "ShippingServiceCode": "101",
+                        "ShipmentStatus": "CONFIRMED",
+                        "ShipDate": "12/25/2015",
+                        "PartneredEstimate": {
+                            "BillableWeight": "6.5",
+                            "EstimatedDeliveryDay": "12/29/2015",
+                            "EstimatedChargeAmount": "21.94"
+                        },
+                        "ShipFromFirstName": "Jon",
+                        "ShipFromLastName": "Doe",
+                        "ShipFromPhoneNumber": "6266171420",
+                        "ShipFromAddress1": "18045 Rowland Street",
+                        "ShipFromCityName": "City Of Industry",
+                        "ShipFromStateCode": "CA",
+                        "ShipFromZipCode": "91748",
+                        "ShipFromCountryCode": "USA",
+                        "PackageList": {
+                            "Package": [
+                                {
+                                    "TrackingNumber": "1Z8V016A0377769652",
+                                    "ItemList": {
+                                        "Item": [
+                                            {
+                                                "SellerPartNumber": "201307220000101",
+                                                "Quantity": "4"
+                                            },
+                                            {
+                                                "SellerPartNumber": "SARATEST0118",
+                                                "Quantity": "1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "TrackingNumber": "1Z8V016A0360430477",
+                                    "ItemList": {
+                                        "Item": {
+                                            "SellerPartNumber": "201307220000102",
+                                            "Quantity": "3"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

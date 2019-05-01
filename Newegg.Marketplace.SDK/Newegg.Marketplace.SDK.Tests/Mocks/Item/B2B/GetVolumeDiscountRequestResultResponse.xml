@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetVolumeDiscountResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <ItemVolumeDiscountInfo>
+      <SellerPartNumber>8013L-Pink Leopard</SellerPartNumber>
+      <NeweggItemNumber>9SIA44S3KG2890</NeweggItemNumber>
+      <DiscountSetting>
+        <Tier>
+          <Priority>1</Priority>
+          <Quantity>5</Quantity>
+          <SellingPrice>0.16</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+      </DiscountSetting>
+    </ItemVolumeDiscountInfo>
+  </ResponseBody>
+</NeweggAPIResponse>

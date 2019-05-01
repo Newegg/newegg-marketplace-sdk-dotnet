@@ -1,0 +1,48 @@
+{
+    "NeweggEnvelope": {
+        "Header": {
+            "DocumentVersion": "1.0"
+        },
+        "MessageType": "ProcessingReport",
+        "Message": {
+            "ProcessingReport": {
+                "OriginalMessageName": "APIAutoFile.xml",
+                "StatusCode": "ProcessReport",
+              "ProcessingSummary": {
+                "ProcessedCount": "3",
+                "SuccessCount": "1",
+                "WithErrorCount": "2"
+              },
+                "Result": [
+                    {
+                        "AdditionalInfo": {
+                            "SubCategoryID": "1648",
+                            "SellerPartNumber": "sellerparttest001",
+                            "ManufacturerPartNumberOrISBN": "mftparttest001"
+                        },
+                        "ErrorList": {
+                            "ErrorDescription": [
+                                "Error(s). Item not created.",
+                                "Manufacturer - The manufacturer does not exist in our system. Please contact Marketplace Support for more information."
+                            ]
+                        }
+                    },
+                    {
+                        "AdditionalInfo": {
+                            "SubCategoryID": "1648",
+                            "SellerPartNumber": "sellerparttest002",
+                            "ManufacturerPartNumberOrISBN": "mftparttest002",
+                            "UPC": "null"
+                        },
+                        "ErrorList": {
+                            "ErrorDescription": [
+                                "Error(s). Item not created.",
+                                "UPC - Format Error: UPC must be an numeric string of at least 12 digits."
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

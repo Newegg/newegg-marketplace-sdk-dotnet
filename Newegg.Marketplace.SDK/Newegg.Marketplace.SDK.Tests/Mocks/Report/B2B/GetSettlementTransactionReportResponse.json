@@ -1,0 +1,34 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "SellerID": "A09D",
+    "OperationType": "GetSettlementTransactionInfoResponse",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "21",
+        "TotalPageCount": "21",
+        "PageSize": "10",
+        "PageIndex": "1"
+      },
+      "RequestID": "2PQDKCAQFHL3M",
+      "RequestDate": "2/23/2012 11:39:00",
+      "SettlementTransactionInfoList": {
+        "SettlementTransactionInfo": {
+          "TransactionDate": "8/9/2011 12:00:00",
+          "TransactionType": "Order",
+          "OrderID": "87123017 ",
+          "InvoiceID": "75994476 ",
+          "SellerPartNumber": "A09D77897686",
+          "NeweggItemNumber": "9SIA00X0002HJ5",
+          "ItemDescription": "dfdfgsdfg",
+          "ItemCondition": "New",
+          "Amount": "10.00",
+          "Shipping": "2.00",
+          "CommissionFee": "-0.75",
+          "SettlementID": null
+        }
+      }
+    },
+    "Memo": null
+  }
+}

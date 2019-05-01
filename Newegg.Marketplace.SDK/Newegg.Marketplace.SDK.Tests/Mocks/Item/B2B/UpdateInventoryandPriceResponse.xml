@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpdateInventoryAndPriceResult>
+  <Result>1</Result>
+  <SellerID>A44S</SellerID>
+  <ItemNumber>9SIA44S8HT5827</ItemNumber>
+  <SellerPartNumber>TestA44SSP</SellerPartNumber>
+  <ShipByNewegg>1</ShipByNewegg>
+  <Active>0</Active>
+  <AvailableQuantity>0</AvailableQuantity>
+  <MSRP>250.00</MSRP>
+  <MAP>230</MAP>
+  <SellingPrice>200.00</SellingPrice>
+  <EnableFreeShipping>1</EnableFreeShipping>
+</UpdateInventoryAndPriceResult>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>VoidShippingResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <RequestIDList>
+      <RequestID>2PQBYWH4V68ZP</RequestID>
+      <RequestID>2PQCX3SPZ3QBF</RequestID>
+    </RequestIDList>
+    <RequestDate>12/06/2015 10:21:00</RequestDate>
+    <RequestStatus>VOIDING</RequestStatus>
+  </ResponseBody>
+</NeweggAPIResponse>

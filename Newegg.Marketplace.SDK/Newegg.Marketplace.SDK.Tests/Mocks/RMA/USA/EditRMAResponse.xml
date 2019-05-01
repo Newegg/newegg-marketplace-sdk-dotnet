@@ -1,0 +1,26 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>EditRMAResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <ResponseBody>
+    <RMAInfo>
+      <RMANumber>21821229</RMANumber>
+      <RMAType>2</RMAType>
+      <RMATypeDescription>Refund</RMATypeDescription>
+      <SourceSONumber>299232884</SourceSONumber>
+      <RMAShipMethod>4</RMAShipMethod>
+      <RMANote>edit refund rma to 201601211001</RMANote>
+      <RMATransactionList>
+        <RMATransaction>
+          <SellerPartNumber>Test_SP#A2EU_20181108_0003</SellerPartNumber>
+          <ReturnQuantity>1</ReturnQuantity>
+          <ReturnUnitPrice>0.02</ReturnUnitPrice>
+          <RefundShippingPrice>0</RefundShippingPrice>
+          <RMAReason>2</RMAReason>
+          <RMAReasonDescription>Defective</RMAReasonDescription>
+        </RMATransaction>
+      </RMATransactionList>
+    </RMAInfo>
+  </ResponseBody>
+  <ResponseDate>02/25/2019 23:52:57</ResponseDate>
+</NeweggAPIResponse>

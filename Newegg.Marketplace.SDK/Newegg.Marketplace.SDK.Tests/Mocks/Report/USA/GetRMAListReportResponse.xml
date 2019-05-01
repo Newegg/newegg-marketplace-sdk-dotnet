@@ -1,0 +1,17 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetRMAListInfoResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>0</TotalCount>
+      <TotalPageCount>0</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>27UMQ2D8D3CZY</RequestID>
+    <RequestDate>03/10/2019 19:23:44</RequestDate>
+    <RMAInfoList/>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:36:32</ResponseDate>
+</NeweggAPIResponse>

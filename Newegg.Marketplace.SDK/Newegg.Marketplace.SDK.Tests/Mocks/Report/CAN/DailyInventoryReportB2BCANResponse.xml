@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>DailyInventoryReportResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>26626K71Y8V6M</RequestId>
+        <RequestType>DAILY_INVENTORY_REPORT</RequestType>
+        <RequestDate>03/10/2019 20:10:39</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

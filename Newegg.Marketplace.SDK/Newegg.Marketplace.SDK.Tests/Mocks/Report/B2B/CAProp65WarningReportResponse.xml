@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <sellerID>A44S</sellerID>
+  <OperationType>CAProp65ReportResponse</OperationType>
+  <ResponseBody>
+    <RequestID>23GUN89SPPMWD</RequestID>
+    <RequestType>CAPROP65_REPORT</RequestType>
+    <RequestDate>03/10/2019 20:48:10</RequestDate>
+    <ReportFileURL>ftp://A44S23GUN89SPPMWD204805508283:0bb588dc-9469-4013-868b-1adf1d2b88a6@mktpftp.newegg.com/CAProp65Report_23GUN89SPPMWD.zip</ReportFileURL>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

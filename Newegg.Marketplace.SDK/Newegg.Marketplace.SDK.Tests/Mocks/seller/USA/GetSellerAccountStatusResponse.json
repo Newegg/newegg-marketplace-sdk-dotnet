@@ -1,0 +1,30 @@
+{
+    "IsSuccess": true,
+    "OperationType": "GetSellerAccountStatusResponse",
+    "SellerID": "A006",
+  "ResponseBody": {
+    "Membership": 0,
+    "FufillmentCenterList": [
+      {
+        "WarehouseLocation": "USA",
+        "WarehouseType": 0,
+        "ShippingDestinationList": [
+          "USA",
+          "AUS",
+          "HKG",
+          "IND",
+          "IDN",
+          "PHL",
+          "KOR",
+          "CHL",
+          "MAC",
+          "CHN",
+          "GBR",
+          "SGP"
+        ]
+      }
+    ],
+    "SellerName": "Test_SandBox_MKTPLS",
+    "Status": "Active"
+  }
+}

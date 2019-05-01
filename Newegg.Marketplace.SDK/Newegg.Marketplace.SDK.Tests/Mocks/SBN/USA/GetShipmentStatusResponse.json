@@ -1,0 +1,15 @@
+{
+  "IsSuccess": true,
+  "SellerID": "A006",
+  "OperationType": "GetShipmentStatusResponse",
+  "ResponseBody": {
+    "ResponseList": [
+      {
+        "RequestId": "22AZLF9YXKT7S",
+        "ActionCode": 1,
+        "RequestDate": "07/11/2013 16:39:30",
+        "RequestStatus": "IN_PROGRESS"
+      }
+    ]
+  }
+}

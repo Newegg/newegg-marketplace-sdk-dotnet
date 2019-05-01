@@ -1,0 +1,14 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "OperationType": "OrderConfirmationResponse",
+    "SellerID": "A006",
+    "ResponseDate": "2/22/2012 16:38:53",
+    "ResponseBody": {
+      "RequestDate": "2/22/2012 16:38:53",
+      "DownloadedOrderList": {
+        "OrderNumber":  "283756617" 
+      }
+    }
+  }
+}

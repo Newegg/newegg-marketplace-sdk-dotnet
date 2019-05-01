@@ -1,0 +1,16 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>CourtesyRefundResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <Memo>All refund requests may take up to 48 hours to process.</Memo>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>8f8648da-7d92-4086-bbe5-e399e07895e6</RequestId>
+        <RequestDate>03/05/2019 00:43:23</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

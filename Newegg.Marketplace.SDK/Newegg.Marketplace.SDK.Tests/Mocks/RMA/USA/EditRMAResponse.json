@@ -1,0 +1,29 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "OperationType": "EditRMAResponse",
+    "SellerID": "A2EU",
+    "ResponseBody": {
+      "RMAInfo": {
+        "RMANumber": "21821229",
+        "RMAType": "2",
+        "RMATypeDescription": "Refund",
+        "SourceSONumber": "299232884",
+        "RMANote": "edit refund rma to 201601211001",
+        "RMATransactionList": {
+          "RMATransaction": [
+            {
+              "SellerPartNumber": "Test_SP#A2EU_20181108_0003",
+              "ReturnQuantity": "1",
+              "ReturnUnitPrice": "0.02",
+              "RefundShippingPrice": "0",
+              "RMAReason": "2",
+              "RMAReasonDescription": "Defective"
+            }
+          ]
+        }
+      }
+    },
+    "ResponseDate": "02/25/2019 23:52:57"
+  }
+}

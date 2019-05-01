@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>InternationalInventoryReportResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>24WIDB87KEHHQ</RequestId>
+        <RequestType>INTERNATIONAL_INVENTORY_REPORT</RequestType>
+        <RequestDate>03/10/2019 20:07:10</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

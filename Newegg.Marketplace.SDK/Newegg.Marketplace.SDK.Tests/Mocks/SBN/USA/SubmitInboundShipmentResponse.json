@@ -1,0 +1,11 @@
+{
+  "IsSuccess": true,
+  "OperationType": "SubmitShipmentResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "RequestID": "Z2OTIV1AVVBJ",
+    "RequestDate": "07/11/2013 17:24:46",
+    "RequestStatus": "SUBMITTED"
+  }
+}
+

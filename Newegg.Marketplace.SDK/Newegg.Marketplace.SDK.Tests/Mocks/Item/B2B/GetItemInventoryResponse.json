@@ -1,0 +1,20 @@
+﻿{
+    "Active": "0",
+    "ItemNumber": "9SIA0060884598",
+    "SellerID": "A006",
+    "SellerPartNumber": "A006testitem201201021459",
+    "FulfillmentOption": "1",
+    "AvailableQuantity": 71,
+    "WarehouseAllocation": {
+        "Warehouse": [
+            {
+                "WarehouseCode": "35",
+                "Quantity": "3"
+            },
+          {
+            "WarehouseCode": "36",
+            "Quantity": "37"
+          }
+        ]
+    }
+}

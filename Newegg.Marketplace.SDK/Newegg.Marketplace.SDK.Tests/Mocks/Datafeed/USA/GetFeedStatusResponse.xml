@@ -1,0 +1,16 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetFeedStatusResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>2PQCX3SPZ3QBF</RequestId>
+        <RequestType>ITEM_DATA</RequestType>
+        <RequestDate>2/22/2012 17:25:10</RequestDate>
+        <RequestStatus>FINISHED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

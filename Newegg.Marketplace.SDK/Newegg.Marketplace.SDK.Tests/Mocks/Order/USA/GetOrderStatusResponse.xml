@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<QueryOrderStatusInfo>
+  <OrderNumber>105137040</OrderNumber>
+  <SellerID>A006</SellerID>
+  <OrderStatusCode>3</OrderStatusCode>
+  <OrderStatusName>Invoiced</OrderStatusName>
+  <OrderDownloaded>true</OrderDownloaded>
+  <SalesChannel>0</SalesChannel>
+  <FulfillmentOption>0</FulfillmentOption>
+</QueryOrderStatusInfo>

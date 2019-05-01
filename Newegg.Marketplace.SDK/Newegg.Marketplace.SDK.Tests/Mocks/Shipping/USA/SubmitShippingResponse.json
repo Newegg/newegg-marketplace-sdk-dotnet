@@ -1,0 +1,10 @@
+{
+    "IsSuccess": "true",
+    "OperationType": "SubmitShippingResponse",
+    "SellerID": "A006",
+  "ResponseBody": {
+    "RequestID": "2PQCX3SPZ3QBF",
+    "RequestDate": "12/06/2015 10:21:00",
+    "RequestStatus": "ESTIMATING"
+  }
+}

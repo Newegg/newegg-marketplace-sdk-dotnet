@@ -1,0 +1,64 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetCourtesyRefundResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <ResponseDate>03/05/2019 00:50:53</ResponseDate>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>3</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageSize>10</PageSize>
+      <PageIndex>1</PageIndex>
+    </PageInfo>
+    <CourtesyRefundInfoList>
+      <CourtesyrefundInfo>
+        <CourtesyRefundID>6da1e083-34a9-4501-b571-f83546079e2b</CourtesyRefundID>
+        <SONumber>299395404</SONumber>
+        <SOAmount>1.44</SOAmount>
+        <InvoiceNumber>167682810</InvoiceNumber>
+        <RefundAmount>0.72</RefundAmount>
+        <ReasonCode>3</ReasonCode>
+        <Reason>Wrong Item Information</Reason>
+        <NoteToCustomer>can courtesy refund 0528</NoteToCustomer>
+        <Status>Open</Status>
+        <IsNeweggRefund>false</IsNeweggRefund>
+        <InUserName>A2EU</InUserName>
+        <InDate>03/05/2019 00:45:00</InDate>
+        <EditUserName>API</EditUserName>
+        <EditDate>03/05/2019 00:45:00</EditDate>
+      </CourtesyrefundInfo>
+      <CourtesyrefundInfo>
+        <CourtesyRefundID>8f8648da-7d92-4086-bbe5-e399e07895e6</CourtesyRefundID>
+        <SONumber>299395404</SONumber>
+        <SOAmount>1.44</SOAmount>
+        <InvoiceNumber>167682810</InvoiceNumber>
+        <RefundAmount>0.72</RefundAmount>
+        <ReasonCode>3</ReasonCode>
+        <Reason>Wrong Item Information</Reason>
+        <NoteToCustomer>can courtesy refund 0528</NoteToCustomer>
+        <Status>Open</Status>
+        <IsNeweggRefund>false</IsNeweggRefund>
+        <InUserName>A2EU</InUserName>
+        <InDate>03/05/2019 00:44:01</InDate>
+        <EditUserName>API</EditUserName>
+        <EditDate>03/05/2019 00:44:01</EditDate>
+      </CourtesyrefundInfo>
+      <CourtesyrefundInfo>
+        <CourtesyRefundID>c193f2b5-cc78-4334-a65b-b6f94940d47d</CourtesyRefundID>
+        <SONumber>299956104</SONumber>
+        <SOAmount>0.16</SOAmount>
+        <InvoiceNumber>167682312</InvoiceNumber>
+        <RefundAmount>1.00</RefundAmount>
+        <ReasonCode>-1</ReasonCode>
+        <Reason>System Mapped Error</Reason>
+        <NoteToCustomer>Test</NoteToCustomer>
+        <Status>Close</Status>
+        <IsNeweggRefund>true</IsNeweggRefund>
+        <InUserName>Caroline.Y.Luo</InUserName>
+        <InDate>02/19/2019 21:23:00</InDate>
+        <EditUserName>Caroline.Y.Luo</EditUserName>
+        <EditDate>02/19/2019 21:23:00</EditDate>
+      </CourtesyrefundInfo>
+    </CourtesyRefundInfoList>
+  </ResponseBody>
+</NeweggAPIResponse>

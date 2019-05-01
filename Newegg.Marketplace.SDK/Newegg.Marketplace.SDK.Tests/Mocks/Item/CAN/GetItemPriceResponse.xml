@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PriceResult>
+  <SellerID>A3TV</SellerID>
+  <ItemNumber>9SIA3TV79R8483</ItemNumber>
+  <SellerPartNumber>Test_SP180514105907186</SellerPartNumber>
+  <ShipByNewegg>0</ShipByNewegg>
+  <Active>1</Active>
+  <MSRP>200.00</MSRP>
+  <SellingPrice>100.00</SellingPrice>
+  <EnableFreeShipping>0</EnableFreeShipping>
+  <OnPromotion>0</OnPromotion>
+  <MAP>180.00</MAP>
+  <CheckoutMAP>1</CheckoutMAP>
+</PriceResult>

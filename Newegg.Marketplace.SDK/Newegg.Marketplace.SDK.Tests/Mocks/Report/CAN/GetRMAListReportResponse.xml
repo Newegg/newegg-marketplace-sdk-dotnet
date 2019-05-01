@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetRMAListInfoResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>1</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>2409DG5ML2VLF</RequestID>
+    <RequestDate>03/10/2019 19:28:11</RequestDate>
+    <RMAInfoList>
+      <RMAInfo>
+        <SellerID>A3TV</SellerID>
+        <RMANumber>21315116</RMANumber>
+        <RMAType>1</RMAType>
+        <RMATypeDescription>Replacement</RMATypeDescription>
+        <RMADate>11/07/2018 18:59:29</RMADate>
+        <RMAStatus>1</RMAStatus>
+        <RMAStatusDescription>Open</RMAStatusDescription>
+        <LastEditDate>11/07/2018 18:59:29</LastEditDate>
+        <LastEditUser>Seller</LastEditUser>
+        <OrderNumber>291872044</OrderNumber>
+        <OrderDate>09/29/2018 01:40:31</OrderDate>
+        <InvoiceNumber>163425083</InvoiceNumber>
+        <OrderAmount>0.10</OrderAmount>
+        <RMAProcessedBy>Seller</RMAProcessedBy>
+        <CustomerName>Kelvin Jiang</CustomerName>
+        <CustomerAddress>6976 Columbus Rd, DB, MISSISSAUGA, BC, V8R 5S7, CAN</CustomerAddress>
+        <RMANote>test</RMANote>
+        <RefundGSTorHSTAmount/>
+        <RefundPSTorQSTAmount/>
+        <RMATransactionList>
+          <RMATransaction>
+            <SellerPartNumber>fo0A3TVtesttest017</SellerPartNumber>
+            <MfrPartNumber>fo0A3TVtesttest017</MfrPartNumber>
+            <NeweggItemNumber>9SIA3TV8019769</NeweggItemNumber>
+            <Description>test item_for testonly 012</Description>
+            <UnitPrice>0.06</UnitPrice>
+            <ReplacementInfo>
+              <ItemReturnQty>1</ItemReturnQty>
+              <ShippedBy>0</ShippedBy>
+              <RMAShipMethod>4</RMAShipMethod>
+              <ReplacementReason>6</ReplacementReason>
+              <ReplacementReasonDescription>Personal Reason | Other Reason</ReplacementReasonDescription>
+            </ReplacementInfo>
+          </RMATransaction>
+        </RMATransactionList>
+      </RMAInfo>
+    </RMAInfoList>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:40:03</ResponseDate>
+</NeweggAPIResponse>

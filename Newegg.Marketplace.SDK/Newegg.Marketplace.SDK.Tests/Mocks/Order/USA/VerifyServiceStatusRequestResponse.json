@@ -1,0 +1,12 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "OperationType": "GetServiceStatus",
+    "SellerID": "A006",
+    "ResponseBody": {
+      "Status": "0",
+      "Timestamp": "2/15/2012 2:50:38",
+      "Message": "The service is unavailable or experiencing extremely high error rates."
+    }
+  }
+}

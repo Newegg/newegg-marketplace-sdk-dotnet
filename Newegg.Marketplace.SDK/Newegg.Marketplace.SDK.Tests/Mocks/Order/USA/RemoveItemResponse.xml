@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>KillItemResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <Memo />
+  <ResponseBody>
+    <RequestDate>2012-02-22 16:42:10</RequestDate>
+    <Orders>
+      <OrderNumber>88237462</OrderNumber>
+      <Result>
+        <ItemList>
+          <Item>
+            <SellerPartNumber>AWHZ3434</SellerPartNumber>
+          </Item>
+        </ItemList>
+      </Result>
+    </Orders>
+  </ResponseBody>
+  <ResponseDate>2012-02-22 16:42:10</ResponseDate>
+</NeweggAPIResponse>

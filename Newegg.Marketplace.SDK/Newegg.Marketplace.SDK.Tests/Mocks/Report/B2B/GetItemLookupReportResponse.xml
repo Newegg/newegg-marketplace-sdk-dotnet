@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>ItemLookupResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>2</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>25LHSE7T08JAU</RequestID>
+    <RequestDate>03/10/2019 19:54:23</RequestDate>
+    <ItemList>
+      <Item>
+        <NeweggItemNumber>0BD-000B-00027</NeweggItemNumber>
+        <UPC>619659075934</UPC>
+        <Condition>1</Condition>
+        <PacksOrSets>1</PacksOrSets>
+        <ManufacturerName>
+          <![CDATA[SanDisk]]>
+        </ManufacturerName>
+        <ManufacturerPartNumber>
+          <![CDATA[619659075934]]>
+        </ManufacturerPartNumber>
+        <WebsiteShortTitle>
+          <![CDATA[SanDisk Extreme 16 GB USB 3.0 Flash Drive SDCZ80-016G-X46]]>
+        </WebsiteShortTitle>
+      </Item>
+      <Item>
+        <NeweggItemNumber>9B0BD-000B-00027</NeweggItemNumber>
+        <UPC>619659075934</UPC>
+        <Condition>1</Condition>
+        <PacksOrSets>1</PacksOrSets>
+        <ManufacturerName>
+          <![CDATA[SanDisk]]>
+        </ManufacturerName>
+        <ManufacturerPartNumber>
+          <![CDATA[619659075934]]>
+        </ManufacturerPartNumber>
+        <WebsiteShortTitle>
+          <![CDATA[SanDisk Extreme 16 GB USB 3.0 Flash Drive SDCZ80-016G-X46]]>
+        </WebsiteShortTitle>
+      </Item>
+    </ItemList>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:51:06</ResponseDate>
+</NeweggAPIResponse>

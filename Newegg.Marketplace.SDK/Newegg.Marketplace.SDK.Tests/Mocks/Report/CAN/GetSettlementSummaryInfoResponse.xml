@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A3TV</SellerID>
+  <OperationType>GetSettlementSummaryInfoResponse</OperationType>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>12</TotalCount>
+      <TotalPageCount>2</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>ZV0JP9P64SZJ</RequestID>
+    <RequestDate>03/10/2019 17:21:54</RequestDate>
+    <SettlementSummaryList>
+      <SettlementSummary>
+        <SettlementDate>03/31/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>03/01/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>03/31/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107078645</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>2.10</ItemPrice>
+        <Shipping>-0.37</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>1.61</TotalOrderAmount>
+        <Refunds>-2.55</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>-12.47</MiscellaneousAdjustment>
+        <TotalRefunds>-15.02</TotalRefunds>
+        <NeweggCommissionFee>-0.41</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>2.58</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>13.41</TotalNeweggFee>
+        <TotalSettlement>0.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>02/28/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>09/24/2014 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>02/28/2018 00:00:00</SettlementDateTo>
+        <SettlementID>106997552</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>317.20</ItemPrice>
+        <Shipping>61.64</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>392.26</TotalOrderAmount>
+        <Refunds>-137.20</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>-28.91</MiscellaneousAdjustment>
+        <TotalRefunds>-166.11</TotalRefunds>
+        <NeweggCommissionFee>-69.50</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>24.75</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>-34.14</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-232.15</TotalNeweggFee>
+        <TotalSettlement>-6.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>06/30/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>06/01/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>06/30/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107419732</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>0.12</ItemPrice>
+        <Shipping>0.02</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>0.16</TotalOrderAmount>
+        <Refunds>0.00</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>0.00</TotalRefunds>
+        <NeweggCommissionFee>-0.02</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.00</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-0.16</TotalNeweggFee>
+        <TotalSettlement>0.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>07/31/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>07/09/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>07/31/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107475806</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>19.48</ItemPrice>
+        <Shipping>-1.26</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>18.26</TotalOrderAmount>
+        <Refunds>-12.00</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-12.00</TotalRefunds>
+        <NeweggCommissionFee>-2.48</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>2.06</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-3.66</TotalNeweggFee>
+        <TotalSettlement>2.60</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>04/30/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>04/02/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>04/30/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107243022</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>7.33</ItemPrice>
+        <Shipping>0.69</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>16.36</TotalOrderAmount>
+        <Refunds>-2.20</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>-7.12</MiscellaneousAdjustment>
+        <TotalRefunds>-9.32</TotalRefunds>
+        <NeweggCommissionFee>-2.83</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.57</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>-0.01</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-7.04</TotalNeweggFee>
+        <TotalSettlement>0.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>09/30/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>09/18/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>09/30/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107781244</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>7.42</ItemPrice>
+        <Shipping>0.07</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>6.76</TotalOrderAmount>
+        <Refunds>-5.40</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-5.40</TotalRefunds>
+        <NeweggCommissionFee>-1.20</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>1.03</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>-3.93</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-2.36</TotalNeweggFee>
+        <TotalSettlement>-1.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>02/28/2019 00:00:00</SettlementDate>
+        <SettlementDateFrom>02/26/2019 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>02/28/2019 00:00:00</SettlementDateTo>
+        <SettlementID>108462350</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>1.15</ItemPrice>
+        <Shipping>0.00</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>1.16</TotalOrderAmount>
+        <Refunds>-1.10</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-1.10</TotalRefunds>
+        <NeweggCommissionFee>-0.06</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.06</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-0.06</TotalNeweggFee>
+        <TotalSettlement>0.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>01/31/2019 00:00:00</SettlementDate>
+        <SettlementDateFrom>01/10/2019 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>01/31/2019 00:00:00</SettlementDateTo>
+        <SettlementID>108405713</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>2.00</ItemPrice>
+        <Shipping>0.49</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>2.74</TotalOrderAmount>
+        <Refunds>-0.50</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-0.50</TotalRefunds>
+        <NeweggCommissionFee>-1.74</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.44</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-3.24</TotalNeweggFee>
+        <TotalSettlement>-1.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>05/31/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>05/03/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>05/31/2018 00:00:00</SettlementDateTo>
+        <SettlementID>107353875</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>2.40</ItemPrice>
+        <Shipping>1.38</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>4.15</TotalOrderAmount>
+        <Refunds>-0.10</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-0.10</TotalRefunds>
+        <NeweggCommissionFee>-1.14</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.02</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>-4.05</TotalNeweggFee>
+        <TotalSettlement>0.00</TotalSettlement>
+      </SettlementSummary>
+      <SettlementSummary>
+        <SettlementDate>11/30/2018 00:00:00</SettlementDate>
+        <SettlementDateFrom>11/01/2018 00:00:00</SettlementDateFrom>
+        <SettlementDateTo>11/30/2018 00:00:00</SettlementDateTo>
+        <SettlementID>108108299</SettlementID>
+        <CheckNumber/>
+        <ItemPrice>0.06</ItemPrice>
+        <Shipping>-0.08</Shipping>
+        <Other>0.00</Other>
+        <TotalOrderAmount>-0.07</TotalOrderAmount>
+        <Refunds>-1.18</Refunds>
+        <ChargeBack>0.00</ChargeBack>
+        <MiscellaneousAdjustment>0.00</MiscellaneousAdjustment>
+        <TotalRefunds>-1.18</TotalRefunds>
+        <NeweggCommissionFee>-0.01</NeweggCommissionFee>
+        <NeweggTransactionFee>0.00</NeweggTransactionFee>
+        <NeweggRefundCommissionFee>0.20</NeweggRefundCommissionFee>
+        <NeweggMonthlyFee>0.00</NeweggMonthlyFee>
+        <NeweggStorageFee>0.00</NeweggStorageFee>
+        <NeweggRMABuyoutFee>0.00</NeweggRMABuyoutFee>
+        <TotalNeweggFee>2.25</TotalNeweggFee>
+        <TotalSettlement>1.00</TotalSettlement>
+      </SettlementSummary>
+    </SettlementSummaryList>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

@@ -1,0 +1,9 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetServiceStatus</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <Status>1</Status>
+    <Timestamp>2/14/2012 9:42:46</Timestamp>
+  </ResponseBody>
+</NeweggAPIResponse>

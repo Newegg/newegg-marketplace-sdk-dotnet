@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>InternationalPriceReportResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>26XZV07ERGI8B</RequestId>
+        <RequestType>INTERNATIONAL_PRICE_REPORT</RequestType>
+        <RequestDate>03/10/2019 20:21:02</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

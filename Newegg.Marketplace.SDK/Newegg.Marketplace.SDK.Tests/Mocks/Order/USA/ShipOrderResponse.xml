@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<UpdateOrderStatusInfo>
+  <IsSuccess>true</IsSuccess>
+  <PackageProcessingSummary>
+    <TotalPackageCount>1</TotalPackageCount>
+    <SuccessCount>1</SuccessCount>
+    <FailCount>0</FailCount>
+  </PackageProcessingSummary>
+  <Result>
+    <OrderNumber>159243598</OrderNumber>
+    <SellerID>A006</SellerID>
+    <OrderStatus>Shipped</OrderStatus>
+    <Shipment>
+      <PackageList>
+        <Package>
+          <TrackingNumber>lztestA0060001</TrackingNumber>
+          <ShipDate>2012-02-10T15:30:01</ShipDate>
+          <ProcessStatus>true</ProcessStatus>
+          <ProcessResult>Success</ProcessResult>
+          <ItemList>
+            <ItemDes>
+              <NeweggItemNumber>9SIA0060845543</NeweggItemNumber>
+              <SellerPartNumber>A006ZX-35833</SellerPartNumber>
+              <ShippedQty>1</ShippedQty>
+            </ItemDes>
+          </ItemList>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </Result>
+</UpdateOrderStatusInfo>

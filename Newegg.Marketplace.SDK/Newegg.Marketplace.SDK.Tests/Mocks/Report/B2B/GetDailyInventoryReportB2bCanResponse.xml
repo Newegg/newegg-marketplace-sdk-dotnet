@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <sellerID>A44S</sellerID>
+  <OperationType>DailyinventoryReportResponse</OperationType>
+  <ResponseBody>
+    <RequestID>27FY2VRBYUKZQ</RequestID>
+    <RequestType>DAILY_INVENTORY_REPORT</RequestType>
+    <RequestDate>3/10/2019 8:11:26 PM</RequestDate>
+    <ReportFileURL>ftp://API-vIwP515f:LsfPPof9@ftp08.newegg.com/DailyInventoryReport_27FY2VRBYUKZQ.zip</ReportFileURL>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

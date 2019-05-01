@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetPlanSuggestionResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ShipmentList>
+      <Shipment>
+        <ShipToWarehouseCode>07</ShipToWarehouseCode>
+        <ShipToAddress1>17708 Rowland St.</ShipToAddress1>
+        <ShipToCityName>City of Industry</ShipToCityName>
+        <ShipToStateCode>CA</ShipToStateCode>
+        <ShipToZipCode>91748</ShipToZipCode>
+        <ShipToCountryCode>USA</ShipToCountryCode>
+        <ItemList>
+          <Item>
+            <SellerPartNumber>380026</SellerPartNumber>
+            <NeweggItemNumber>9SIA0068P31016</NeweggItemNumber>
+            <Quantity>10</Quantity>
+            <NumberofCartons>1</NumberofCartons>
+          </Item>
+        </ItemList>
+      </Shipment>
+      <Shipment>
+        <ShipToWarehouseCode>14</ShipToWarehouseCode>
+        <ShipToAddress1>45 Patrick Ave., Dock 9-17</ShipToAddress1>
+        <ShipToCityName>Edison</ShipToCityName>
+        <ShipToStateCode>NJ</ShipToStateCode>
+        <ShipToZipCode>08837</ShipToZipCode>
+        <ShipToCountryCode>USA</ShipToCountryCode>
+        <ItemList>
+          <Item>
+            <SellerPartNumber>423440</SellerPartNumber>
+            <NeweggItemNumber>9SIA0068P31027</NeweggItemNumber>
+            <Quantity>20</Quantity>
+            <NumberofCartons>2</NumberofCartons>
+          </Item>
+          <Item>
+            <SellerPartNumber>380026</SellerPartNumber>
+            <NeweggItemNumber>9SIA0068P31016</NeweggItemNumber>
+            <Quantity>20</Quantity>
+            <NumberofCartons>2</NumberofCartons>
+          </Item>
+        </ItemList>
+      </Shipment>
+    </ShipmentList>
+  </ResponseBody>
+</NeweggAPIResponse>

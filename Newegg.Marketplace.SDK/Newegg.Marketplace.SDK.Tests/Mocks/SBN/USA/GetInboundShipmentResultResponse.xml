@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetShipmentResultResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <RequestID>21VS8NZ4D1RU9</RequestID>
+    <RequestDate>07/14/2013 22:41:25</RequestDate>
+    <ProcessedDate>07/14/2013 22:42:40</ProcessedDate>
+    <RequestStatus>FINISHED</RequestStatus>
+    <Shipment>
+      <ShipmentID>2768782</ShipmentID>
+      <LabelURLList>
+        <Label>
+          <LabelType>ItemLabel</LabelType>
+          <LabelUrl>ftp://API-kisRuBid:aa8ke7h8@ftp03.newegg.com/fff5267a-b688-4705-a676-6b17e910454a.pdf</LabelUrl>
+        </Label>
+        <Label>
+          <LabelType>PackageLabel</LabelType>
+          <LabelUrl>ftp://API-kisRuBid:aa8ke7h8@ftp03.newegg.com/ac2ec547-4492-41c0-80facbcbd2e5a393.pdf</LabelUrl>
+        </Label>
+        <Label>
+          <LabelType>PackingListLabel</LabelType>
+          <LabelUrl>ftp://API-kisRuBid:aa8ke7h8@ftp03.newegg.com/d5dd197a-5e4a-410d-bc12-98841ea84623.pdf</LabelUrl>
+        </Label>
+        <Label>
+          <LabelType>ShippingLabel</LabelType>
+          <LabelUrl>ftp://API-kisRuBid:aa8ke7h8@ftp03.newegg.com/063d7c3a-0ed3-4b5f-adb7-f21ba46e2d4f.pdf</LabelUrl>
+        </Label>
+      </LabelURLList>
+      <ErrorList></ErrorList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

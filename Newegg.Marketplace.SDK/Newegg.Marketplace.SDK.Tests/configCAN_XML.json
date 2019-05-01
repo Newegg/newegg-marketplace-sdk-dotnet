@@ -1,0 +1,15 @@
+{
+  "SellerID": "****",
+  "Credentials": {
+    "Authorization": "********************************",
+    "SecretKey": "*******-****-****-****-************"
+  },
+  "MockPath": "../../../Mocks/",
+  "Connection": {
+    "RequestTimeoutMs": 30000,
+    "AttemptsTimes": 5,
+    "RetryIntervalMs": 1000
+  },
+  "APIFormat": "XML",
+  "Platform": "CAN"
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetVolumeDiscountResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ItemVolumeDiscountInfo>
+      <SellerPartNumber>MYSTUFF029384</SellerPartNumber>
+      <NeweggItemNumber>9SIA0063R11047</NeweggItemNumber>
+      <DiscountSetting>
+        <Tier>
+          <Priority>1</Priority>
+          <Quantity>5</Quantity>
+          <SellingPrice>7777.00</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+      </DiscountSetting>
+    </ItemVolumeDiscountInfo>
+  </ResponseBody>
+</NeweggAPIResponse>

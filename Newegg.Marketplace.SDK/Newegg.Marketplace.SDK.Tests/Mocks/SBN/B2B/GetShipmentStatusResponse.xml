@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetShipmentStatusResponse</OperationType>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>ZQFVH1A9WO7D</RequestId>
+        <ActionCode>2</ActionCode>
+        <RequestDate>03/11/2019 22:42:50</RequestDate>
+        <RequestStatus>FINISHED</RequestStatus>
+      </ResponseInfo>
+      <ResponseInfo>
+        <RequestId>25X378SU38ZOF</RequestId>
+        <ActionCode>2</ActionCode>
+        <RequestDate>03/11/2019 22:42:58</RequestDate>
+        <RequestStatus>FINISHED</RequestStatus>
+      </ResponseInfo>
+      <ResponseInfo>
+        <RequestId>25B8V65JHTU2R</RequestId>
+        <ActionCode>2</ActionCode>
+        <RequestDate>03/11/2019 22:43:04</RequestDate>
+        <RequestStatus>FINISHED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

@@ -1,0 +1,58 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "OperationType": "ItemLookupResponse",
+    "SellerID": "bfwk",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "4",
+        "TotalPageCount": "1",
+        "PageIndex": "1",
+        "PageSize": "10"
+      },
+      "RequestID": "28292T8ASAL64",
+      "RequestDate": "07/11/2014 18:14:04",
+      "ItemList": {
+        "Item": [
+          {
+            "ParentItemNumber": "01T-001Y-00004",
+            "UPC": "20140711101111",
+            "Condition": "1",
+            "PacksOrSets": "1",
+            "ManufacturerName": "q-see",
+            "ManufacturerPartNumber": "canmfpn20140711101",
+            "WebShortTitle": "b2b new item 201407111001"
+          },
+          {
+            "ParentItemNumber": "01T-001Y-00004",
+            "UPC": "20140711101111",
+            "Condition": "1",
+            "PacksOrSets": "1",
+            "ManufacturerName": "q-see",
+            "ManufacturerPartNumber": "canmfpn20140711101",
+            "WebShortTitle": "b2b new item 201407111001"
+          },
+          {
+            "ParentItemNumber": "01T-001Y-00004",
+            "UPC": "20140711101111",
+            "Condition": "1",
+            "PacksOrSets": "1",
+            "ManufacturerName": "q-see",
+            "ManufacturerPartNumber": "canmfpn20140711101",
+            "WebShortTitle": "b2b new item 201407111001"
+          },
+          {
+            "ParentItemNumber": "01T-001Y-00007",
+            "UPC": "",
+            "Condition": "2",
+            "PacksOrSets": "1",
+            "ManufacturerName": "q-see",
+            "ManufacturerPartNumber": "canmfpn20140711101",
+            "WebShortTitle": "456346"
+          }
+        ]
+      }
+    },
+    "ResponseDate": "07/11/2014 19:00:59"
+  }
+}

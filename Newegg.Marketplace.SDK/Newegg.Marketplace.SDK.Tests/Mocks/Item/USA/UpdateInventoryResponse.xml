@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateInventoryResult>
+  <SellerID>A006</SellerID>
+  <ItemNumber>9SIA0068KA0333</ItemNumber>
+  <SellerPartNumber>meredith-20181229-1345</SellerPartNumber>
+  <InventoryList>
+    <Inventory>
+      <WarehouseLocation>USA</WarehouseLocation>
+      <AvailableQuantity>100</AvailableQuantity>
+    </Inventory>
+    <Inventory>
+      <WarehouseLocation>USA</WarehouseLocation>
+      <AvailableQuantity>100</AvailableQuantity>
+    </Inventory>
+  </InventoryList>
+</UpdateInventoryResult>

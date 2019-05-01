@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSellerPropertyValueResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <PropertyInfoList>
+      <PropertyInfo>
+        <SubcategoryID>1045</SubcategoryID>
+        <SubcategoryName><![CDATA[Costumes]]></SubcategoryName>
+        <PropertyName><![CDATA[Costume_Gender]]></PropertyName>
+        <IsAdvancedSearch>1</IsAdvancedSearch>
+        <IsGroupBy>0</IsGroupBy>
+        <IsRequired>1</IsRequired>
+        <PropertyValueList>
+          <PropertyValue><![CDATA[Boys]]></PropertyValue>
+          <PropertyValue><![CDATA[Female]]></PropertyValue>
+          <PropertyValue><![CDATA[Girls]]></PropertyValue>
+          <PropertyValue><![CDATA[Male]]></PropertyValue>
+          <PropertyValue><![CDATA[Unisex]]></PropertyValue>
+          <PropertyValue><![CDATA[Women]]></PropertyValue>
+        </PropertyValueList>
+      </PropertyInfo>
+    </PropertyInfoList>
+  </ResponseBody>
+</NeweggAPIResponse>

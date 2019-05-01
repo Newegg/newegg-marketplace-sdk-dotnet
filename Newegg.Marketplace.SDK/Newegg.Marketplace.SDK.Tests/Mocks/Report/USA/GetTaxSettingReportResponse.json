@@ -1,0 +1,13 @@
+ {
+    "IsSuccess": "true",
+    "sellerID": "A006",
+    "OperationType": "ItemChinaTaxSettingReportResponse",
+  "ResponseBody": {
+    "RequestID": "219O8NZS6DQV0",
+    "RequestType": "ITEM_CHINATAXSETTING_REPORT",
+    "RequestDate": "03/10/2019 22:14:53",
+    "ReportFileURL": "ftp: //API-S2XW8ryv:XM8mVLf1@ftp03.newegg.com/ItemChinaTaxSettingReport_219O8NZS6DQV0.zip"
+  },
+    "Memo": ""
+  }
+

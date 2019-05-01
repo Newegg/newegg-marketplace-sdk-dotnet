@@ -1,0 +1,15 @@
+{
+    "IsSuccess": true,
+    "OperationType": "CAProp65ReportResponse",
+    "SellerID": "a001",
+  "ResponseBody": {
+    "ResponseList": [
+      {
+        "RequestId": "270Z8Y3SYIGQV",
+        "RequestType": "CAPROP65 _REPORT",
+        "RequestDate": "07/12/2014 11:34:57",
+        "RequestStatus": "SUBMITTED"
+      }
+    ]
+  }
+}

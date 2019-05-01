@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType/>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>210CQTAFHO2N6</RequestId>
+        <RequestType>PREMIER_ITEM_REPORT</RequestType>
+        <RequestDate>03/10/2019 20:30:37</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

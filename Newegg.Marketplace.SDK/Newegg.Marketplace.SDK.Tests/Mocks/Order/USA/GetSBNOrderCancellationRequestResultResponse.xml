@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSBNOrderCancellationResultResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseDate>2/22/2012 16:37:20</ResponseDate>
+  <ResponseBody>
+    <RequestDate>2/22/2012 15:37:20</RequestDate>
+    <OrderNumber>159243598</OrderNumber>
+    <Result>Failed</Result>
+    <ErrorMessage>Order void was not successful due to technical issues / order already shipped.</ErrorMessage>
+  </ResponseBody>
+</NeweggAPIResponse>

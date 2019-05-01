@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSellerAccountStatusResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <SellerName>
+      <![CDATA[Test_SandBox_MKTPLS]]>
+    </SellerName>
+    <Status>Active</Status>
+    <Membership>0</Membership>
+    <FufillmentCenterList>
+      <FufillmentCenter>
+        <WarehouseLocation>USA</WarehouseLocation>
+        <WarehouseType>0</WarehouseType>
+        <ShippingDestinationList>
+          <ShipToCountry>USA</ShipToCountry>
+          <ShipToCountry>AUS</ShipToCountry>
+          <ShipToCountry>HKG</ShipToCountry>
+          <ShipToCountry>IND</ShipToCountry>
+          <ShipToCountry>IDN</ShipToCountry>
+          <ShipToCountry>PHL</ShipToCountry>
+          <ShipToCountry>KOR</ShipToCountry>
+          <ShipToCountry>CHL</ShipToCountry>
+          <ShipToCountry>MAC</ShipToCountry>
+          <ShipToCountry>CHN</ShipToCountry>
+          <ShipToCountry>GBR</ShipToCountry>
+          <ShipToCountry>SGP</ShipToCountry>
+        </ShippingDestinationList>
+      </FufillmentCenter>
+    </FufillmentCenterList>
+  </ResponseBody>
+</NeweggAPIResponse>

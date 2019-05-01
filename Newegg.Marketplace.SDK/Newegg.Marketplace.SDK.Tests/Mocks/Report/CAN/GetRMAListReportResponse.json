@@ -1,0 +1,69 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "SellerID": "V006",
+    "OperationType": "GetOrderInfoResponse",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "20",
+        "TotalPageCount": "20",
+        "PageSize": "10",
+        "PageIndex": "1"
+      },
+      "RequestID": "2PQBYWH4V68ZP",
+      "RequestDate": "2/21/2012 14:38:17",
+      "OrderInfoList": {
+        "OrderInfo": {
+          "SellerID": "V006",
+          "OrderNumber": "155738158",
+          "SellerOrderNumber": "2153930",
+          "InvoiceNumber": "0",
+          "OrderDownloaded": "false",
+          "OrderDate": "12/21/2011 1:47:24",
+          "OrderStatus": "4",
+          "OrderStatusDescription": "Voided",
+          "CustomerName": "Richard Chen",
+          "CustomerPhoneNumber": "626-277-1420",
+          "ShipToAddress1": "17708 Rowland St",
+          "ShipToAddress2": null,
+          "ShipToCityName": "Rowland Heights",
+          "ShipToStateCode": "DC",
+          "ShipToZipCode": "20001",
+          "ShipToCountryCode": "USA",
+          "ShipService": "Media Mail (7-14 business days)",
+          "ShipToFirstName": "Richard",
+          "ShipToLastName": "Chen",
+          "ShipToCompany": null,
+          "OrderItemAmount": "0.00",
+          "ShippingAmount": "3.00",
+          "DiscountAmount": "-5.00",
+          "RefundAmount": "0.00",
+          "OrderTotalAmount": "8.00",
+          "OrderQty": "1",
+          "IsAutoVoid": "false",
+          "SalesChannel": 0,
+          "FulfillmentOption": 1,
+          "ItemInfoList": {
+            "ItemInfo": {
+              "SellerPartNumber": "Mike_A006_101478-151",
+              "NeweggItemNumber": "9SIA00607Y6664",
+              "MfrPartNumber": "Mike_A006_10114-151",
+              "UPCCode": "410997000004",
+              "Description": "Tungsten Ladies' Dome Ring w/ CZ",
+              "OrderedQty": "1",
+              "ShippedQty": "0",
+              "UnitPrice": "5.00",
+              "ExtendUnitPrice": "1.03",
+              "UnitShippingCharge": "1.03",
+              "ExtendShippingCharge": "1.03",
+              "Status": "3",
+              "StatusDescription": "Canceled"
+            }
+          },
+          "PackageInfoList": null
+        }
+      }
+    },
+    "Memo": null
+  }
+}

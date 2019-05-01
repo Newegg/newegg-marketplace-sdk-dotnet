@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetShipmentListResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ShipmentList>
+      <Shipment>
+        <ShipmentID>2740139</ShipmentID>
+        <Status>Ready to ship</Status>
+        <CreateDate>06/06/2013 17:02:31</CreateDate>
+        <LastEditDate>06/07/2013 11:31:00</LastEditDate>
+        <ShipFrom>Test_MKTPLS'K_</ShipFrom>
+        <ShipToWarehouseCode>14</ShipToWarehouseCode>
+        <ShipToAddress1>45 Patrick Ave., Dock 9-17</ShipToAddress1>
+        <ShipToCityName>Edison</ShipToCityName>
+        <ShipToStateCode>NJ</ShipToStateCode>
+        <ShipToZipCode>08837</ShipToZipCode>
+        <ShipToCountryCode>USA</ShipToCountryCode>
+        <ShippingMethodCode>1</ShippingMethodCode>
+        <ShippingCarrierCode>99</ShippingCarrierCode>
+        <OtherCarrierName>1</OtherCarrierName>
+        <PackageList>
+          <Package>
+            <TrackingNumber>1</TrackingNumber>
+            <PackageWeight>0</PackageWeight>
+            <PackageLength>0</PackageLength>
+            <PackageHeight>0</PackageHeight>
+            <PackageWidth>0</PackageWidth>
+          </Package>
+        </PackageList>
+        <ItemList>
+          <Item>
+            <SellerPartNumber>Ss0120121228065937386</SellerPartNumber>
+            <Quantity>36</Quantity>
+            <NumberofPackage>2</NumberofPackage>
+          </Item>
+          <Item>
+            <SellerPartNumber>SS0120130516683100755</SellerPartNumber>
+            <Quantity>9</Quantity>
+            <NumberofPackage>3</NumberofPackage>
+          </Item>
+        </ItemList>
+      </Shipment>
+    </ShipmentList>
+  </ResponseBody>
+</NeweggAPIResponse>

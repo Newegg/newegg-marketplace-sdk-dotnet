@@ -1,0 +1,51 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>IssueRMAResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <ResponseBody>
+    <RMAInfo>
+      <RMANumber>21821229</RMANumber>
+      <RMAType>2</RMAType>
+      <RMATypeDescription>Refund</RMATypeDescription>
+      <RMADate>02/25/2019 23:24:14</RMADate>
+      <RMAStatus>6</RMAStatus>
+      <RMAStatusDescription>Processing</RMAStatusDescription>
+      <OrderNumber>299232884</OrderNumber>
+      <OrderDate>01/25/2019 19:30:12</OrderDate>
+      <InvoiceNumber>167615205</InvoiceNumber>
+      <OrderAmount>0.06</OrderAmount>
+      <AvailableRefundAmount>0.06</AvailableRefundAmount>
+      <RMAProcessedBy>S</RMAProcessedBy>
+      <RMANote>API test refund RMA201601061001</RMANote>
+      <PriorRefundAmount>0.00</PriorRefundAmount>
+      <CustomerName>test1 test0.32</CustomerName>
+      <CustomerPhoneNumber>432-532-4325EXT45</CustomerPhoneNumber>
+      <CustomerEmailAddress>cusa.q7zw1u4erbgt9e@marketplace.newegg.com</CustomerEmailAddress>
+      <ShipToAddress1>181 S Central Ave</ShipToAddress1>
+      <ShipToAddress2/>
+      <ShipToCityName>Los Angeles</ShipToCityName>
+      <ShipToStateCode>CA</ShipToStateCode>
+      <ShipToZipCode>90012-3912</ShipToZipCode>
+      <ShipToCountryCode>UNITED STATES</ShipToCountryCode>
+      <ShipToLastName>test0.32</ShipToLastName>
+      <ShipToFirstName>test1</ShipToFirstName>
+      <ShipToCompany>test32012.test01</ShipToCompany>
+      <RMATransactionList>
+        <RMATransaction>
+          <SellerPartNumber>Test_SP#A2EU_20181108_0003</SellerPartNumber>
+          <MfrPartNumber>Test_MP#A2EU181108_3</MfrPartNumber>
+          <NeweggItemNumber>9SIA2EU8E43864</NeweggItemNumber>
+          <Description>Test_Item Website Short Title A2EU_20181108 00003</Description>
+          <UnitPrice>0.02</UnitPrice>
+          <ReturnQuantity>1</ReturnQuantity>
+          <ReturnUnitPrice>0.02</ReturnUnitPrice>
+          <RefundShippingPrice>0.00</RefundShippingPrice>
+          <RMAReason>2</RMAReason>
+          <RMAReasonDescription>Defective</RMAReasonDescription>
+        </RMATransaction>
+      </RMATransactionList>
+    </RMAInfo>
+  </ResponseBody>
+  <ResponseDate>02/25/2019 23:24:14</ResponseDate>
+  <Memo>All refund requests may take up to 48 hours to process.</Memo>
+</NeweggAPIResponse>

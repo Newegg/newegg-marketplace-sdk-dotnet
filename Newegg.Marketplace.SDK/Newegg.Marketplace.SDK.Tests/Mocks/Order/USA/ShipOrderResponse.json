@@ -1,0 +1,30 @@
+{
+    "IsSuccess": true,
+  "PackageProcessingSummary": {
+    "FailCount": 0,
+    "SuccessCount": 1,
+    "TotalPackageCount": 1
+  },
+    "Result": {
+        "OrderNumber": "159243598",
+        "OrderStatus": "Shipped",
+        "SellerID": "A006",
+        "Shipment": {
+            "PackageList": [
+                {
+                    "ItemList": [
+                        {
+                            "NeweggItemNumber": "9SIA0060845543",
+                            "SellerPartNumber": "A006ZX-35833",
+                            "ShippedQty": 1
+                        }
+                    ],
+                    "ProcessResult": "Success",
+                    "ProcessStatus": true,
+                    "ShipDate": "2012-02-10T15:30:01",
+                    "TrackingNumber": "lztestA0060001"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitVolumeDiscountResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <ItemVolumeDiscountInfo>
+      <SellerPartNumber>Test_SP#A44S_20181114_0001</SellerPartNumber>
+      <NeweggItemNumber>9SIA44S8EW3023</NeweggItemNumber>
+      <DiscountSetting>
+        <Tier>
+          <Priority>1</Priority>
+          <Quantity>12</Quantity>
+          <SellingPrice>1.08</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+        <Tier>
+          <Priority>2</Priority>
+          <Quantity>20</Quantity>
+          <SellingPrice>1.07</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+      </DiscountSetting>
+    </ItemVolumeDiscountInfo>
+  </ResponseBody>
+</NeweggAPIResponse>

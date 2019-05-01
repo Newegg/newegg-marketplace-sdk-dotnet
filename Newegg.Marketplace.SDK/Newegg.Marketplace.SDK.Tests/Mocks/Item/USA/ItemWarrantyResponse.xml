@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitItemWarrantyResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ItemWarrantyList>
+      <ItemWarranty>
+        <IsSuccess>false</IsSuccess>
+        <ErrorList>
+          <Error>
+            <ErrorCode>CT514</ErrorCode>
+            <ErrorMessage>Warranty exists in CountryCode:USA, SellerPartNumber:NE.Dell.M6800.16.1TB+1TB.W10.</ErrorMessage>
+          </Error>
+        </ErrorList>
+      </ItemWarranty>
+    </ItemWarrantyList>
+  </ResponseBody>
+  <ResponseDate>02/22/2019 17:13:53</ResponseDate>
+</NeweggAPIResponse>

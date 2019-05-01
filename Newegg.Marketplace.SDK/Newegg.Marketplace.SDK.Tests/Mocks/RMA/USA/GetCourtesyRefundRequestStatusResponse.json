@@ -1,0 +1,17 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "OperationType": "GetCourtesyRefundRequestStatusResponse",
+    "SellerID": "A2EU",
+    "ResponseBody": {
+      "ResponseList": {
+        "ResponseInfo": {
+          "RequestId": "8f8648da-7d92-4086-bbe5-e399e07895e6",
+          "RequestType": "COURTESYREFUND",
+          "RequestDate": "03/05/2019 00:43:23",
+          "RequestStatus": "IN_PROGRESS"
+        }
+      }
+    }
+  }
+}

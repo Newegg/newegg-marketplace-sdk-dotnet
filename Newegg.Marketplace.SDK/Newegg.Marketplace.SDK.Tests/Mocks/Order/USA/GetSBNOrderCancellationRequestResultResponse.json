@@ -1,0 +1,12 @@
+{
+  "IsSuccess": "true",
+  "OperationType": "GetSBNOrderCancellationResultResponse",
+  "SellerID": "A006",
+  "ResponseDate": "2/22/2012 16:37:20",
+  "ResponseBody": {
+    "RequestDate": "2/22/2012 15:37:20",
+    "OrderNumber": "159243598",
+    "Result": "Failed",
+    "ErrorMessage": "Order void was not successful due to technical issues / order alreadyshipped."
+  }
+}

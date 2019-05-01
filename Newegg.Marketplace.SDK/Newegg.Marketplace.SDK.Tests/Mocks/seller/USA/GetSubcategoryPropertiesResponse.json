@@ -1,0 +1,25 @@
+{
+  "IsSuccess": "true",
+  "OperationType": "GetSellerSubcategoryPropertyResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "SubcategoryPropertyList": [
+      {
+        "SubcategoryID": "1045",
+        "SubcategoryName": "Costumes",
+        "PropertyName": "Costume_Brand",
+        "IsAdvancedSearch": "0",
+        "IsGroupBy": "0",
+        "IsRequired": "0"
+      },
+      {
+        "SubcategoryID": "1045",
+        "SubcategoryName": "Costumes",
+        "PropertyName": "Costume_Model",
+        "IsAdvancedSearch": "1",
+        "IsGroupBy": "1",
+        "IsRequired": "1"
+      }
+    ]
+  }
+}

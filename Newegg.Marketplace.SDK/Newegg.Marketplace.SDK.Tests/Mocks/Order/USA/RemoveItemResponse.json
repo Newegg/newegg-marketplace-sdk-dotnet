@@ -1,0 +1,20 @@
+{
+    "IsSuccess": true,
+    "Memo": null,
+    "OperationType": "KillItemResponse",
+    "SellerID": "A006",
+    "ResponseBody": {
+        "Orders": {
+            "OrderNumber": "88237462",
+            "Result": {
+                "ItemList": [
+                  {
+                    "SellerPartNumber": "AWHZ3434"
+                  }
+                ]
+            }
+        },
+        "RequestDate": "2012-02-22 16:42:10"
+    },
+    "ResponseDate": "2012-02-22 16:42:10"
+}

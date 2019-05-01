@@ -1,0 +1,16 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitFeedResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>2291326430</RequestId>
+        <RequestType>ITEM_DATA</RequestType>
+        <RequestDate>2/16/2012 12:29:19</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+  <Memo />
+</NeweggAPIResponse>

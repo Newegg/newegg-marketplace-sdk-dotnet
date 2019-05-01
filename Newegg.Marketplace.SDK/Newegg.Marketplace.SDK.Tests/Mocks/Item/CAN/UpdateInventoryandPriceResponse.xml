@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateInventoryAndPriceResult>
+  <Result>1</Result>
+  <SellerID>A3TV</SellerID>
+  <ItemNumber>9SIA3TV5977227</ItemNumber>
+  <SellerPartNumber>fortestest0042012</SellerPartNumber>
+  <ShipByNewegg>0</ShipByNewegg>
+  <Active>0</Active>
+  <AvailableQuantity>100</AvailableQuantity>
+  <MSRP>250.00</MSRP>
+  <MAP>230</MAP>
+  <SellingPrice>200.00</SellingPrice>
+  <EnableFreeShipping>1</EnableFreeShipping>
+</UpdateInventoryAndPriceResult>

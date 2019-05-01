@@ -1,0 +1,9 @@
+{
+  "IsSuccess": true,
+  "OperationType": "GetSellerAccountStatusResponse",
+  "SellerID": "A3TV",
+  "ResponseBody": {
+    "SellerName": "Test_fortestonly fortest012412",
+    "Status": "Active"
+  }
+}

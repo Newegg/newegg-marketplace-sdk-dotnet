@@ -1,0 +1,8 @@
+﻿<UpdateOrderStatusInfo>
+  <IsSuccess>true</IsSuccess>
+  <Result>
+    <OrderNumber>127237320</OrderNumber>
+    <SellerID>A2EU</SellerID>
+    <OrderStatus>Void</OrderStatus>
+  </Result>
+</UpdateOrderStatusInfo>

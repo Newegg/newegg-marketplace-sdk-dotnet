@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSellerAccountStatusResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <SellerName>
+      <![CDATA[Test_fortestonly fortest012412]]>
+    </SellerName>
+    <Status>Active</Status>
+  </ResponseBody>
+</NeweggAPIResponse>

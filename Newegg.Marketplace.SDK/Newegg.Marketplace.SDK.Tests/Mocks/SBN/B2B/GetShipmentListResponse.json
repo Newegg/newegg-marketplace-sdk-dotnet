@@ -1,0 +1,46 @@
+{
+  "IsSuccess": true,
+  "OperationType": "GetShipmentListResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "ShipmentList": [
+      {
+        "ShipmentID": "2740139",
+        "Status": "Ready to ship",
+        "CreateDate": "06/06/2013 17:02:31",
+        "LastEditDate": "06/07/2013 11:31:00",
+        "ShipFrom": "Test_MKTPLS'K_",
+        "ShipToWarehouseCode": "14",
+        "ShipToAddress1": "45 Patrick Ave., Dock 9-17",
+        "ShipToCityName": "Edison",
+        "ShipToStateCode": "NJ",
+        "ShipToZipCode": "08837",
+        "ShipToCountryCode": "USA",
+        "ShippingMethodCode": 0,
+        "ShippingCarrierCode": 99,
+        "OtherCarrierName": "1",
+        "PackageList": [
+          {
+            "TrackingNumber": "1",
+            "PackageWeight": 0.0,
+            "PackageLength": 0.0,
+            "PackageHeight": 0.0,
+            "PackageWidth": 0.0
+          }
+        ],
+        "ItemList": [
+          {
+            "SellerPartNumber": "Ss0120121228065937386",
+            "Quantity": 36,
+            "NumberofPackage": 2
+          },
+          {
+            "SellerPartNumber": "SS0120130516683100755",
+            "Quantity": 9,
+            "NumberofPackage": 3
+          }
+        ]
+      }
+]
+}
+}

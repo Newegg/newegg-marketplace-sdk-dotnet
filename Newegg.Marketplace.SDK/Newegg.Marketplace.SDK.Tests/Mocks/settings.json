@@ -1,0 +1,235 @@
+{
+  "GET USA sellermgmt/seller/accountstatus": "seller/USA/GetSellerAccountStatusResponse",
+  "GET B2B sellermgmt/seller/accountstatus": "seller/B2B/GetSellerAccountStatusResponse",
+  "GET CAN sellermgmt/seller/accountstatus": "seller/CAN/GetSellerAccountStatusResponse",
+  "GET USA sellermgmt/seller/industry": "seller/USA/GetIndustryListResponse",
+  "GET USB sellermgmt/seller/industry": "seller/USA/GetIndustryListResponse",
+  "GET CAN sellermgmt/seller/industry": "seller/USA/GetIndustryListResponse",
+  "PUT USA sellermgmt/seller/subcategory": "seller/USA/GetSubcategoryStatusResponse",
+  "PUT USB sellermgmt/seller/subcategory": "seller/USA/GetSubcategoryStatusResponse",
+  "PUT CAN sellermgmt/seller/subcategory": "seller/USA/GetSubcategoryStatusResponse",
+  "PUT USA sellermgmt/seller/subcategory/v2": "seller/USA/GetSubcategoryStatusForInternationalCountryResponse",
+  "PUT USA sellermgmt/seller/subcategoryproperty": "seller/USA/GetSubcategoryPropertiesResponse",
+  "PUT USB sellermgmt/seller/subcategoryproperty": "seller/USA/GetSubcategoryPropertiesResponse",
+  "PUT CAN sellermgmt/seller/subcategoryproperty": "seller/USA/GetSubcategoryPropertiesResponse",
+  "PUT USA sellermgmt/seller/propertyvalue": "seller/USA/GetSubcategoryPropertyValuesResponse",
+  "PUT USB sellermgmt/seller/propertyvalue": "seller/USA/GetSubcategoryPropertyValuesResponse",
+  "PUT CAN sellermgmt/seller/propertyvalue": "seller/USA/GetSubcategoryPropertyValuesResponse",
+
+  "GET USA ordermgmt/orderstatus/orders": "Order/USA/GetOrderStatusResponse",
+  "GET USB ordermgmt/orderstatus/orders": "Order/USA/GetOrderStatusResponse",
+  "GET CAN ordermgmt/orderstatus/orders": "Order/USA/GetOrderStatusResponse",
+  "PUT USB ordermgmt/orderstatus/orders": "Order/USA/CancelOrderResponse",
+  "PUT CAN ordermgmt/orderstatus/orders": "Order/USA/CancelOrderResponse",
+  "PUT USA ordermgmt/orderstatus/orders": "Order/USA/CancelOrderResponse",
+  "PUT USB ordermgmt/orderstatus/orders/159243598": "Order/USA/ShipOrderResponse",
+  "PUT CAN ordermgmt/orderstatus/orders/159243598": "Order/USA/ShipOrderResponse",
+  "PUT USA ordermgmt/orderstatus/orders/159243598": "Order/USA/ShipOrderResponse",
+  "POST USA ordermgmt/orderstatus/orders/confirmation": "Order/USA/OrderConfirmationResponse",
+  "POST USB ordermgmt/orderstatus/orders/confirmation": "Order/USA/OrderConfirmationResponse",
+  "POST CAN ordermgmt/orderstatus/orders/confirmation": "Order/USA/OrderConfirmationResponse",
+  "PUT USB ordermgmt/order/orderinfo": "Order/USB/GetOrderInformationResponse",
+  "PUT CAN ordermgmt/order/orderinfo": "Order/CAN/GetOrderInformationResponse",
+  "PUT USA ordermgmt/order/orderinfo": "Order/USA/GetOrderInformationResponse",
+  "GET USA ordermgmt/sbnorder/cancellationresult": "Order/USA/GetSBNOrderCancellationRequestResultResponse",
+  "GET USB ordermgmt/sbnorder/cancellationresult": "Order/USA/GetSBNOrderCancellationRequestResultResponse",
+  "GET CAN ordermgmt/sbnorder/cancellationresult": "Order/USA/GetSBNOrderCancellationRequestResultResponse",
+  "PUT USA ordermgmt/killitem/orders": "Order/USA/RemoveItemResponse",
+  "PUT USB ordermgmt/killitem/orders": "Order/USA/RemoveItemResponse",
+  "PUT CAN ordermgmt/killitem/orders": "Order/USA/RemoveItemResponse",
+  "POST USA ordermgmt/order/addorderinfo": "Order/USA/GetAdditionalOrderInformationResponse",
+  "GET USA ordermgmt/servicestatus": "Order/USA/VerifyServiceStatusRequestResponse",
+  "GET USB ordermgmt/servicestatus": "Order/USA/VerifyServiceStatusRequestResponse",
+  "GET CAN ordermgmt/servicestatus": "Order/USA/VerifyServiceStatusRequestResponse",
+
+  "POST USA datafeedmgmt/feeds/submitfeed": "Datafeed/USA/SubmitFeedResponse",
+  "PUT USA datafeedmgmt/feeds/status": "Datafeed/USA/GetFeedStatusResponse",
+  "GET USA datafeedmgmt/feeds/result": "Datafeed/USA/GetFeedResultResponse",
+
+
+  "POST USA servicemgmt/rma/newrma": "RMA/USA/SubmitRMAResponse",
+  "POST USB servicemgmt/rma/newrma": "RMA/USA/SubmitRMAResponse",
+  "POST CAN servicemgmt/rma/newrma": "RMA/USA/SubmitRMAResponse",
+  "POST USA servicemgmt/rma/updaterma": "RMA/USA/EditRMAResponse",
+  "POST USB servicemgmt/rma/updaterma": "RMA/USA/EditRMAResponse",
+  "POST CAN servicemgmt/rma/updaterma": "RMA/USA/EditRMAResponse",
+  "PUT USA servicemgmt/rma/rmainfo": "RMA/USA/GetRMAInformationResponse",
+  "PUT USB servicemgmt/rma/rmainfo": "RMA/USA/GetRMAInformationResponse",
+  "PUT CAN servicemgmt/rma/rmainfo": "RMA/USA/GetRMAInformationResponse",
+  "POST USA servicemgmt/courtesyrefund/new": "RMA/USA/IssueCourtesyRefundResponse",
+  "POST USB servicemgmt/courtesyrefund/new": "RMA/USA/IssueCourtesyRefundResponse",
+  "POST CAN servicemgmt/courtesyrefund/new": "RMA/USA/IssueCourtesyRefundResponse",
+  "PUT USA servicemgmt/courtesyrefund/requeststatus": "RMA/USA/GetCourtesyRefundRequestStatusResponse",
+  "PUT USB servicemgmt/courtesyrefund/requeststatus": "RMA/USA/GetCourtesyRefundRequestStatusResponse",
+  "PUT CAN servicemgmt/courtesyrefund/requeststatus": "RMA/USA/GetCourtesyRefundRequestStatusResponse",
+  "PUT USA servicemgmt/courtesyrefund/info": "RMA/USA/GetCourtesyRefundInformationResponse",
+  "PUT USB servicemgmt/courtesyrefund/info": "RMA/USA/GetCourtesyRefundInformationResponse",
+  "PUT CAN servicemgmt/courtesyrefund/info": "RMA/USA/GetCourtesyRefundInformationResponse",
+
+  "PUT USA shippingservice/shippinglabel/packagelist": "Shipping/USA/GetPackageListResponse",
+  "PUT B2B shippingservice/shippinglabel/packagelist": "Shipping/B2B/GetPackageListResponse",
+
+  "PUT USA shippingservice/shippinglabel/shippinglabels": "Shipping/USA/GetShippinLabelResponse",
+  "PUT B2B shippingservice/shippinglabel/shippinglabels": "Shipping/B2B/GetShippinLabelResponse",
+
+  "POST USA shippingservice/shippinglabel/confirmshippingrequest": "Shipping/USA/ComfirmShipResponse",
+  "POST B2B shippingservice/shippinglabel/confirmshippingrequest": "Shipping/B2B/ComfirmShipResponse",
+
+
+  "PUT USA shippingservice/shippinglabel/shippingdetail": "Shipping/USA/GetShippingDetailResponse",
+  "PUT B2B shippingservice/shippinglabel/shippingdetail": "Shipping/B2B/GetShippingDetailResponse",
+
+
+  "POST USA shippingservice/shippinglabel/shippingrequest": "Shipping/USA/SubmitShippingResponse",
+  "POST B2B shippingservice/shippinglabel/shippingrequest": "Shipping/B2B/SubmitShippingResponse",
+
+  "POST USA shippingservice/shippinglabel/voidshippingrequest": "Shipping/USA/VoidShippingResponseBody",
+  "POST B2B shippingservice/shippinglabel/voidshippingrequest": "Shipping/B2B/VoidShippingResponseBody",
+
+  "PUT USA sbnmgmt/inboundshipment/plansuggestion": "SBN/USA/GetInboundShipmentPlanResponse",
+  "PUT B2B sbnmgmt/inboundshipment/plansuggestion": "SBN/B2B/GetInboundShipmentPlanResponse",
+
+  "PUT USA sbnmgmt/inboundshipment/shipmentrequest": "SBN/USA/SubmitInboundShipmentResponse",
+  "POST USA sbnmgmt/inboundshipment/shipmentrequest": "SBN/USA/SubmitVoidInboundShipmentResponse",
+
+  "PUT USA sbnmgmt/inboundshipment/shipmentstatus": "SBN/USA/GetShipmentStatusResponse",
+  "PUT B2B sbnmgmt/inboundshipment/shipmentstatus": "SBN/B2B/GetShipmentStatusResponse",
+
+
+  "GET USA sbnmgmt/inboundshipment/shipmentresult/23J3XQBO93AM4": "SBN/USA/GetInboundShipmentResultResponse",
+  "GET B2B sbnmgmt/inboundshipment/shipmentresult/23J3XQBO93AM4": "SBN/B2B/GetInboundShipmentResultResponse",
+
+  "PUT USA sbnmgmt/inboundshipment/shipmentlist": "SBN/USA/GetShipmentListResponse",
+  "PUT B2B sbnmgmt/inboundshipment/shipmentlist": "SBN/B2B/GetShipmentListResponse",
+
+  "PUT USA sbnmgmt/inboundshipment/warehouse": "SBN/USA/GetWarehouseListResponse",
+  "PUT B2B sbnmgmt/inboundshipment/warehouse": "SBN/B2B/GetWarehouseListResponse",
+
+
+  "PUT USA reportmgmt/report/status": "Report/USA/GetReportStatusResponse",
+  "PUT B2B reportmgmt/report/status": "Report/B2B/GetReportStatusResponse",
+  "PUT CAN reportmgmt/report/status": "Report/CAN/GetReportStatusResponse",
+
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/SubmitOrderListReportResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/SubmitOrderListReportResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/SubmitOrderListReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/SettlementSummaryReportResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/SettlementSummaryReportResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/SettlementSummaryReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/SettlementTransactionResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/SettlementTransactionResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/SettlementTransactionResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/SubmitRMAListReportResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/SubmitRMAListReportResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/SubmitRMAListReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/ItemLookupResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/ItemLookupResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/ItemLookupResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/DailyInventoryReportResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/DailyInventoryReportB2BCANResponse",
+  "POST CAN reportmgmt/report/submitrequest": "Report/CAN/DailyInventoryReportB2BCANResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/DailyPriceReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/PremierItemReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/CAProp65ReportResponse",
+  "POST B2B reportmgmt/report/submitrequest": "Report/B2B/CAProp65ReportResponse",
+
+  "POST USA reportmgmt/report/submitrequest": "Report/USA/ItemChinaTaxSettingReportResponse",
+
+
+  "PUT USA reportmgmt/report/result": "Report/USA/OrderListReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/OrderListReportResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/OrderListReportResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetSettlementSummaryInfoResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/GetSettlementSummaryInfoResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/GetSettlementSummaryInfoResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetSettlementTransactionReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/GetSettlementTransactionReportResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/GetSettlementTransactionReportResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetRMAListReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/GetRMAListReportResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/GetRMAListReportResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetItemLookupReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/GetItemLookupReportResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/GetItemLookupReportResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetDailyInventoryReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/GetDailyInventoryReportB2bCanResponse",
+  "PUT CAN reportmgmt/report/result": "Report/CAN/GetDailyInventoryReportB2bCanResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetDailyPriceReportResponse",
+
+  "PUT USA reportmgmt/report/result": "Report/USA/CAProp65WarningReportResponse",
+  "PUT B2B reportmgmt/report/result": "Report/B2B/CAProp65WarningReportResponse",
+
+
+  "PUT USA reportmgmt/report/result": "Report/USA/GetTaxSettingReportResponse",
+
+
+  "PUT USA contentmgmt/manufacturer/manufacturerinfo": "Item/USA/ManufacturerLookupResponse",
+  "PUT B2B contentmgmt/manufacturer/manufacturerinfo": "Item/B2B/ManufacturerLookupResponse",
+  "PUT CAN contentmgmt/manufacturer/manufacturerinfo": "Item/CAN/ManufacturerLookupResponse",
+
+  "PUT USA contentmgmt/manufacturer/manufacturerinfo/v2": "Item/USA/ManufacturerLookupForInternationalCountryResponse",
+
+
+
+  "POST USA contentmgmt/manufacturer/creationrequest": "Item/USA/SubmitManufacturerResponse",
+  "POST B2B contentmgmt/manufacturer/creationrequest": "Item/B2B/SubmitManufacturerResponse",
+  "POST CAN contentmgmt/manufacturer/creationrequest": "Item/CAN/SubmitManufacturerResponse",
+
+  "PUT USA contentmgmt/manufacturer/creationrequeststatus": "Item/USA/GetManufacturerRequestStatusResponse",
+  "PUT B2B contentmgmt/manufacturer/creationrequeststatus": "Item/B2B/GetManufacturerRequestStatusResponse",
+  "PUT CAN contentmgmt/manufacturer/creationrequeststatus": "Item/CAN/GetManufacturerRequestStatusResponse",
+
+  "POST USA contentmgmt/Item/VolumeDiscount": "Item/USA/SubmitVolumeDiscountResponse",
+  "POST B2B contentmgmt/Item/VolumeDiscount": "Item/B2B/SubmitVolumeDiscountResponse",
+  "POST CAN contentmgmt/Item/VolumeDiscount": "Item/CAN/SubmitVolumeDiscountResponse",
+
+  "PUT USA contentmgmt/item/volumediscount": "Item/USA/GetVolumeDiscountRequestResultResponse",
+  "PUT B2B contentmgmt/item/volumediscount": "Item/B2B/GetVolumeDiscountRequestResultResponse",
+  "PUT CAN contentmgmt/item/volumediscount": "Item/CAN/GetVolumeDiscountRequestResultResponse",
+
+
+  "PUT USA contentmgmt/item/international/inventory": "Item/USA/GetItemInternationalInventoryResponse",
+
+  "POST USA contentmgmt/item/inventory": "Item/USA/GetItemInventoryResponse",
+  "POST B2B contentmgmt/item/inventory": "Item/B2B/GetItemInventoryResponse",
+  "POST CAN contentmgmt/item/inventory": "Item/CAN/GetItemInventoryResponse",
+
+  "PUT B2B contentmgmt/item/inventoryandprice": "Item/B2B/UpdateInventoryandPriceResponse",
+  "PUT CAN contentmgmt/item/inventoryandprice": "Item/CAN/UpdateInventoryandPriceResponse",
+  "PUT USA contentmgmt/item/inventoryandprice": "Item/USA/UpdateInventoryandPriceResponse",
+
+  "PUT  USA contentmgmt/item/international/price": "Item/USA/GetItemPriceResponse",
+  "PUT  B2B contentmgmt/item/international/price": "Item/B2B/GetItemPriceResponse",
+  "PUT  CAN contentmgmt/item/international/price": "Item/CAN/GetItemPriceResponse",
+
+  "POST USA contentmgmt/item/international/price": "Item/USA/UpdateItemPriceResponse",
+
+  "PUT USA contentmgmt/item/international/price": "Item/USA/GetInternationalItemPriceResponse",
+
+  "POST USA contentmgmt/item/price": "Item/USA/GetItemPriceResponse",
+  "POST B2B contentmgmt/item/price": "Item/B2B/GetItemPriceResponse",
+  "POST CAN contentmgmt/item/price": "Item/CAN/GetItemPriceResponse",
+
+  "POST USA contentmgmt/item/international/inventory": "Item/USA/UpdateInventoryResponse",
+
+  "POST USA contentmgmt/item/warranty": "Item/USA/ItemWarrantyResponse",
+  "POST B2B contentmgmt/item/warranty": "Item/B2B/ItemWarrantyResponse",
+  "POST CAN contentmgmt/item/warranty": "Item/CAN/ItemWarrantyResponse"
+
+
+}

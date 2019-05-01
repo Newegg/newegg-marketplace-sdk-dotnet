@@ -1,0 +1,43 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "SellerID": "A09D",
+    "OperationType": "GetSettlementSummaryInfoResponse",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "1",
+        "TotalPageCount": "1",
+        "PageSize": "10",
+        "PageIndex": "1"
+      },
+      "RequestID": "2PQBZMZTL3DYF",
+      "RequestDate": "2/21/2012 15:12:55",
+      "SettlementSummaryList": {
+        "SettlementSummary": {
+          "SettlementDate": "2/21/2012 12:00:00",
+          "SettlementDateFrom": "8/5/2011 12:00:00",
+          "SettlementDateTo": "2/21/2012 12:00:00",
+          "SettlementID": "0",
+          "ItemPrice": "71.00",
+          "Shipping": "31.95",
+          "Other": "0.00",
+          "TotalOrderAmount": "102.95",
+          "Refunds": "-1.98",
+          "ChargeBack": "0.00",
+          "MiscellaneousAdjustment": "-182.53",
+          "TotalRefunds": "-184.51",
+          "NeweggCommissionFee": "-7.71",
+          "NeweggTransactionFee": "0.00",
+          "NeweggRefundCommissionFee": "0.15",
+          "NeweggMonthlyFee": "0.00",
+          "NeweggStorageFee": "-59.05",
+          "NeweggRMABuyoutFee": "-0.72",
+          "NeweggPremierFee": "0.00",
+          "NeweggShippingLabelFee": "0.00",
+          "TotalNeweggFee": "-638.63",
+          "TotalSettlement": "-720.19"
+        }
+      }
+    }
+  }
+}

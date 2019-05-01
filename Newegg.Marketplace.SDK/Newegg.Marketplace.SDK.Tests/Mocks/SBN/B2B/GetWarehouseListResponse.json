@@ -1,0 +1,19 @@
+{
+  "IsSuccess": true,
+  "OperationType": "GetWarehouseResponse",
+  "SellerID": "V006",
+  "ResponseBody": {
+    "WarehouseList": [
+      {
+        "WarehouseCode": "10",
+        "AllowBulkItem": 0,
+        "AllowSmallItem": 1,
+        "ShipToAddress1": "4995 Citation Dr Suite 101,Dock 1-10",
+        "ShipToCityName": "Memphis",
+        "ShipToStateCode": "TN",
+        "ShipToZipCode": "38118",
+        "ShipToCountryCode": "USA"
+      }
+    ]
+  }
+}

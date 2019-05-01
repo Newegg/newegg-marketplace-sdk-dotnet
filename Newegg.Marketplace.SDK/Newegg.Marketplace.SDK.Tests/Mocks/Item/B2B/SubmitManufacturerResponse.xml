@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitManufacturerResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ManufacturerRequest>
+      <Name>
+        <![CDATA[test2013 6]]>
+      </Name>
+      <RequestDate>02/14/2019 18:00:23</RequestDate>
+    </ManufacturerRequest>
+  </ResponseBody>
+  <ResponseDate>02/14/2019 18:00:26</ResponseDate>
+</NeweggAPIResponse>

@@ -1,0 +1,44 @@
+﻿{
+    "IsSuccess": "true",
+    "SellerID": "A006",
+    "OperationType": "GetManufacturerResponse",
+    "ResponseDate": "2/22/2012 16:51:03",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "1",
+        "TotalPageCount": "1",
+        "PageSize": "10",
+        "PageIndex": "1"
+      },
+        "ManufacturerList": {
+            "Manufacturer": [
+                {
+                    "Name": "sony & wonder",
+                    "IsRestricted": "0",
+                    "MappedNameList": {
+                        "MappedName": "wonder"
+                    }
+                },
+                {
+                    "Name": "newegg",
+                    "IsRestricted": "1",
+                    "RestrictedSubcategoryList": {
+                        "Subcategory": [
+                            {
+                                "SubcategoryID": "1508",
+                                "SubcategoryName": "Belts & Suspenders"
+                            },
+                            {
+                                "SubcategoryID": "153",
+                                "SubcategoryName": "Buckles"
+                            }
+                        ]
+                    },
+                    "MappedNameList": {
+                        "MappedName": "test_newegg"
+                    }
+                }
+            ]
+        }
+    }
+}

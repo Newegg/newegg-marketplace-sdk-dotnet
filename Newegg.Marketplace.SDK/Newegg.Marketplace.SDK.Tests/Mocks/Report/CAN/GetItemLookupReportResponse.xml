@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>ItemLookupResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>1</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>ZL3QTLXLHDMV</RequestID>
+    <RequestDate>03/10/2019 19:52:12</RequestDate>
+    <ItemList>
+      <Item>
+        <NeweggItemNumber>0J2-00JV-000C3</NeweggItemNumber>
+        <UPC>0514105907175</UPC>
+        <Condition>1</Condition>
+        <PacksOrSets>1</PacksOrSets>
+        <ManufacturerName>
+          <![CDATA[test2013 1]]>
+        </ManufacturerName>
+        <ManufacturerPartNumber>
+          <![CDATA[Test180514105907175]]>
+        </ManufacturerPartNumber>
+        <WebsiteShortTitle>
+          <![CDATA[Test_WST180514105907175]]>
+        </WebsiteShortTitle>
+      </Item>
+    </ItemList>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:50:11</ResponseDate>
+</NeweggAPIResponse>

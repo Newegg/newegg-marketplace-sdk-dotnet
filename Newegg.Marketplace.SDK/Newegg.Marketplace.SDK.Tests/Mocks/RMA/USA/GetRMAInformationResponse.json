@@ -1,0 +1,63 @@
+{
+  "IsSuccess": "true",
+  "OperationType": "GetRMAInfo",
+  "SellerID": "A2EU",
+  "ResponseBody": {
+    "PageInfo": {
+      "TotalCount": "1",
+      "TotalPageCount": "1",
+      "PageIndex": "1",
+      "PageSize": "10"
+    },
+    "RMAInfoList": {
+      "RMAInfo": [
+        {
+          "RMANumber": "21821229",
+          "RMAType": "2",
+          "RMATypeDescription": "Refund",
+          "IssueUser": "A2EU",
+          "RMADate": "02/25/2019 23:24:13",
+          "RMAStatus": "1",
+          "RMAStatusDescription": "Open",
+          "OrderNumber": "299232884",
+          "OrderDate": "01/25/2019 19:30:12",
+          "InvoiceNumber": "167615205",
+          "OrderAmount": "0.06",
+          "AvailableRefundAmount": "0.00",
+          "RMAProcessedBy": "Seller",
+          "RMANote": "edit refund rma to 201601211001\n          By on 03/11/2019 05:55 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:54 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:49 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:43 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:42 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:40 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:39 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:38 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:38 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:38 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:35 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:35 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:35 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 03/11/2019 05:33 AM.\n          \"\"\n          edit refund rma to 201601211001\n          By on 02/25/2019 11:52 PM.\n          \"\"\n          API test refund RMA201601061001",
+          "PriorRefundAmount": "0.02",
+          "CustomerName": "test1 test0.32",
+          "CustomerPhoneNumber": "432-532-4325EXT45",
+          "CustomerEmailAddress": "cusa.q7zw1u4erbgt9e@marketplace.newegg.com",
+          "ShipToAddress1": "181 S Central Ave",
+          "ShipToAddress2": "",
+          "ShipToCityName": "Los Angeles",
+          "ShipToStateCode": "CA",
+          "ShipToZipCode": "90012-3912",
+          "ShipToCountryCode": "UNITED STATES",
+          "ShipToLastName": "test0.32",
+          "ShipToFirstName": "test1",
+          "ShipToCompany": "test32012.test01",
+          "RMATransactionList": {
+            "RMATransaction": [
+              {
+                "SellerPartNumber": "Test_SP#A2EU_20181108_0003",
+                "MfrPartNumber": "Test_MP#A2EU181108_3",
+                "NeweggItemNumber": "9SIA2EU8E43864",
+                "Description": "Test_Item Website Short Title A2EU_20181108 00003",
+                "UnitPrice": "0.02",
+                "ReturnQuantity": "1",
+                "ReturnUnitPrice": "0.02",
+                "RefundShippingPrice": "0.00",
+                "RMAReason": "2",
+                "RMAReasonDescription": "Defective"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "ResponseDate": "03/11/2019 06:35:34"
+}

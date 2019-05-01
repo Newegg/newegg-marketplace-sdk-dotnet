@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <sellerID>A006</sellerID>
+  <OperationType>InternationalPriceReportResponse</OperationType>
+  <ResponseBody>
+    <RequestID>26XZV07ERGI8B</RequestID>
+    <RequestType>INTERNATIONAL_PRICE_REPORT</RequestType>
+    <RequestDate>03/10/2019 20:21:03</RequestDate>
+    <ReportFileURL>ftp://API-ftTGtfBX:JTVXi9rn@ftp03.newegg.com/InternationalPriceReport_26XZV07ERGI8B.zip</ReportFileURL>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

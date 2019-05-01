@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <sellerID>A006</sellerID>
+  <OperationType>ItemChinaTaxSettingReportResponse</OperationType>
+  <ResponseBody>
+    <RequestID>219O8NZS6DQV0</RequestID>
+    <RequestType>ITEM_CHINATAXSETTING_REPORT</RequestType>
+    <RequestDate>03/10/2019 22:14:53</RequestDate>
+    <ReportFileURL>ftp://API-S2XW8ryv:XM8mVLf1@ftp03.newegg.com/ItemChinaTaxSettingReport_219O8NZS6DQV0.zip</ReportFileURL>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

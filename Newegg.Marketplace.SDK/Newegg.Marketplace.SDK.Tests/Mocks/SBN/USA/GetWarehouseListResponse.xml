@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetWarehouseResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <WarehouseList>
+      <Warehouse>
+        <WarehouseCode>06</WarehouseCode>
+        <AllowBulkItem>1</AllowBulkItem>
+        <AllowSmallItem>0</AllowSmallItem>
+        <ShipToAddress1>
+          <![CDATA[6100 East Holmes Road, Suite 103-104]]>
+        </ShipToAddress1>
+        <ShipToCityName>Memphis</ShipToCityName>
+        <ShipToStateCode>TN</ShipToStateCode>
+        <ShipToZipCode>38141</ShipToZipCode>
+        <ShipToCountryCode>USA</ShipToCountryCode>
+      </Warehouse>
+    </WarehouseList>
+  </ResponseBody>
+</NeweggAPIResponse>

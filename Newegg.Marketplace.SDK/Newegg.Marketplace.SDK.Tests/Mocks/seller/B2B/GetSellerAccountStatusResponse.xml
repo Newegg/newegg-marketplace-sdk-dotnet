@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSellerAccountStatusResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <SellerName>
+      <![CDATA[Test_B2B_updatename2updateb2b UPDATE01]]>
+    </SellerName>
+    <Status>Active</Status>
+  </ResponseBody>
+</NeweggAPIResponse>

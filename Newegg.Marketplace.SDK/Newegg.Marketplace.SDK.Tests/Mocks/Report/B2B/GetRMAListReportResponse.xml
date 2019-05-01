@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetRMAListInfoResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>1</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>27A0RBCMLV904</RequestID>
+    <RequestDate>03/10/2019 19:30:48</RequestDate>
+    <RMAInfoList>
+      <RMAInfo>
+        <SellerID>A44S</SellerID>
+        <RMANumber>20957370</RMANumber>
+        <RMAType>2</RMAType>
+        <RMATypeDescription>Refund</RMATypeDescription>
+        <RMADate>07/11/2017 22:52:39</RMADate>
+        <RMAStatus>1</RMAStatus>
+        <RMAStatusDescription>Open</RMAStatusDescription>
+        <LastEditDate>07/11/2017 22:52:39</LastEditDate>
+        <LastEditUser>Seller</LastEditUser>
+        <OrderNumber>1218779860</OrderNumber>
+        <OrderDate>06/27/2017 04:33:35</OrderDate>
+        <InvoiceNumber>1300435513</InvoiceNumber>
+        <OrderAmount>0.94</OrderAmount>
+        <RMAProcessedBy>Seller</RMAProcessedBy>
+        <CustomerName>SAPRFC01</CustomerName>
+        <CustomerAddress>1605 S Azusa Ave, Test01 Address 2 Test Only, Hacienda Heights, CA, 91745-3893, USA</CustomerAddress>
+        <RMATransactionList/>
+      </RMAInfo>
+    </RMAInfoList>
+  </ResponseBody>
+  <ResponseDate>03/10/2019 23:40:51</ResponseDate>
+</NeweggAPIResponse>

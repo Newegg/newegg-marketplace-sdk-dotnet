@@ -1,0 +1,142 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A006</SellerID>
+  <OperationType>GetOrderInfoResponse</OperationType>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>2</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageSize>10</PageSize>
+      <PageIndex>1</PageIndex>
+    </PageInfo>
+    <OrderInfoList>
+      <OrderInfo>
+        <SellerID>A006</SellerID>
+        <OrderNumber>41473642</OrderNumber>
+        <SellerOrderNumber>2153930</SellerOrderNumber>
+        <InvoiceNumber>0</InvoiceNumber>
+        <OrderDownloaded>true</OrderDownloaded>
+        <OrderDate>1/23/2012 7:33:05</OrderDate>
+        <OrderStatus>4</OrderStatus>
+        <OrderStatusDescription>Voided</OrderStatusDescription>
+        <CustomerName>WY SD</CustomerName>
+        <CustomerPhoneNumber>123-223-3223</CustomerPhoneNumber>
+        <CustomerEmailAddress>gdv6l0viwo4l7j1d@marketplace.newegg.com</CustomerEmailAddress>
+        <ShipToAddress1>149 Kenwood Dr</ShipToAddress1>
+        <ShipToAddress2 />
+        <ShipToCityName>Newcastle</ShipToCityName>
+        <ShipToStateCode>WY</ShipToStateCode>
+        <ShipToZipCode>82701</ShipToZipCode>
+        <ShipToCountryCode>UNITED STATES</ShipToCountryCode>
+        <ShipService>Media Mail (7-14 business days)</ShipService>
+        <ShipToFirstName>WY</ShipToFirstName>
+        <ShipToLastName>SD</ShipToLastName>
+        <ShipToCompany />
+        <OrderItemAmount>0</OrderItemAmount>
+        <ShippingAmount>0.00</ShippingAmount>
+        <DiscountAmount>0.00</DiscountAmount>
+        <RefundAmount>0</RefundAmount>
+        <SalesTax />
+        <VATTotal />
+        <DutyTotal />
+        <OrderTotalAmount>0.00</OrderTotalAmount>
+        <OrderQty>1</OrderQty>
+        <IsAutoVoid>true</IsAutoVoid>
+        <SalesChannel>0</SalesChannel>
+        <FulfillmentOption>1</FulfillmentOption>
+        <ItemInfoList>
+          <ItemInfo>
+            <SellerPartNumber>A00655467241</SellerPartNumber>
+            <NeweggItemNumber>9SIA0060823129</NeweggItemNumber>
+            <MfrPartNumber>55467241</MfrPartNumber>
+            <UPCCode />
+            <Description>test creation test item</Description>
+            <OrderedQty>1</OrderedQty>
+            <ShippedQty>0</ShippedQty>
+            <UnitPrice>1.00</UnitPrice>
+            <ExtendUnitPrice>1.03</ExtendUnitPrice>
+            <ExtendShippingCharge>1.03</ExtendShippingCharge>
+            <ExtendSalesTax />
+            <ExtendVAT />
+            <ExtendDuty />
+            <Status>3</Status>
+            <StatusDescription>Canceled</StatusDescription>
+          </ItemInfo>
+        </ItemInfoList>
+        <PackageInfoList />
+      </OrderInfo>
+      <OrderInfo>
+        <SellerID>A006</SellerID>
+        <OrderNumber>159243598</OrderNumber>
+        <SellerOrderNumber>2153930</SellerOrderNumber>
+        <InvoiceNumber>82961992</InvoiceNumber>
+        <OrderDownloaded>true</OrderDownloaded>
+        <OrderDate>1/18/2012 1:05:18</OrderDate>
+        <OrderStatus>3</OrderStatus>
+        <OrderStatusDescription>Invoiced</OrderStatusDescription>
+        <CustomerName>WY SD</CustomerName>
+        <CustomerPhoneNumber>123-223-3223</CustomerPhoneNumber>
+        <CustomerEmailAddress>gdv6l0viwo4l7j1d@marketplace.newegg.com</CustomerEmailAddress>
+        <ShipToAddress1>149 Kenwood Dr</ShipToAddress1>
+        <ShipToAddress2 />
+        <ShipToCityName>Newcastle</ShipToCityName>
+        <ShipToStateCode>WY</ShipToStateCode>
+        <ShipToZipCode>82701</ShipToZipCode>
+        <ShipToCountryCode>UNITED STATES</ShipToCountryCode>
+        <ShipService>Media Mail (7-14 business days)</ShipService>
+        <ShipToFirstName>WY</ShipToFirstName>
+        <ShipToLastName>SD</ShipToLastName>
+        <ShipToCompany />
+        <OrderItemAmount>2.00</OrderItemAmount>
+        <ShippingAmount>10.00</ShippingAmount>
+        <DiscountAmount>1.00</DiscountAmount>
+        <RefundAmount>0</RefundAmount>
+        <SalesTax />
+        <VATTotal />
+        <DutyTotal />
+        <OrderTotalAmount>11.00</OrderTotalAmount>
+        <OrderQty>2</OrderQty>
+        <IsAutoVoid>false</IsAutoVoid>
+        <SalesChannel>0</SalesChannel>
+        <FulfillmentOption>1</FulfillmentOption>
+        <ItemInfoList>
+          <ItemInfo>
+            <SellerPartNumber>A006ZX-35833</SellerPartNumber>
+            <NeweggItemNumber>9SIA0060845543</NeweggItemNumber>
+            <MfrPartNumber>ZX-35833</MfrPartNumber>
+            <UPCCode>431573000287</UPCCode>
+            <Description>GYRO Huge Metal Goliath 3.5CH Electric RTF RC Helicopter</Description>
+            <OrderedQty>2</OrderedQty>
+            <ShippedQty>2</ShippedQty>
+            <UnitPrice>1.00</UnitPrice>
+            <Status>2</Status>
+            <StatusDescription>Shipped</StatusDescription>
+            <ExtendUnitPrice>1.03</ExtendUnitPrice>
+            <ExtendShippingCharge>1.03</ExtendShippingCharge>
+            <ExtendSalesTax />
+            <ExtendVAT />
+            <ExtendDuty />
+          </ItemInfo>
+        </ItemInfoList>
+        <PackageInfoList>
+          <PackageInfo>
+            <PackageType>Shipped</PackageType>
+            <ShipCarrier>UPS</ShipCarrier>
+            <ShipService>342</ShipService>
+            <TrackingNumber>2342424</TrackingNumber>
+            <ShipDate>1/18/2012 16:59:15</ShipDate>
+            <ItemInfoList>
+              <ItemInfo>
+                <SellerPartNumber>A006ZX-35833</SellerPartNumber>
+                <MfrPartNumber>ZX-35833</MfrPartNumber>
+                <ShippedQty>2</ShippedQty>
+              </ItemInfo>
+            </ItemInfoList>
+          </PackageInfo>
+        </PackageInfoList>
+      </OrderInfo>
+    </OrderInfoList>
+  </ResponseBody>
+  <Memo />
+  <ResponseDate>2/22/2012 16:51:03</ResponseDate>
+</NeweggAPIResponse>

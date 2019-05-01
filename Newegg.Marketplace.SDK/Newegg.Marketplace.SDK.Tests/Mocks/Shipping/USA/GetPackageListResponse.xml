@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetPackageListResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <OrderNumber>252426189</OrderNumber>
+    <RequestList>
+      <Request>
+        <RequestID>282Q5AUAMQKIE</RequestID>
+        <PdfFileList>
+          <File>http://images10.newegg.com/SBNInbound/UPSShippingLabel/58d2b179-0ed7-470b-adcb-45a8374a8154.pdf</File>
+        </PdfFileList>
+      </Request>
+    </RequestList>
+  </ResponseBody>
+</NeweggAPIResponse>

@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>OrderConfirmationResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseDate>2/22/2012 16:37:20</ResponseDate>
+  <ResponseBody>
+    <RequestDate>2/22/2012 16:37:20</RequestDate>
+    <DownloadedOrderList>
+      <OrderNumber>283756617</OrderNumber>
+    </DownloadedOrderList>
+  </ResponseBody>
+</NeweggAPIResponse>

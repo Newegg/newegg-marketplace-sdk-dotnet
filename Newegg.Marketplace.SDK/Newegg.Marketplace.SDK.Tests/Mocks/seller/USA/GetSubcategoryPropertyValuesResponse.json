@@ -1,0 +1,42 @@
+{
+  "IsSuccess": "true",
+  "OperationType": "GetSellerPropertyValueResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "PropertyInfoList": [
+      {
+        "SubcategoryID": "1045",
+        "SubcategoryName": "Costume",
+        "PropertyName": "Costume_Gender",
+        "IsAdvancedSearch": "1",
+        "IsGroupBy": "0",
+        "IsRequired": "0",
+        "PropertyValueList": [
+          "Male"
+        ]
+      },
+      {
+        "SubcategoryID": "1045",
+        "SubcategoryName": "Costume",
+        "PropertyName": "Costume_Gender",
+        "IsAdvancedSearch": "1",
+        "IsGroupBy": "0",
+        "IsRequired": "0",
+        "PropertyValueList": [
+          "Female"
+        ]
+      },
+      {
+        "SubcategoryID": "1045",
+        "SubcategoryName": "Costume",
+        "PropertyName": "Costume_Gender",
+        "IsAdvancedSearch": "1",
+        "IsGroupBy": "0",
+        "IsRequired": "0",
+        "PropertyValueList": [
+          "Unisex"
+        ]
+      }
+    ]
+  }
+}

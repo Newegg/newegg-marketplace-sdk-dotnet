@@ -1,0 +1,49 @@
+{
+  "IsSuccess": "true",
+  "SellerID": "A006",
+  "OperationType": "GetAddOrderInfoResponse",
+  "ResponseBody": {
+    "PageInfo": {
+      "TotalCount": "2",
+      "TotalPageCount": "1",
+      "PageSize": "10",
+      "PageIndex": "1"
+    },
+    "AddOrderInfoList": [
+      {
+        "OrderNumber": "41473642",
+        "RecipientIDType": "ID",
+        "RecipientIDNumber": "511522198812036655",
+        "NISPOriginalInfo": {
+          "NISPOriFirstName": "Guang",
+          "NISPOriLastName": "Li",
+          "NISPOriCompanyName": null,
+          "NISPOriAddress1": "149 Tianfu Blvd",
+          "NISPOriAddress2": null,
+          "NISPOriCity": "Chengdu",
+          "NISPOriState": "Sichuan",
+          "NISPOriZipCode": "64410",
+          "NISPOriCountryCode": "CHINA",
+          "NISPOriPhoneNumber": "13812345678"
+        },
+        "OriginalInputInfo": {
+          "OriginalFirstName": "?",
+          "OriginalLastName": "李",
+          "OriginalCompanyName": null,
+          "OriginalAddress1": "天府大道149 ?",
+          "OriginalAddress2": null,
+          "OriginalCity": "成都",
+          "OriginalState": "四川",
+          "OriginalZipCode": "64410",
+          "OriginalCountryCode": "CHINA",
+          "OriginalPhoneNumber": "13812345678"
+        },
+        "AddInfo1": null,
+        "AddInfo2": null,
+        "AddInfo3": null
+      }
+    ]
+  },
+  "Memo": null,
+  "ResponseDate": "9/01/2018 16:51:03"
+}

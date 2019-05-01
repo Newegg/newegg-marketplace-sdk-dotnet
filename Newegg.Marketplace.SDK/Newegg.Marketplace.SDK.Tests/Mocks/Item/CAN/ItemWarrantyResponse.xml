@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitItemWarrantyResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <ItemWarrantyList>
+      <ItemWarranty>
+        <IsSuccess>false</IsSuccess>
+        <ErrorList>
+          <Error>
+            <ErrorCode>CT512</ErrorCode>
+            <ErrorMessage>SellerPartNumber: Test_SP180514105907197 is not refurbished or used item.</ErrorMessage>
+          </Error>
+        </ErrorList>
+      </ItemWarranty>
+    </ItemWarrantyList>
+  </ResponseBody>
+  <ResponseDate>02/21/2019 19:04:36</ResponseDate>
+</NeweggAPIResponse>

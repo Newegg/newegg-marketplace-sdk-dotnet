@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetManufacturerResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>2</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <ManufacturerList>
+      <Manufacturer>
+        <Name>
+          <![CDATA[test2013 2]]>
+        </Name>
+        <IsRestricted>1</IsRestricted>
+        <CountryCode>USA</CountryCode>
+        <RestrictedSubcategoryList/>
+        <MappedNameList>
+          <MappedName/>
+        </MappedNameList>
+      </Manufacturer>
+      <Manufacturer>
+        <Name>
+          <![CDATA[test2013 2]]>
+        </Name>
+        <IsRestricted>0</IsRestricted>
+        <CountryCode>USA</CountryCode>
+        <RestrictedSubcategoryList/>
+        <MappedNameList>
+          <MappedName/>
+        </MappedNameList>
+      </Manufacturer>
+    </ManufacturerList>
+  </ResponseBody>
+  <ResponseDate>03/12/2019 18:43:37</ResponseDate>
+  <Memo/>
+</NeweggAPIResponse>

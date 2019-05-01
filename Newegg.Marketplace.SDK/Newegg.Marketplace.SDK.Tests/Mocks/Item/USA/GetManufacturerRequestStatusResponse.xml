@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetManufacturerStatusResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ManufacturerList>
+      <Manufacturer>
+        <RequestName>
+          <![CDATA[test2013 6]]>
+        </RequestName>
+        <ApprovedName/>
+        <RequestDate>02/14/2019 18:00:25</RequestDate>
+        <Status>Processing</Status>
+        <ProcessDate/>
+        <DeclineReason/>
+      </Manufacturer>
+      <Manufacturer>
+        <RequestName>
+          <![CDATA[test2013 SDK USAtest-1]]>
+        </RequestName>
+        <ApprovedName/>
+        <RequestDate>02/14/2019 18:25:37</RequestDate>
+        <Status>Processing</Status>
+        <ProcessDate/>
+        <DeclineReason/>
+      </Manufacturer>
+    </ManufacturerList>
+  </ResponseBody>
+  <ResponseDate>02/15/2019 00:15:50</ResponseDate>
+  </NeweggAPIResponse>

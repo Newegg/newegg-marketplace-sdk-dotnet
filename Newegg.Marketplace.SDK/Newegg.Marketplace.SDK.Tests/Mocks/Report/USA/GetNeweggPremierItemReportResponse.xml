@@ -1,0 +1,12 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <sellerID>A006</sellerID>
+  <OperationType>PremierItemReportResponse</OperationType>
+  <ResponseBody>
+    <RequestID>210CQTAFHO2N6</RequestID>
+    <RequestType>PREMIER_ITEM_REPORT</RequestType>
+    <RequestDate>03/10/2019 20:30:42</RequestDate>
+    <ReportFileURL>ftp://API-PbekUYhn:IKvfy6Yv@ftp03.newegg.com/PremierItemReport_210CQTAFHO2N6.zip</ReportFileURL>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

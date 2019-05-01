@@ -1,0 +1,23 @@
+{
+    "IsSuccess": "true",
+    "OperationType": "GetSellerSubcategoryResponse",
+    "SellerID": "A006",
+    "ResponseBody": {
+        "SubcategoryList": [
+          {
+            "IndustryCode": "AP",
+            "IndustryName": "Apparel",
+            "SubcategoryID": "1508",
+            "SubcategoryName": "Belts & Suspenders",
+            "Enabled": "1"
+          },
+            {
+                "IndustryCode": "AP",
+                "IndustryName": "Apparel",
+                "SubcategoryID": "153",
+                "SubcategoryName": "Buckles",
+                "Enabled": "0"
+            }
+        ]
+    }
+}

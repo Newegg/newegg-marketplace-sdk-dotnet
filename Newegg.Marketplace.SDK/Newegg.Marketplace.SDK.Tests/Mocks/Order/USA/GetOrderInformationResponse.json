@@ -1,0 +1,153 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "SellerID": "A006",
+    "OperationType": "GetOrderInfoResponse",
+    "ResponseBody": {
+      "PageInfo": {
+        "TotalCount": "2",
+        "TotalPageCount": "1",
+        "PageSize": "10",
+        "PageIndex": "1"
+      },
+      "OrderInfoList": {
+        "OrderInfo": [
+          {
+            "SellerID": "A006",
+            "OrderNumber": "41473642",
+            "SellerOrderNumber": "2153930",
+            "InvoiceNumber": "0",
+            "OrderDownloaded": "true",
+            "OrderDate": "1/23/2012 7:33:05",
+            "OrderStatus": "4",
+            "OrderStatusDescription": "Voided",
+            "CustomerName": "WY SD",
+            "CustomerPhoneNumber": "123-223-3223",
+            "CustomerEmailAddress": "gdv6l0viwo4l7j1d@marketplace.newegg.com",
+            "ShipToAddress1": "149 Kenwood Dr",
+            "ShipToAddress2": "",
+            "ShipToCityName": "Newcastle",
+            "ShipToStateCode": "WY",
+            "ShipToZipCode": "82701",
+            "ShipToCountryCode": "UNITED STATES",
+            "ShipService": "Media Mail (7-14 business days)",
+            "ShipToFirstName": "WY",
+            "ShipToLastName": "SD",
+            "ShipToCompany": "",
+            "OrderItemAmount": "0",
+            "ShippingAmount": "0.00",
+            "DiscountAmount": "0.00",
+            "RefundAmount": "0",
+            "SalesTax": "",
+            "VATTotal": "",
+            "DutyTotal": "",
+            "OrderTotalAmount": "0.00",
+            "OrderQty": "1",
+            "IsAutoVoid": "true",
+            "SalesChannel": "0",
+            "FulfillmentOption": "1",
+            "ItemInfoList": {
+              "ItemInfo": [
+                {
+                  "SellerPartNumber": "A00655467241",
+                  "NeweggItemNumber": "9SIA0060823129",
+                  "MfrPartNumber": "55467241",
+                  "UPCCode": "",
+                  "Description": "test creation test item",
+                  "OrderedQty": "1",
+                  "ShippedQty": "0",
+                  "UnitPrice": "1.00",
+                  "ExtendUnitPrice": "1.03",
+                  "ExtendShippingCharge": "1.03",
+                  "ExtendSalesTax": "",
+                  "ExtendVAT": "",
+                  "ExtendDuty": "",
+                  "Status": "3",
+                  "StatusDescription": "Canceled"
+                }
+              ]
+            }
+          },
+          {
+            "SellerID": "A006",
+            "OrderNumber": "159243598",
+            "SellerOrderNumber": "2153930",
+            "InvoiceNumber": "82961992",
+            "OrderDownloaded": "true",
+            "OrderDate": "1/18/2012 1:05:18",
+            "OrderStatus": "3",
+            "OrderStatusDescription": "Invoiced",
+            "CustomerName": "WY SD",
+            "CustomerPhoneNumber": "123-223-3223",
+            "CustomerEmailAddress": "gdv6l0viwo4l7j1d@marketplace.newegg.com",
+            "ShipToAddress1": "149 Kenwood Dr",
+            "ShipToAddress2": "",
+            "ShipToCityName": "Newcastle",
+            "ShipToStateCode": "WY",
+            "ShipToZipCode": "82701",
+            "ShipToCountryCode": "UNITED STATES",
+            "ShipService": "Media Mail (7-14 business days)",
+            "ShipToFirstName": "WY",
+            "ShipToLastName": "SD",
+            "ShipToCompany": "",
+            "OrderItemAmount": "2.00",
+            "ShippingAmount": "10.00",
+            "DiscountAmount": "1.00",
+            "RefundAmount": "0",
+            "SalesTax": "",
+            "VATTotal": "",
+            "DutyTotal": "",
+            "OrderTotalAmount": "11.00",
+            "OrderQty": "2",
+            "IsAutoVoid": "false",
+            "SalesChannel": "0",
+            "FulfillmentOption": "1",
+            "ItemInfoList": {
+              "ItemInfo": [
+                {
+                  "SellerPartNumber": "A006ZX-35833",
+                  "NeweggItemNumber": "9SIA0060845543",
+                  "MfrPartNumber": "ZX-35833",
+                  "UPCCode": "431573000287",
+                  "Description": "GYRO Huge Metal Goliath 3.5CH Electric RTF RC Helicopter",
+                  "OrderedQty": "2",
+                  "ShippedQty": "2",
+                  "UnitPrice": "1.00",
+                  "Status": "2",
+                  "StatusDescription": "Shipped",
+                  "ExtendUnitPrice": "1.03",
+                  "ExtendShippingCharge": "1.03",
+                  "ExtendSalesTax": "",
+                  "ExtendVAT": "",
+                  "ExtendDuty": ""
+                }
+              ]
+            },
+            "PackageInfoList": {
+              "PackageInfo": [
+                {
+                  "PackageType": "Shipped",
+                  "ShipCarrier": "UPS",
+                  "ShipService": "342",
+                  "TrackingNumber": "2342424",
+                  "ShipDate": "1/18/2012 16:59:15",
+                  "ItemInfoList": {
+                    "ItemInfo": [
+                      {
+                        "SellerPartNumber": "A006ZX-35833",
+                        "MfrPartNumber": "ZX-35833",
+                        "ShippedQty": "2"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Memo": "",
+    "ResponseDate": "2/22/2012 16:51:03"
+  }
+}

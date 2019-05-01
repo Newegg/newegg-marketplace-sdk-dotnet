@@ -1,0 +1,142 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetSellerIndustryResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <IndustryList>
+      <Industry>
+        <IndustryCode>MI</IndustryCode>
+        <IndustryName><![CDATA[Musical Instruments]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>CE</IndustryCode>
+        <IndustryName><![CDATA[Consumer Electronics]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>OT</IndustryCode>
+        <IndustryName><![CDATA[Other]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>BE</IndustryCode>
+        <IndustryName><![CDATA[Beauty]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>SP</IndustryCode>
+        <IndustryName><![CDATA[Sports Goods]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>PS</IndustryCode>
+        <IndustryName><![CDATA[Pet Supplies]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>WG</IndustryCode>
+        <IndustryName><![CDATA[Food & Gifts]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>HE</IndustryCode>
+        <IndustryName><![CDATA[Health & Personal care]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>CH</IndustryCode>
+        <IndustryName><![CDATA[Computer Hardware  ]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>AU</IndustryCode>
+        <IndustryName><![CDATA[Auto & Hardware]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>IN</IndustryCode>
+        <IndustryName><![CDATA[Industrial Supplies]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>TY</IndustryCode>
+        <IndustryName><![CDATA[Toys Games & Hobbies]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>JW</IndustryCode>
+        <IndustryName><![CDATA[Jewelry]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>AR</IndustryCode>
+        <IndustryName><![CDATA[Arts & Crafts]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>OD</IndustryCode>
+        <IndustryName><![CDATA[Outdoor & Garden]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>AC</IndustryCode>
+        <IndustryName><![CDATA[Accessories]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>AL</IndustryCode>
+        <IndustryName><![CDATA[Appliance          ]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>SW</IndustryCode>
+        <IndustryName><![CDATA[Software           ]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>LU</IndustryCode>
+        <IndustryName><![CDATA[Bags & Luggage]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>DV</IndustryCode>
+        <IndustryName><![CDATA[DVD & Videos       ]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>BA</IndustryCode>
+        <IndustryName><![CDATA[Baby]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>CP</IndustryCode>
+        <IndustryName><![CDATA[Camera & Photo]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>UC</IndustryCode>
+        <IndustryName><![CDATA[Cell Phones]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>CA</IndustryCode>
+        <IndustryName><![CDATA[Cell Phone Accessories]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>BK</IndustryCode>
+        <IndustryName><![CDATA[Books, Media & Entertainment]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>VC</IndustryCode>
+        <IndustryName><![CDATA[Video Game Consoles]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>HI</IndustryCode>
+        <IndustryName><![CDATA[Home Improvement]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>OS</IndustryCode>
+        <IndustryName><![CDATA[Office Equipment & Supplies]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>HO</IndustryCode>
+        <IndustryName><![CDATA[Home & Living]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>BT</IndustryCode>
+        <IndustryName><![CDATA[Marine & Aviation]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>WA</IndustryCode>
+        <IndustryName><![CDATA[Watches]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>AP</IndustryCode>
+        <IndustryName><![CDATA[Apparel]]></IndustryName>
+      </Industry>
+      <Industry>
+        <IndustryCode>MT</IndustryCode>
+        <IndustryName><![CDATA[Motorcycles & Powersports]]></IndustryName>
+      </Industry>
+    </IndustryList>
+  </ResponseBody>
+</NeweggAPIResponse>

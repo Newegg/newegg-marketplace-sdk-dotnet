@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>CAProp65ReportResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>23GUN89SPPMWD</RequestId>
+        <RequestType>CAPROP65_REPORT</RequestType>
+        <RequestDate>03/10/2019 20:46:42</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

@@ -1,0 +1,16 @@
+﻿{
+  "UpdateInventoryAndPriceResult": {
+    "SellerID": "V006",
+    "ItemNumber": "9SIA00607Y6476",
+    "SellerPartNumber": "A006BSP3",
+    "FulfillmentOption": "0",
+    "Active": "0",
+    "Result": "1",
+    "AvailableQuantity": "20",
+    "MSRP": "200",
+    "MAP": "230",
+    "CheckoutMAP": "0",
+    "SellingPrice": "250",
+    "EnableFreeShipping": "1"
+  }
+}

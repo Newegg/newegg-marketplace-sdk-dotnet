@@ -1,0 +1,49 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A006</SellerID>
+  <OperationType>GetAddOrderInfoResponse</OperationType>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>2</TotalCount>
+      <TotalPageCount>1</TotalPageCount>
+      <PageSize>10</PageSize>
+      <PageIndex>1</PageIndex>
+    </PageInfo>
+    <AddOrderInfoList>
+      <AddOrderInfo>
+        <OrderNumber>41473642</OrderNumber>
+        <RecipientIDType>ID</RecipientIDType>
+        <RecipientIDNumber>511522198812036655</RecipientIDNumber>
+        <NISPOriginalInfo>
+          <NISPOriFirstName>Guang</NISPOriFirstName>
+          <NISPOriLastName>Li</NISPOriLastName>
+          <NISPOriCompanyName />
+          <NISPOriAddress1>149 Tianfu Blvd</NISPOriAddress1>
+          <NISPOriAddress2 />
+          <NISPOriCity>Chengdu</NISPOriCity>
+          <NISPOriState>Sichuan</NISPOriState>
+          <NISPOriZipCode>64410</NISPOriZipCode>
+          <NISPOriCountryCode>CHINA</NISPOriCountryCode>
+          <NISPOriPhoneNumber>13812345678</NISPOriPhoneNumber>
+        </NISPOriginalInfo>
+        <OriginalInputInfo>
+          <OriginalFirstName>广</OriginalFirstName>
+          <OriginalLastName>李</OriginalLastName>
+          <OriginalCompanyName />
+          <OriginalAddress1>天府大道149 号</OriginalAddress1>
+          <OriginalAddress2 />
+          <OriginalCity>成都</OriginalCity>
+          <OriginalState>四川</OriginalState>
+          <OriginalZipCode>64410</OriginalZipCode>
+          <OriginalCountryCode>CHINA</OriginalCountryCode>
+          <OriginalPhoneNumber>13812345678</OriginalPhoneNumber>
+        </OriginalInputInfo>
+        <AddInfo1/>
+        <AddInfo2/>
+        <AddInfo3/>
+      </AddOrderInfo>
+    </AddOrderInfoList>
+  </ResponseBody>
+  <Memo />
+  <ResponseDate>09/01/2018 16:51:03</ResponseDate>
+</NeweggAPIResponse>

@@ -1,0 +1,36 @@
+﻿{
+  "SellerID": "A006",
+  "ItemNumber": "9SIA0060884598",
+  "SellerPartNumber": "A006testitem201201021459",
+  "InventoryAllocation": {
+    "Inventory": [
+      {
+        "WarehouseLocation": "USA",
+        "FulfillmentOption": "0",
+        "AvailableQuantity": "107"
+      },
+      {
+        "WarehouseLocation": "USA",
+        "FulfillmentOption": "1",
+        "AvailableQuantity": "40",
+        "WarehouseAllocation": {
+          "Warehouse": [
+            {
+              "WarehouseCode": "07",
+              "Quantity": "3"
+            },
+            {
+              "WarehouseCode": "12",
+              "Quantity": "37"
+            }
+          ]
+        }
+      },
+      {
+        "WarehouseLocation": "AUS",
+        "FulfillmentOption": "0",
+        "AvailableQuantity": "0"
+      }
+    ]
+  }
+}

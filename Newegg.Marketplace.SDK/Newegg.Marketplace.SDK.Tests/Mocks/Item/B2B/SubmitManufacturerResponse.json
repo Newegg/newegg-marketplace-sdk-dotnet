@@ -1,0 +1,12 @@
+﻿{
+  "IsSuccess": "true",
+  "SellerID": "A006",
+  "OperationType": "SubmitManufacturerResponse",
+  "ResponseBody": {
+    "ManufacturerRequest": {
+      "Name": "sony & wonder",
+      "RequestDate": "2/22/2012 16:50:03"
+    }
+  },
+  "ResponseDate": "2/22/2012 16:51:03"
+}

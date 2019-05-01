@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetShippingDetailResponse</OperationType>
+  <SellerID>A2GS</SellerID>
+  <ResponseBody>
+    <OrderNumber>257760329</OrderNumber>
+    <RequestList>
+      <Request>
+        <RequestID>245BWZ383S93Y</RequestID>
+        <RequestDate>09/25/2018 22:33:31</RequestDate>
+        <Shipment>
+          <CustomerName>TEST3 TEST6</CustomerName>
+          <CustomerPhoneNumber>854-125-4152</CustomerPhoneNumber>
+          <CustomerEmailAddress>cusa.q7zw1u4erbgt9e@marketplace.newegg.com</CustomerEmailAddress>
+          <ShipToAddress1>Hacettepe, TalatpaSa Blv No:82,</ShipToAddress1>
+          <ShipToAddress2/>
+          <ShipToCityName>TalatpaSa</ShipToCityName>
+          <ShipToStateCode>CA</ShipToStateCode>
+          <ShipToZipCode>91748</ShipToZipCode>
+          <ShipToCountryCode>UNITED STATES</ShipToCountryCode>
+          <ShippingCarrierCode>100</ShippingCarrierCode>
+          <ShippingServiceCode/>
+          <ShipmentStatus>ERROR_ESTIMATING</ShipmentStatus>
+          <ErrorMessage>
+            An error was encountered when communicating with Newegg partnered carrier service: Your ship from address is not valid for Newegg partnered carriers.The followings are the recommended addresses provided by Newegg partnered carries:
+            ROWLAND HEIGHTS CA 91748, USA
+            CITY INDUSTRY CA 91748, USA
+            CITY OF INDUSTRY CA 91748, USA
+            ""
+            Your ship to address is not valid for Newegg partnered carriers.The followings are the recommended addresses provided by Newegg partnered carries:
+            ROWLAND HEIGHTS CA 91748, USA
+            CITY INDUSTRY CA 91748, USA
+            CITY OF INDUSTRY CA 91748, USA
+            . For further assistance, please contact Newegg Integration Team via Datafeeds@newegg.com.
+          </ErrorMessage>
+          <ShipDate/>
+          <PartneredEstimate>
+            <BillableWeight>0.00</BillableWeight>
+            <EstimatedDeliveryDay/>
+            <EstimatedChargeAmount>0.00</EstimatedChargeAmount>
+          </PartneredEstimate>
+          <ShipFromFirstName>TEST3</ShipFromFirstName>
+          <ShipFromLastName>TEST6</ShipFromLastName>
+          <ShipFromPhoneNumber>854-125-4152</ShipFromPhoneNumber>
+          <ShipFromAddress1>Hacettepe, TalatpaSa Blv No:82</ShipFromAddress1>
+          <ShipFromCityName>TalatpaSa</ShipFromCityName>
+          <ShipFromStateCode>CA</ShipFromStateCode>
+          <ShipFromZipCode>91748</ShipFromZipCode>
+          <ShipFromCountryCode>USA</ShipFromCountryCode>
+          <PackageList>
+            <Package>
+              <ItemList>
+                <Item>
+                  <SellerPartNumber>fortestestsisisisi</SellerPartNumber>
+                  <Quantity>1</Quantity>
+                </Item>
+              </ItemList>
+            </Package>
+          </PackageList>
+        </Shipment>
+      </Request>
+    </RequestList>
+  </ResponseBody>
+</NeweggAPIResponse>

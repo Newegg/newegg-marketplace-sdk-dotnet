@@ -1,0 +1,30 @@
+{
+    "IsSuccess": "true",
+    "OperationType": "GetPackageListResponse",
+    "SellerID": "A006",
+    "ResponseBody": {
+        "OrderNumber": "423423678",
+        "RequestList": {
+            "Request": [
+              {
+                "RequestID": "2PQBYWH4V68ZP",
+                "PdfFileList": {
+                  "File": [
+                    "http://images10.newegg.com/SBNInbound/UPSShippingLabel/dc395051-a1ba-4c7e-99c9-94025bc7577e.pdf",
+                    "http://images10.newegg.com/SBNInbound/UPSShippingLabel/dc395051-a1ba-4c7e-99c9-94025bc7577e.pdf"
+                  ]
+                }
+              },
+                {
+                    "RequestID": "2PQBYWH4V68ZP",
+                    "PdfFileList": {
+                        "File": [
+                            "http://images10.newegg.com/SBNInbound/UPSShippingLabel/dc395051-a1ba-4c7e-99c9-94025bc7577e.pdf",
+                            "http://images10.newegg.com/SBNInbound/UPSShippingLabel/dc395051-a1ba-4c7e-99c9-94025bc7577e.pdf"
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

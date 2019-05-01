@@ -1,0 +1,16 @@
+{
+  "IsSuccess": true,
+  "OperationType": "GetReportStatusResponse",
+  "ResponseBody": {
+    "ResponseList": [
+      {
+        "RequestDate": "2/21/2012 14:38:17",
+        "RequestId": "2PQBYWH4V68ZP",
+        "RequestStatus": "IN_PROGRESS",
+        "RequestType": "ORDER_LIST_REPORT",
+        "TotalCount": 4
+      }
+    ]
+  },
+  "SellerID": "A006"
+}

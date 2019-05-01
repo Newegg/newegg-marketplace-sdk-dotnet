@@ -1,0 +1,68 @@
+{
+	"NeweggAPIResponse": {
+		"IsSuccess": "true",
+		"OperationType": "GetCourtesyRefundResponse",
+		"SellerID": "A2EU",
+		"ResponseDate": "03/05/2019 00:50:53",
+		"ResponseBody": {
+			"PageInfo": {
+				"TotalCount": "3",
+				"TotalPageCount": "1",
+				"PageSize": "10",
+				"PageIndex": "1"
+			},
+			"CourtesyRefundInfoList": {
+				"CourtesyrefundInfo": [
+					{
+						"CourtesyRefundID": "6da1e083-34a9-4501-b571-f83546079e2b",
+						"SONumber": "299395404",
+						"SOAmount": "1.44",
+						"InvoiceNumber": "167682810",
+						"RefundAmount": "0.72",
+						"ReasonCode": "3",
+						"Reason": "Wrong Item Information",
+						"NoteToCustomer": "can courtesy refund 0528",
+						"Status": "Open",
+						"IsNeweggRefund": "false",
+						"InUserName": "A2EU",
+						"InDate": "03/05/2019 00:45:00",
+						"EditUserName": "API",
+						"EditDate": "03/05/2019 00:45:00"
+					},
+          {
+            "CourtesyRefundID": "8f8648da-7d92-4086-bbe5-e399e07895e6",
+            "SONumber": "299395404",
+            "SOAmount": "1.44",
+            "InvoiceNumber": "167682810",
+            "RefundAmount": "0.72",
+            "ReasonCode": "3",
+            "Reason": "Wrong Item Information",
+            "NoteToCustomer": "can courtesy refund 0528",
+            "Status": "Open",
+            "IsNeweggRefund": "false",
+            "InUserName": "A2EU",
+            "InDate": "03/05/2019 00:44:01",
+            "EditUserName": "API",
+            "EditDate": "03/05/2019 00:44:01"
+          },
+					{
+						"CourtesyRefundID": "c193f2b5-cc78-4334-a65b-b6f94940d47d",
+						"SONumber": "299956104",
+						"SOAmount": "0.16",
+						"InvoiceNumber": "167682312",
+						"RefundAmount": "1.00",
+						"ReasonCode": "-1",
+						"Reason": "System Mapped Error",
+						"NoteToCustomer": "Test",
+						"Status": "Close",
+						"IsNeweggRefund": "true",
+						"InUserName": "Caroline.Y.Luo",
+						"InDate": "02/19/2019 21:23:00",
+						"EditUserName": "Caroline.Y.Luo",
+						"EditDate": "02/19/2019 21:23:00"
+					}
+				]
+			}
+		}
+	}
+}

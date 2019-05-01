@@ -1,0 +1,17 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A006</SellerID>
+  <OperationType>GetSettlementTransactionInfoResponse</OperationType>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>0</TotalCount>
+      <TotalPageCount>0</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>24JW8D51O5V2D</RequestID>
+    <RequestDate>03/10/2019 19:08:57</RequestDate>
+    <SettlementTransactionInfoList/>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

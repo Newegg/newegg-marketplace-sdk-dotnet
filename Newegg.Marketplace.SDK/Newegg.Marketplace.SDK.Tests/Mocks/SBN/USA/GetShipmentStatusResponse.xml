@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetShipmentStatusResponse</OperationType>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>21UYNT6Z2217K</RequestId>
+        <ActionCode>1</ActionCode>
+        <RequestDate>10/31/2018 23:53:40</RequestDate>
+        <RequestStatus>IN_PROGRESS</RequestStatus>
+      </ResponseInfo>
+      <ResponseInfo>
+        <RequestId>24UQBFFT2NE9A</RequestId>
+        <ActionCode>1</ActionCode>
+        <RequestDate>11/01/2018 00:30:45</RequestDate>
+        <RequestStatus>IN_PROGRESS</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

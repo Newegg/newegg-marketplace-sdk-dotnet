@@ -1,0 +1,14 @@
+{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "sellerID": "A006",
+    "OperationType": "CAProp65ReportResponse",
+    "ResponseBody": {
+      "RequestID": "2PQC13C7UYDPQ",
+      "RequestType": "CAPROP65_REPORT",
+      "RequestDate": "2/21/2012 15:32:57",
+      "ReportFileURL": "ftp://APIe6Cl2FfE:M9RUtm2s@ftp03.newegg.com/InternationalInventoryReport_2PQC13C7UYDPQ.xls"
+    },
+    "Memo": null
+  }
+}

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <SellerID>A3TV</SellerID>
+  <OperationType>GetSettlementTransactionInfoResponse</OperationType>
+  <ResponseBody>
+    <PageInfo>
+      <TotalCount>0</TotalCount>
+      <TotalPageCount>0</TotalPageCount>
+      <PageIndex>1</PageIndex>
+      <PageSize>10</PageSize>
+    </PageInfo>
+    <RequestID>25EN5T559Z6JF</RequestID>
+    <RequestDate>03/10/2019 19:09:44</RequestDate>
+    <SettlementTransactionInfoList/>
+  </ResponseBody>
+  <Memo/>
+</NeweggAPIResponse>

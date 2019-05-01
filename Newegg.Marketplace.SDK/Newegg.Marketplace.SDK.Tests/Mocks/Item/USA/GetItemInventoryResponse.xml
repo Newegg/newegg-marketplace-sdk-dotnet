@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InventoryResult>
+  <SellerID>A006</SellerID>
+  <ItemNumber>9SIA0063R11047</ItemNumber>
+  <SellerPartNumber>MYSTUFF029384</SellerPartNumber>
+  <FulfillmentOption>0</FulfillmentOption>
+  <Active>0</Active>
+  <AvailableQuantity>12</AvailableQuantity>
+  <WarehouseAllocation>
+    <Warehouse>
+      <WarehouseCode>SBS</WarehouseCode>
+      <Quantity>12</Quantity>
+    </Warehouse>
+  </WarehouseAllocation>
+</InventoryResult>

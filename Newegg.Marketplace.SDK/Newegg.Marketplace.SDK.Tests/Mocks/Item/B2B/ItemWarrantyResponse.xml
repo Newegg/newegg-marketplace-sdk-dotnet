@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>SubmitItemWarrantyResponse</OperationType>
+  <SellerID>A44S</SellerID>
+  <ResponseBody>
+    <ItemWarrantyList>
+      <ItemWarranty>
+        <IsSuccess>false</IsSuccess>
+        <ErrorList>
+          <Error>
+            <ErrorCode>CT512</ErrorCode>
+            <ErrorMessage>SellerPartNumber: qwe001 is not refurbished or used item.</ErrorMessage>
+          </Error>
+        </ErrorList>
+      </ItemWarranty>
+    </ItemWarrantyList>
+  </ResponseBody>
+  <ResponseDate>02/21/2019 19:07:15</ResponseDate>
+</NeweggAPIResponse>

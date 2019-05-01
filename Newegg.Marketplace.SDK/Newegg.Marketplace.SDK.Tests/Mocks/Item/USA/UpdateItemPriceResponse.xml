@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpdatePriceResult>
+  <SellerID>A006</SellerID>
+  <ItemNumber>9SIA00607Y6476</ItemNumber>
+  <SellerPartNumber>A006BSP3</SellerPartNumber>
+  <PriceList>
+    <Price>
+      <CountryCode>USA</CountryCode>
+      <Currency>USD</Currency>
+      <Active>0</Active>
+      <MSRP>30.98</MSRP>
+      <MAP>25.99</MAP>
+      <CheckoutMAP>0</CheckoutMAP>
+      <SellingPrice>20.92</SellingPrice>
+      <EnableFreeShipping>1</EnableFreeShipping>
+    </Price>
+    <Price>
+      <CountryCode>IND</CountryCode>
+      <Currency>INR</Currency>
+      <Active>1</Active>
+      <MSRP>459.98</MSRP>
+      <MAP>25.99</MAP>
+      <CheckoutMAP>0</CheckoutMAP>
+      <SellingPrice>389.92</SellingPrice>
+      <EnableFreeShipping>0</EnableFreeShipping>
+    </Price>
+    <Price>
+      <CountryCode>IRL</CountryCode>
+      <Currency>EUR</Currency>
+      <Active>0</Active>
+      <MSRP>30.98</MSRP>
+      <MAP>25.99</MAP>
+      <CheckoutMAP>0</CheckoutMAP>
+      <SellingPrice>19.92</SellingPrice>
+      <EnableFreeShipping>0</EnableFreeShipping>
+    </Price>
+  </PriceList>
+</UpdatePriceResult>

@@ -1,0 +1,17 @@
+﻿{
+  "SellerID": "A006",
+  "ItemNumber": "9SIA00607Y6476",
+  "SellerPartNumber": "A006BSP3",
+  "InventoryList": {
+    "Inventory": [
+      {
+        "WarehouseLocation": "USA",
+        "AvailableQuantity": "107"
+      },
+      {
+        "WarehouseLocation": "AUS",
+        "AvailableQuantity": "0"
+      }
+    ]
+  }
+}

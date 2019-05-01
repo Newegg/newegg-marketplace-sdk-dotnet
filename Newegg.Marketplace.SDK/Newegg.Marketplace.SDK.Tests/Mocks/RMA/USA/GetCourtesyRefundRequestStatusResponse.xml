@@ -1,0 +1,15 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetCourtesyRefundRequestStatusResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>8f8648da-7d92-4086-bbe5-e399e07895e6</RequestId>
+        <RequestType>COURTESYREFUND</RequestType>
+        <RequestDate>03/05/2019 00:43:23</RequestDate>
+        <RequestStatus>IN_PROGRESS</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

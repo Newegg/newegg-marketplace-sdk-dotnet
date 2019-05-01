@@ -1,0 +1,9 @@
+{
+  "IsSuccess": true,
+  "OperationType": "GetSellerAccountStatusResponse",
+  "SellerID": "A44S",
+  "ResponseBody": {
+    "SellerName": "Test_B2B_updatename2updateb2b UPDATE01",
+    "Status": "Active"
+  }
+}

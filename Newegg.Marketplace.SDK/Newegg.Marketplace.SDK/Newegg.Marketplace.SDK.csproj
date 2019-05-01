@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<Authors>Newegg</Authors>
+    <Description>Newegg.Marketplace.SDK for .Net</Description>
+    <Copyright>2000-present</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Newegg.Marketplace.SDK.Base\Newegg.Marketplace.SDK.Base.csproj" />
+  </ItemGroup>
+
+</Project>

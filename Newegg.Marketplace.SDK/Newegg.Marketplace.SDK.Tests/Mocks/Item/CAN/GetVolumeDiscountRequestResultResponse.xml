@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>GetVolumeDiscountResponse</OperationType>
+  <SellerID>A3TV</SellerID>
+  <ResponseBody>
+    <ItemVolumeDiscountInfo>
+      <SellerPartNumber>Test_SP170707143804717</SellerPartNumber>
+      <NeweggItemNumber>9SIA3TV5Y19568</NeweggItemNumber>
+      <DiscountSetting>
+        <Tier>
+          <Priority>1</Priority>
+          <Quantity>11</Quantity>
+          <SellingPrice>0.40</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+        <Tier>
+          <Priority>2</Priority>
+          <Quantity>21</Quantity>
+          <SellingPrice>0.25</SellingPrice>
+          <EnableFreeShipping>0</EnableFreeShipping>
+        </Tier>
+        <Tier>
+          <Priority>3</Priority>
+          <Quantity>31</Quantity>
+          <SellingPrice>0.18</SellingPrice>
+          <EnableFreeShipping>1</EnableFreeShipping>
+        </Tier>
+      </DiscountSetting>
+    </ItemVolumeDiscountInfo>
+  </ResponseBody>
+</NeweggAPIResponse>

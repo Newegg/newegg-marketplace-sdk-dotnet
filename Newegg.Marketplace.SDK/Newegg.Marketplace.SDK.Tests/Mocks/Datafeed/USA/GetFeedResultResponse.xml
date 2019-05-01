@@ -1,0 +1,42 @@
+﻿<NeweggEnvelope>
+  <Header>
+    <DocumentVersion>1.0</DocumentVersion>
+  </Header>
+  <MessageType>ProcessingReport</MessageType>
+  <Message>
+    <ProcessingReport>
+      <OriginalMessageName>APIAutoFile.xml</OriginalMessageName>
+      <!-- please ignore this element -->
+      <StatusCode>ProcessReport</StatusCode>
+      <ProcessingSummary>
+        <ProcessedCount>3</ProcessedCount>
+        <SuccessCount>1</SuccessCount>
+        <WithErrorCount>2</WithErrorCount>
+      </ProcessingSummary>
+      <Result>
+        <AdditionalInfo>
+          <SubCategoryID>1648</SubCategoryID>
+          <SellerPartNumber>sellerparttest001</SellerPartNumber>
+          <ManufacturerPartNumberOrISBN>mftparttest001</ManufacturerPartNumberOrISBN>
+          <UPC />
+        </AdditionalInfo>
+        <ErrorList>
+          <ErrorDescription>Error(s). Item not created.</ErrorDescription>
+          <ErrorDescription>Manufacturer - The manufacturer does not exist in our system. Please contact Marketplace Support for more information </ErrorDescription>
+        </ErrorList>
+      </Result>
+      <Result>
+        <AdditionalInfo>
+          <SubCategoryID>1648</SubCategoryID>
+          <SellerPartNumber>sellerparttest002</SellerPartNumber>
+          <ManufacturerPartNumberOrISBN>mftparttest002</ManufacturerPartNumberOrISBN>
+          <UPC>null</UPC>
+        </AdditionalInfo>
+        <ErrorList>
+          <ErrorDescription>Error(s). Item not created.</ErrorDescription>
+          <ErrorDescription>UPC - Format Error: UPC must be an numeric string of at least 12 digits.</ErrorDescription>
+        </ErrorList>
+      </Result>
+    </ProcessingReport>
+  </Message>
+</NeweggEnvelope>

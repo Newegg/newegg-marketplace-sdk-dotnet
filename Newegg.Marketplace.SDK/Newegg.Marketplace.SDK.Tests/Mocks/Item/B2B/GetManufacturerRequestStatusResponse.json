@@ -1,0 +1,33 @@
+﻿{
+  "NeweggAPIResponse": {
+    "IsSuccess": "true",
+    "SellerID": "A006",
+    "OperationType": "GetManufacturerStatusResponse",
+    "ResponseDate": "2/22/2012 16:51:03",
+    "ResponseBody": {
+      "ManufacturerList": {
+        "Manufacturer": [
+          {
+            "RequestName": "AWG",
+            "Status": "Processing",
+            "RequestDate": "2/21/2012 16:51:03"
+          },
+          {
+            "RequestName": "sony & wonder",
+            "ApprovedName": "sony",
+            "Status": "Approved",
+            "RequestDate": "2/21/2012 15:51:03",
+            "ProcessDate": "2/21/2012 16:51:03"
+          },
+          {
+            "RequestName": "Sony vario",
+            "Status": "Declined",
+            "RequestDate": "2/21/2012 12:51:03",
+            "ProcessDate": "2/21/2012 16:51:03",
+            "DeclineReason": "please provide manufacturer URL"
+          }
+        ]
+      }
+    }
+  }
+}

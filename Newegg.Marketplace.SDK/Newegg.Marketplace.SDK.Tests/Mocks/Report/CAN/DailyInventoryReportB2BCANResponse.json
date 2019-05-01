@@ -1,0 +1,16 @@
+{
+  "OperationType": "InternationalInventoryReportRequest",
+  "RequestBody": {
+    "DailyInventoryReportCriteria": {
+      "FulfillType": "0",
+      "WarehouseList": {
+        "WarehouseLocation": [
+          "USA",
+          "AUS"
+        ]
+      },
+      "RequestType": "INTERNATIONAL_INVENTORY_REPORT",
+      "FileType": "XLS"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+﻿{
+    "SellerID": "A006",
+    "ItemNumber": "9SIA0060884598",
+    "SellerPartNumber": "A006testitem201201021459",
+    "PriceList": {
+        "Price": [
+            {
+                "CountryCode": "USA",
+                "Currency": "USD",
+                "Active": "0",
+                "MSRP": "30.98",
+                "MAP": "25.99",
+                "CheckoutMAP": "0",
+                "SellingPrice": "20.92",
+                "EnableFreeShipping": "1",
+                "OnPromotion": "1,5"
+            },
+          {
+            "CountryCode": "IND",
+            "Currency": "INR",
+            "Active": "1",
+            "MSRP": "459.98",
+            "MAP": "25.99",
+            "CheckoutMAP": "0",
+            "SellingPrice": "389.92",
+            "EnableFreeShipping": "0",
+            "OnPromotion": "1,5"
+          },
+            {
+                "CountryCode": "IRL",
+                "Currency": "EUR",
+                "Active": "0",
+                "MSRP": "30.98",
+                "MAP": "25.99",
+                "CheckoutMAP": "0",
+                "SellingPrice": "19.92",
+                "EnableFreeShipping": "0"
+            }
+        ]
+    }
+}

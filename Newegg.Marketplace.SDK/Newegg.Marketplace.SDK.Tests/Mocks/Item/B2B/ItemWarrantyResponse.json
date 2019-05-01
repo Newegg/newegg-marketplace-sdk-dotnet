@@ -1,0 +1,26 @@
+﻿{
+    "NeweggAPIResponse": {
+        "IsSuccess": "true",
+        "OperationType": "SubmitItemWarrantyResponse",
+        "SellerID": "BG9H",
+        "ResponseBody": {
+            "ItemWarrantyList": {
+                "ItemWarranty": [
+                  {
+                    "IsSuccess": "true"
+                  },
+                    {
+                        "IsSuccess": "false",
+                        "ErrorList": {
+                            "Error": {
+                                "ErrorCode": "CT508",
+                                "ErrorMessage": "SellerPartNumber: bg9h2016042001 does not exist or it is not refurbished."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "ResponseDate": "04/28/2016 02:48:29"
+    }
+}

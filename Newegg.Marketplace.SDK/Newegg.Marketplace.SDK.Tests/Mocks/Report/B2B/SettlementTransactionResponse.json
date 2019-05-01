@@ -1,0 +1,15 @@
+{
+  "IsSuccess": true,
+  "OperationType": "SettlementTransactionReportResponse",
+  "SellerID": "a001",
+  "ResponseBody": {
+    "ResponseList": [
+      {
+        "RequestId": "270Z8Y3SYIGQV",
+        "RequestType": "SETTLEMENT_TRANSACTION_REPORT",
+        "RequestDate": "07/12/2014 11:34:57",
+        "RequestStatus": "SUBMITTED"
+      }
+    ]
+  }
+}

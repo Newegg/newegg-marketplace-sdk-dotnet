@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>ItemChinaTaxSettingReportResponse</OperationType>
+  <SellerID>A2EU</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>26CWUO2OC9HGX</RequestId>
+        <RequestType>ITEM_CHINATAXSETTING_REPORT</RequestType>
+        <RequestDate>03/17/2019 20:33:23</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>

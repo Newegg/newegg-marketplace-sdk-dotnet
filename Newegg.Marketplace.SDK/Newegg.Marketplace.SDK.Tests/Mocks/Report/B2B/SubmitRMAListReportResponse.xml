@@ -1,0 +1,15 @@
+﻿<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>RMAListReportResponse</OperationType>
+  <SellerID>A006</SellerID>
+  <ResponseBody>
+    <ResponseList>
+      <ResponseInfo>
+        <RequestId>27UMQ2D8D3CZY</RequestId>
+        <RequestType>RMA_LIST_REPORT</RequestType>
+        <RequestDate>03/10/2019 19:23:44</RequestDate>
+        <RequestStatus>SUBMITTED</RequestStatus>
+      </ResponseInfo>
+    </ResponseList>
+  </ResponseBody>
+</NeweggAPIResponse>
