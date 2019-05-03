@@ -31,12 +31,30 @@ using Newegg.Marketplace.SDK.Base.Util;
 
 namespace Newegg.Marketplace.SDK.Base
 {
-    // Main configuration class, holds all global settings for SDK
+
+    /// <summary>
+    /// Main configuration class, holds all global settings for SDK 
+    /// </summary>
     public class APIConfig
     {
+        /// <summary>
+        /// The Credentials to call API
+        /// </summary>
         public Credentials Credentials { get; private set; }
+
+        /// <summary>        
+        /// The platfrom of seller: There are three options:
+        ///USA: seller on www.newegg.com
+        ///B2B: seller on www.neweggbussiness.com
+        ///CAN: seller on www.newegg.ca Optional, Default: USA.
+        /// </summary>
         public APIPlatform Platform { get; set; } = APIPlatform.USA;
+
         private string baseUrl = "https://apis.newegg.com/marketplace/";
+
+        /// <summary>
+        /// The base url of the Newegg marketplace API. Optional, Default: https://apis.newegg.com/marketplace/
+        /// </summary>
         public string BaseUrl
         {
             get
@@ -49,6 +67,10 @@ namespace Newegg.Marketplace.SDK.Base
             }
         }
         private LogLevel _logLevel = LogLevel.Info;
+
+        /// <summary>
+        /// The log level when call API, If log level above LogLevel.Debug, will log the request and response content.
+        /// </summary>
         public LogLevel LogLevel
         {
             get
@@ -62,12 +84,32 @@ namespace Newegg.Marketplace.SDK.Base
             }
         }
 
+        /// <summary>
+        /// Seller's ID usually is a 4-character string
+        /// </summary>
         public string SellerID { get; set; }
+
+        /// <summary>
+        /// The Format to call API
+        /// </summary>
         public APIFormat APIFormat { get; set; } = APIFormat.JSON;
+
+        /// <summary>
+        /// The mock file path, which is use for simulation
+        /// </summary>
         public string MockPath { get; set; }
 
+        /// <summary>
+        /// Connectin Setting
+        /// </summary>
         public ConnectSetting Connection { get; set; }
 
+        /// <summary>
+        /// Three nessary params to create the API config. Other property will use the default value.
+        /// </summary>
+        /// <param name="sellerid">Seller ID</param>
+        /// <param name="authorization">The API Key</param>
+        /// <param name="secretKey">The Secret Key</param>
         public APIConfig(string sellerid, string authorization, string secretKey)
         {
             this.SellerID = sellerid;
@@ -80,6 +122,10 @@ namespace Newegg.Marketplace.SDK.Base
             };
         }
 
+        /// <summary>
+        /// Clone a config object
+        /// </summary>
+        /// <returns></returns>
         public APIConfig Clone()
         {
             APIConfig ret = this.MemberwiseClone() as APIConfig;
@@ -160,12 +206,21 @@ namespace Newegg.Marketplace.SDK.Base
         }
     }
 
+    /// <summary>
+    /// API Format
+    /// </summary>
     public enum APIFormat
     {
         XML,
         JSON,
     }
 
+    /// <summary>
+    /// The platfrom of seller: There are three options:
+    /// USA: seller on www.newegg.com
+    /// B2B: seller on www.neweggbussiness.com
+    /// CAN: seller on www.newegg.ca Optional, Default: USA.
+    /// </summary>
     public enum APIPlatform
     {
         USA,

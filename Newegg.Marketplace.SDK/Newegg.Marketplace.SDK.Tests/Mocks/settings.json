@@ -72,8 +72,8 @@
   "PUT USA shippingservice/shippinglabel/shippinglabels": "Shipping/USA/GetShippinLabelResponse",
   "PUT B2B shippingservice/shippinglabel/shippinglabels": "Shipping/B2B/GetShippinLabelResponse",
 
-  "POST USA shippingservice/shippinglabel/confirmshippingrequest": "Shipping/USA/ComfirmShipResponse",
-  "POST B2B shippingservice/shippinglabel/confirmshippingrequest": "Shipping/B2B/ComfirmShipResponse",
+  "POST USA shippingservice/shippinglabel/confirmshippingrequest": "Shipping/USA/confirmShipResponse",
+  "POST B2B shippingservice/shippinglabel/confirmshippingrequest": "Shipping/B2B/confirmShipResponse",
 
 
   "PUT USA shippingservice/shippinglabel/shippingdetail": "Shipping/USA/GetShippingDetailResponse",

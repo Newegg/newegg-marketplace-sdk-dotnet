@@ -57,13 +57,13 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             return result;
         }
 
-        public async Task<ComfirmShipResponse> ConfirmShippingRequest(ComfirmShipRequest reqModel)
+        public async Task<confirmShipResponse> ConfirmShippingRequest(confirmShipRequest reqModel)
         {
-            var request = CreateRequest<ComfirmShipRequest>(reqModel);
+            var request = CreateRequest<confirmShipRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/confirmshippingrequest";
 
             var response = await client.PostAsync(request);
-            var result = await ProcessResponse<ComfirmShipResponse>(response);
+            var result = await ProcessResponse<confirmShipResponse>(response);
             return result;
         }
 

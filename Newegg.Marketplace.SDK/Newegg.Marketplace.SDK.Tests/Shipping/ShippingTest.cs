@@ -165,10 +165,10 @@ namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
         [Fact]//11.3  XML USA
         public async Task ConfirmShippingRequest_XML_USA()
         {
-            var request = new ComfirmShipRequest()
+            var request = new confirmShipRequest()
             {
 
-                RequestBody = new ComfirmShipRequestBody()
+                RequestBody = new confirmShipRequestBody()
                 {
                     RequestIDList = new List<string>
                     { "27BBNUFEFG8HI"}
@@ -177,17 +177,17 @@ namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
             };
 
 
-            CheckRequestString<ComfirmShipRequest>(request);
+            CheckRequestString<confirmShipRequest>(request);
             var body = await fadeAPI_USA_XML.ConfirmShippingRequest(request);
-            Assert.IsType<ComfirmShipResponse>(body);
+            Assert.IsType<confirmShipResponse>(body);
         }
         [Fact]//11.3  XML B2B
         public async Task ConfirmShippingRequest_XML_B2B()
         {
-            var request = new ComfirmShipRequest()
+            var request = new confirmShipRequest()
             {
 
-                RequestBody = new ComfirmShipRequestBody()
+                RequestBody = new confirmShipRequestBody()
                 {
                     RequestIDList = new List<string>
                     { "27BBNUFEFG8HI"}
@@ -196,9 +196,9 @@ namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
             };
 
 
-            CheckRequestString<ComfirmShipRequest>(request);
+            CheckRequestString<confirmShipRequest>(request);
             var body = await fadeAPI_B2B_XML.ConfirmShippingRequest(request);
-            Assert.IsType<ComfirmShipResponse>(body);
+            Assert.IsType<confirmShipResponse>(body);
         }
 
         [Fact]//11.2 xml USA

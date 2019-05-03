@@ -23,15 +23,15 @@ using Newegg.Marketplace.SDK.Base.Util;
 namespace Newegg.Marketplace.SDK.Shipping.Model
 {
     [XmlRoot("NeweggAPIRequest")]
-    public class ComfirmShipRequest : RequestModel<ComfirmShipRequestBody>
+    public class confirmShipRequest : RequestModel<confirmShipRequestBody>
     {
-        public ComfirmShipRequest()
+        public confirmShipRequest()
         {
             this.OperationType = "ConfirmShippingRequest";
         }
     }
 
-    public class ComfirmShipRequestBody
+    public class confirmShipRequestBody
     {
         [XmlArrayItem("RequestID"), JsonConverter(typeof(JsonMoreLevelSeConverter), "RequestID")]
         public List<string> RequestIDList { get; set; }
