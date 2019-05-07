@@ -92,7 +92,17 @@ namespace Newegg.Marketplace.SDK.Base
         /// <summary>
         /// The Format to call API
         /// </summary>
-        public APIFormat APIFormat { get; set; } = APIFormat.JSON;
+        public APIFormat APIFormat
+        {
+            get
+            {
+                return APIFormat.XML;
+            }
+            set
+            {
+
+            }
+        }
 
         /// <summary>
         /// The mock file path, which is use for simulation
@@ -102,7 +112,7 @@ namespace Newegg.Marketplace.SDK.Base
         /// <summary>
         /// Connectin Setting
         /// </summary>
-        public ConnectSetting Connection { get; set; }
+        public ConnectSetting Connection { get; set; } = new ConnectSetting();
 
         /// <summary>
         /// Three nessary params to create the API config. Other property will use the default value.
@@ -113,13 +123,7 @@ namespace Newegg.Marketplace.SDK.Base
         public APIConfig(string sellerid, string authorization, string secretKey)
         {
             this.SellerID = sellerid;
-            this.Credentials = new Credentials(authorization, secretKey);
-            this.Connection = new ConnectSetting()
-            {
-                RequestTimeoutMs = 3000,
-                RetryIntervalMs = 1000,
-                AttemptsTimes = 3
-            };
+            this.Credentials = new Credentials(authorization, secretKey);            
         }
 
         /// <summary>
@@ -248,8 +252,8 @@ namespace Newegg.Marketplace.SDK.Base
     /// </summary>
     public class ConnectSetting
     {
-        public int RequestTimeoutMs { get; set; } = 5000;
-        public int AttemptsTimes { get; set; } = 5;
-        public int RetryIntervalMs { get; set; } = 1000;
+        public int RequestTimeoutMs { get; set; } = 10000;
+        public int AttemptsTimes { get; set; } = 3;
+        public int RetryIntervalMs { get; set; } = 3000;
     }
 }

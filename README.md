@@ -44,9 +44,9 @@ We recommend using Visual Studio 2017 or later. You can choose to build it with 
     "SecretKey": "*******-****-****-****-************"
   },
   "Connection": {
-    "RequestTimeoutMs": 30000,
-    "AttemptsTimes": 5,
-    "RetryIntervalMs": 1000
+    "RequestTimeoutMs": 20000,
+    "AttemptsTimes": 3,
+    "RetryIntervalMs": 3000
   },
   "APIFormat": "XML",
   "Platform": "CAN"
@@ -74,9 +74,9 @@ var orderstatus = await ordercall.GetOrderStatus("105137040", 304);
     * SellerID :  The 4-character Seller ID. Required.
     * Credentials.Authorization: The API Key get from datafeeds@newegg.com. Required.
     * Credentials.SecretKey: The Secret Key get from datafeeds@newegg.com. Required.
-    * Connection.RequestTimeoutMs: The number of milliseconds the system connection timed out. Optional, Default:5000.
-    * Connection.AttemptsTimes: Number of retries after a failed connection. Optional, Default:5.
-    * Connection.RetryIntervalMs: The number of milliseconds between retry attempts. Optional, Default:1000.
+    * Connection.RequestTimeoutMs: The number of milliseconds the system connection timed out. Optional, Default:10000.
+    * Connection.AttemptsTimes: Number of retries after a failed connection. Optional, Default:3.
+    * Connection.RetryIntervalMs: The number of milliseconds between retry attempts. Optional, Default:3000.
     * BaseUrl: The base url of the Newegg marketplace API. Optional, Default: "https://apis.newegg.com/marketplace/"
     * APIFormat: Content type used to call API.  The options are XML and Json. Optional, Default: XML.
     * Platform: The platfrom of seller: There are three options: 
@@ -92,9 +92,14 @@ var orderstatus = await ordercall.GetOrderStatus("105137040", 304);
     2. The message should include seller name or default email address.
     Newegg Marketplace team will process all requests in 24 hours.  
 
-- NLog configuration file location and how to customize log
-Please refer https://github.com/NLog/NLog/wiki/Configuration-file#configuration-file-locations
+- NLog configuration file location and how to customize log  
+    Please refer https://github.com/NLog/NLog/wiki/Configuration-file#configuration-file-locations
 
+- How to use the Mock model?  
+    Set the SimulationEnabled to be 'true' to the APIClient object.
+```csharp
+fakeUSAClientXML = new APIClient(USA_Config_XML) { SimulationEnabled = true };
+```
 
 ## Modules
 
