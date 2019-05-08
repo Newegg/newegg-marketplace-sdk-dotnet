@@ -9,6 +9,8 @@ The solution contains 2 library projects: Newegg.Marketplace.SDK.Base and Newegg
 
 ## Target Frameworks  
 * .NET Standard 2.0 
+* .NET Core 2.1 
+* .NET Framework 4.6  
 
 ## Installation  
     The package is on Nuget. You can install it with the Nuget Package Manager, search for 'newegg.marketplace.sdk'. You can also install it with the following tools:    
@@ -100,6 +102,10 @@ var orderstatus = await ordercall.GetOrderStatus("105137040", 304);
 ```csharp
 fakeUSAClientXML = new APIClient(USA_Config_XML) { SimulationEnabled = true };
 ```
+
+- Where is the example code?   
+    There is an example project in the solution.  
+    https://github.com/Newegg/newegg-marketplace-sdk-dotnet/tree/master/Newegg.Marketplace.SDK/example  
 
 ## Modules
 
