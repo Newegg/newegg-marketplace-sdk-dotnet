@@ -1,4 +1,4 @@
-# NewEgg Marketplace SDK for .Net
+# Newegg Marketplace SDK for .Net
 
 Newegg Marketplace SDK(C#) is a library to help .Net programmers easily integrate their application with the Newegg Marketplace API.  Included are definitions for the data objects models to create the request and resolve the response. The logger and retry mechanism can be customized to your requirements.
 
