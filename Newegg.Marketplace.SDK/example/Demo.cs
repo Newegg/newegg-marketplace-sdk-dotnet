@@ -55,6 +55,9 @@ namespace example
 
         #region Order API Demo
 
+        /// <summary>
+        /// Get Unshipped Order during a time period.
+        /// </summary>
         public void GetOrderInfo()
         {
             Console.WriteLine("GetOrderInfo");
@@ -62,7 +65,7 @@ namespace example
             // Create Request
             var orderreq = new GetOrderInformationRequest(new GetOrderInformationRequestCriteria()
             {
-                Status = Newegg.Marketplace.SDK.Order.Model.OrderStatus.Voided,
+                Status = Newegg.Marketplace.SDK.Order.Model.OrderStatus.Unshipped,
                 Type = OrderInfoType.All,
                 OrderDateFrom = "2016-01-01 09:30:47",
                 OrderDateTo = "2017-12-17 09:30:47",
@@ -80,6 +83,9 @@ namespace example
 
         }
 
+        /// <summary>
+        /// Get the status of special order
+        /// </summary>
         public void GetOrderStatus()
         {
             Console.WriteLine("GetOrderStatus");
@@ -91,6 +97,9 @@ namespace example
             Console.WriteLine(string.Format("There order status is {0}.", orderstatus.OrderStatusName));
         }
 
+        /// <summary>
+        /// Get addtional Information of order.
+        /// </summary>
         public void GetAddOrderInfo()
         {
             Console.WriteLine("GetAddOrderInfo");
@@ -113,6 +122,10 @@ namespace example
         #endregion
 
         #region Item API Demo
+
+        /// <summary>
+        /// Get Item price for multiple countries.
+        /// </summary>
         public void GetInternationalPrice()
         {
             Console.WriteLine("GetInternationalPrice");
@@ -133,6 +146,9 @@ namespace example
 
         }
 
+        /// <summary>
+        /// Update item price
+        /// </summary>
         public void UpdateItemlPrice()
         {
             Console.WriteLine("UpdateItemlPrice");
@@ -175,6 +191,9 @@ namespace example
         #endregion
 
         #region Seller API Demo
+        /// <summary>
+        /// Check Seller Status
+        /// </summary>
         public void GetSellerStatusCheck()
         {
             Console.WriteLine("GetSellerStatusCheck");
@@ -185,6 +204,9 @@ namespace example
             Console.WriteLine(string.Format("Current Seller Status is {0}.", response.GetResponseBody().Status));
         }
 
+        /// <summary>
+        /// Get the properties of special subcategory.
+        /// </summary>
         public void GetSubcategoryProperties()
         {
             Console.WriteLine("GetSubcategoryProperties");
@@ -197,6 +219,9 @@ namespace example
                 response.GetResponseBody().SubcategoryPropertyList.Count));
         }
 
+        /// <summary>
+        /// Get Subcategory of special Industry.
+        /// </summary>
         public void GetSubcategoryStatus()
         {
             Console.WriteLine("GetSubcategoryStatus");
@@ -212,6 +237,10 @@ namespace example
         #endregion
 
         #region Datafeed API Demo
+
+        /// <summary>
+        /// Submit data feed.
+        /// </summary>
         public void SubmitFeed()
         {
             Console.WriteLine("SubmitFeed");
@@ -242,6 +271,9 @@ namespace example
                 feedstatus.GetResponseBody().ResponseList.Count));
         }
 
+        /// <summary>
+        /// Get the status of the submitted datafeed.
+        /// </summary>
         public void GetFeedStatus()
         {
             Console.WriteLine("GetFeedStatus");
@@ -254,6 +286,9 @@ namespace example
                 feedstatus.GetResponseBody().ResponseList.Count));
         }
 
+        /// <summary>
+        /// Get the result of the submitted datafeed.
+        /// </summary>
         public void GetFeedResult()
         {
             Console.WriteLine("GetFeedResult");
@@ -267,6 +302,9 @@ namespace example
 
         #region RMA API Demo
 
+        /// <summary>
+        /// Get RMA infomation by keyword
+        /// </summary>
         public void GetRMAInfo()
         {
             Console.WriteLine("GetRMAInfo");
@@ -291,6 +329,9 @@ namespace example
                 result.GetResponseBody().RMAInfoList.Count));
         }
 
+        /// <summary>
+        /// Get Status of special Courtesy Refund Request by request id
+        /// </summary>
         public void GetCourtesyRefundRequestStatus()
         {
             Console.WriteLine("GetCourtesyRefundRequestStatus");
@@ -315,6 +356,9 @@ namespace example
                 result.GetResponseBody().ResponseList.ResponseInfo.RequestType));
         }
 
+        /// <summary>
+        /// Get information of Courtesy Refund
+        /// </summary>
         public void GetCourtesyRefundInformation()
         {
             Console.WriteLine("GetCourtesyRefundInformation");
@@ -343,6 +387,9 @@ namespace example
 
         #region Shipping API Demo
 
+        /// <summary>
+        /// Submit the shipping request for your Newegg order to receive the estimation of shipping cost using Newegg Shipping Label Service.
+        /// </summary>
         public void SubmitShippingRequest()
         {
             Console.WriteLine("SubmitShippingRequest");
@@ -392,6 +439,9 @@ namespace example
                 result.GetResponseBody().RequestStatus));
         }
 
+        /// <summary>
+        /// Retrieving the processing result of Submit Shipping Request.
+        /// </summary>
         public void GetShippingRequestDetail()
         {
             Console.WriteLine("GetShippingRequestDetail");
@@ -413,6 +463,9 @@ namespace example
                 result.GetResponseBody().RequestList.Count));
         }
 
+        /// <summary>
+        /// An unconfirmed shipping request is applicable for void using this function.
+        /// </summary>
         public void VoidShippingRequest()
         {
             Console.WriteLine("VoidShippingRequest");
@@ -435,6 +488,13 @@ namespace example
                 result.GetResponseBody().RequestStatus));
         }
 
+        /// <summary>
+        /// Once shipping estimate is available, you must confirm it when you are ready to ship.
+        /// Note: Once a shipping request is confirmed, Newegg will continue to process the order and the status 
+        /// of order will soon become “Shipped”.  Also, the shipping information will be displayed in Order Detail 
+        /// under the customer’s My Account section, and Newegg will send the customer an email notification with 
+        /// all of the shipping information.  When shipping request is confirmed, the revoke of the operation is not available.
+        /// </summary>
         public void ConfirmShippingRequest()
         {
             Console.WriteLine("ConfirmShippingRequest");
@@ -459,6 +519,10 @@ namespace example
         #endregion
 
         #region Report API Demo
+
+        /// <summary>
+        /// Get item’s available inventory quantity, price information, shipping, and activation status for defaulted warehouse.
+        /// </summary>
         public void SubmitDailyInventoryReport()
         {
             Console.WriteLine("SubmitDailyInventoryReport");
@@ -485,6 +549,9 @@ namespace example
                 result.GetResponseBody().ResponseList.Count));
         }
 
+        /// <summary>
+        /// Get item’s price information, shipping, and activation status for targeted countries, including United States.
+        /// </summary>
         public void SubmitDailyPriceReport()
         {
             Console.WriteLine("SubmitDailyPriceReport");
@@ -511,6 +578,9 @@ namespace example
                 result.GetResponseBody().ResponseList.Count));
         }
 
+        /// <summary>
+        /// Get the status of specified report request.
+        /// </summary>
         public void GetReportStatus()
         {
             Console.WriteLine("GetReportStatus");
@@ -536,6 +606,9 @@ namespace example
                 result.GetResponseBody().ResponseList.Count));
         }
 
+        /// <summary>
+        /// Get report when Get Report Status result is FINISHED.
+        /// </summary>
         public void GetDailyInventoryReport()
         {
             Console.WriteLine("GetDailyInventoryReport");
@@ -564,9 +637,12 @@ namespace example
 
         #region Other API Demo
 
+        /// <summary>
+        /// Check the status of Newegg Marketplace API
+        /// </summary>
         public void VerifyServiceStatus()
         {
-            Console.WriteLine("VerifyServiceStatus");            
+            Console.WriteLine("VerifyServiceStatus");
 
             // Send your request and get response
             var result = otherCall.VerifyServiceStatus(ServiceDomain.Order).Result;
