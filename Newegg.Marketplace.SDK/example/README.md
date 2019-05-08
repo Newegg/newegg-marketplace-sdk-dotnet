@@ -471,8 +471,8 @@
         /// <summary>
         /// Once shipping estimate is available, you must confirm it when you are ready to ship.
         /// Note: Once a shipping request is confirmed, Newegg will continue to process the order and the status 
-        /// of order will soon become “Shipped”.  Also, the shipping information will be displayed in Order Detail 
-        /// under the customer’s My Account section, and Newegg will send the customer an email notification with 
+        /// of order will soon become "Shipped".  Also, the shipping information will be displayed in Order Detail 
+        /// under the customer's My Account section, and Newegg will send the customer an email notification with 
         /// all of the shipping information.  When shipping request is confirmed, the revoke of the operation is not available.
         /// </summary>
         public void ConfirmShippingRequest()
@@ -501,7 +501,7 @@
         #region Report API Demo
 
         /// <summary>
-        /// Get item’s available inventory quantity, price information, shipping, and activation status for defaulted warehouse.
+        /// Get item's available inventory quantity, price information, shipping, and activation status for defaulted warehouse.
         /// </summary>
         public void SubmitDailyInventoryReport()
         {
@@ -530,7 +530,7 @@
         }
 
         /// <summary>
-        /// Get item’s price information, shipping, and activation status for targeted countries, including United States.
+        /// Get item's price information, shipping, and activation status for targeted countries, including United States.
         /// </summary>
         public void SubmitDailyPriceReport()
         {
