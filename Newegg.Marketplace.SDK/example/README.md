@@ -1,4 +1,4 @@
-# Newegg Marketplace SDK for .Net Demo Code
+# NewEgg Marketplace SDK for .Net Demo Code
 
 ```csharp
  public class Demo

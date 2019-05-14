@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newegg.Marketplace.SDK", "N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newegg.Marketplace.SDK.Tests", "Newegg.Marketplace.SDK.Tests\Newegg.Marketplace.SDK.Tests.csproj", "{64D52ACF-CC4B-408B-B432-14B9ABF8E2FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "example\example.csproj", "{104C8C06-F6B5-42A1-B1AE-567B75E9BB6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "example", "example\example.csproj", "{C6C32159-65F0-41F7-A3B0-37EA9591F40C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{64D52ACF-CC4B-408B-B432-14B9ABF8E2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D52ACF-CC4B-408B-B432-14B9ABF8E2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D52ACF-CC4B-408B-B432-14B9ABF8E2FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{104C8C06-F6B5-42A1-B1AE-567B75E9BB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{104C8C06-F6B5-42A1-B1AE-567B75E9BB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{104C8C06-F6B5-42A1-B1AE-567B75E9BB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{104C8C06-F6B5-42A1-B1AE-567B75E9BB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C32159-65F0-41F7-A3B0-37EA9591F40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C32159-65F0-41F7-A3B0-37EA9591F40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C32159-65F0-41F7-A3B0-37EA9591F40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C32159-65F0-41F7-A3B0-37EA9591F40C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -98,7 +98,7 @@ namespace example
         }
 
         /// <summary>
-        /// Get additional Information of order.
+        /// Get addtional Information of order.
         /// </summary>
         public void GetAddOrderInfo()
         {
@@ -303,7 +303,7 @@ namespace example
         #region RMA API Demo
 
         /// <summary>
-        /// Get RMA information by keyword
+        /// Get RMA infomation by keyword
         /// </summary>
         public void GetRMAInfo()
         {

@@ -41,7 +41,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             B2Bapi = new ItemCall(B2BClientXML);
             B2BJSON = new ItemCall(B2BClientJSON);
             CANXML = new ItemCall(CANClientXML);
-            CANJSON = new ItemCall(CANClientJSON);          
+            CANJSON = new ItemCall(CANClientJSON);
             fadeAPI_USA_XML = new ItemCall(fakeUSAClientXML);
             fadeAPI_B2B_XML = new ItemCall(fakeB2BClientXML);
             fadeAPI_CAN_XML = new ItemCall(fakeCANClientXML);
@@ -57,7 +57,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
         [Fact]//XML USA
         public async Task SubmitVolumeDiscount_XML_USA()
         {
-          
+
             var request = new SubmitVolumeDiscountRequest()
             {
 
@@ -85,7 +85,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
                    }
                     }
                 }
-             };
+            };
 
 
 
@@ -93,7 +93,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             var body = await fadeAPI_USA_XML.SubmitVolumeDiscount(request);
 
             Assert.IsType<SubmitVolumeDiscountResponse>(body);
-            
+
         }
         [Fact]
         public async Task SubmitVolumeDiscount_XML_B2B()
@@ -201,11 +201,11 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             CheckRequestString<SubmitManufacturerRequest>(request);
             var body = await fadeAPI_USA_XML.SubmitManufacturerRequest(request);
-           
+
             Assert.IsType<SubmitManufacturerResponse>(body);
             Assert.Equal("A006", body.SellerID);
-         
-          
+
+
         }
         [Fact]//XML B2B
         public async Task SubmitManufacturerRequest_XML_B2B()
@@ -232,7 +232,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             Assert.IsType<SubmitManufacturerResponse>(body);
 
-          
+
         }
         [Fact]//XML CAN
         public async Task SubmitManufacturerRequest_XML_CAN()
@@ -259,9 +259,9 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             Assert.IsType<SubmitManufacturerResponse>(body);
 
-          
+
         }
-     
+
 
         [Fact]//xml USA
         public async Task ManufacturerLookup_XML_USA()
@@ -288,12 +288,12 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             CheckRequestString<ManufacturerLookupRequest>(request);
             var body = await fadeAPI_USA_XML.ManufacturerLookup(request);
-            
+
 
             Assert.IsType<ManufacturerLookupResponse>(body);
-          
 
-        }     
+
+        }
         [Fact]//xml B2B
         public async Task ManufacturerLookup_XML_B2B()
         {
@@ -363,10 +363,10 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             CheckRequestString<ManufacturerLookupForInternationalCountryRequest>(request);
             var body = await fadeAPI_USA_XML.ManufacturerLookupForInternationalCountry(request);
-           
+
             Assert.IsType<ManufacturerLookupForInternationalCountryResponse>(body);
         }
-        
+
 
         [Fact]//XML USA
         public async Task GetManufacturerRequestStatus_XML_USA()
@@ -387,7 +387,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             CheckRequestString<GetManufacturerRequestStatusRequest>(request);
             var body = await fadeAPI_USA_XML.GetManufacturerRequestStatus(request);
-           
+
             Assert.IsType<GetManufacturerRequestStatusResponse>(body);
         }
         [Fact]//XML  B2B
@@ -434,7 +434,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             Assert.IsType<GetManufacturerRequestStatusResponse>(body);
         }
-        
+
 
         [Fact]//USA  XML 
         public async Task GetVolumeDiscountRequestResult_XML_USA()
@@ -450,9 +450,9 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             CheckRequestString<GetVolumeDiscountRequestResultRequest>(request);
             var body = await fadeAPI_USA_XML.GetVolumeDiscountRequestResult(request);
-           
+
             Assert.IsType<GetVolumeDiscountRequestResultResponse>(body);
-        }       
+        }
         [Fact]//B2B  XML 
         public async Task GetVolumeDiscountRequestResult_XML_B2B()
         {
@@ -466,8 +466,8 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             };
 
             CheckRequestString<GetVolumeDiscountRequestResultRequest>(request);
-            var body =  await fadeAPI_B2B_XML.GetVolumeDiscountRequestResult(request);
-           
+            var body = await fadeAPI_B2B_XML.GetVolumeDiscountRequestResult(request);
+
             Assert.IsType<GetVolumeDiscountRequestResultResponse>(body);
         }
         [Fact]//CAN XML 
@@ -505,11 +505,11 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             CheckRequestString<GetItemInternationalInventoryRequest>(InventoryRequest);
             var body = await fadeAPI_USA_XML.GetItemInternationalInventory(InventoryRequest);
             Assert.IsType<GetItemInternationalInventoryResponse>(body);
-          
+
 
 
         }
-       
+
         [Fact]//USA XML
         public async Task GetItemInternationalInventory_XML_USA_have_WarehouseList()
         {
@@ -525,7 +525,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             CheckRequestString<GetItemInternationalInventoryRequest>(InventoryRequest);
             var body = await fadeAPI_USA_XML.GetItemInternationalInventory(InventoryRequest);
             Assert.IsType<GetItemInternationalInventoryResponse>(body);
-          
+
         }
 
         [Fact]//B2B  XML 
@@ -584,16 +584,16 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             GetInternationalItemPriceRequest PriceRequest = new GetInternationalItemPriceRequest()
             {
-                 Condition = ItemCondition.Refurbished,
+                Condition = ItemCondition.Refurbished,
                 Type = ItemQueryType.NewEggItemNumber,
                 Value = "9SIA0068KA0333"
- 
+
             };
 
             CheckRequestString<GetInternationalItemPriceRequest>(PriceRequest);
             var body = await fadeAPI_USA_XML.GetInternationalItemPrice(PriceRequest);
-      
-              Assert.IsType<GetInternationalItemPriceResponse>(body);
+
+            Assert.IsType<GetInternationalItemPriceResponse>(body);
 
         }
 
@@ -673,12 +673,12 @@ namespace Newegg.Marketplace.SDK.Tests.Item
                  } }
 
             };
-         
+
             CheckRequestString<UpdateInventoryRequest>(UpdateItemInventoryRequest);
             var body = await fadeAPI_USA_XML.UpdateItemInventory(UpdateItemInventoryRequest);
             Assert.IsType<UpdateInventoryResponse>(body);
         }
-       
+
 
         [Fact]//XML USA 
         public async Task UpdateItemPrice_XML_USA()
@@ -693,7 +693,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
                 PriceList = new List<UpdateItemPriceRequest.UpdateItemPrice>()
                  {
                      new UpdateItemPriceRequest.UpdateItemPrice(){
-                         
+
                        CountryCode = "AUS",
                        Currency = "USD",
                         Active =ItemPriceActive.Deactivate_item,
@@ -708,12 +708,12 @@ namespace Newegg.Marketplace.SDK.Tests.Item
                  }
 
             };
-         
+
             CheckRequestString<UpdateItemPriceRequest>(UpdateItemPricerequest);
             var body = await fadeAPI_USA_XML.UpdateItemPrice(UpdateItemPricerequest);
             Assert.IsType<UpdateItemPriceResponse>(body);
         }
-       
+
 
         [Fact]//XML CAN 
         public async Task UpdateInventoryandPriceB2BCAN_XML_CAN()
@@ -742,8 +742,8 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             CheckRequestString<UpdateInventoryandPriceRequest>(UpdateItemInventoryRequest);
             // var body = await CANXML.UpdateInventoryandPrice(UpdateItemInventoryRequest);
             var body = await fadeAPI_CAN_XML.UpdateInventoryandPrice(UpdateItemInventoryRequest);
-          Assert.IsType<UpdateInventoryandPriceResponse>(body);
-          
+            Assert.IsType<UpdateInventoryandPriceResponse>(body);
+
 
         }
         [Fact]//XML B2B 
@@ -772,10 +772,10 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             };
 
             CheckRequestString<UpdateInventoryandPriceRequest>(UpdateItemInventoryRequest);
-          //  var body = await B2Bapi.UpdateInventoryandPrice(UpdateItemInventoryRequest); 
-           var body = await fadeAPI_B2B_XML.UpdateInventoryandPrice(UpdateItemInventoryRequest);
-           Assert.IsType<UpdateInventoryandPriceResponse>(body);
-            
+            //  var body = await B2Bapi.UpdateInventoryandPrice(UpdateItemInventoryRequest); 
+            var body = await fadeAPI_B2B_XML.UpdateInventoryandPrice(UpdateItemInventoryRequest);
+            Assert.IsType<UpdateInventoryandPriceResponse>(body);
+
 
         }
 

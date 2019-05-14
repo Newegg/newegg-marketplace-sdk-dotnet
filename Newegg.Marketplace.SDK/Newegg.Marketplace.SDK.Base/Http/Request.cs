@@ -121,7 +121,7 @@ namespace Newegg.Marketplace.SDK.Base.Http
             HttpRequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue(GetContentType()));
             HttpRequest.Headers.Authorization = new AuthenticationHeaderValue(config.Credentials.Authorization);
             HttpRequest.Headers.Add("SecretKey", config.Credentials.SecretKey);
-            HttpRequest.Headers.Add("User-Agent", ".Net SDK v1.0.0");
+            HttpRequest.Headers.Add("User-Agent", ".Net SDK");
         }
 
        
