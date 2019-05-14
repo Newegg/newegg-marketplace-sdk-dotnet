@@ -15,13 +15,13 @@ The solution contains 2 library projects: Newegg.Marketplace.SDK.Base and Newegg
 ## Installation  
     The package is on Nuget. You can install it with the Nuget Package Manager, search for 'newegg.marketplace.sdk'. You can also install it with the following tools:    
 - Package Manager:  
-    `Install-Package Newegg.Marketplace.SDK -Version 0.1.1-beta`    
+    `Install-Package Newegg.Marketplace.SDK -Version 1.0.1`    
 - .Net CLI       
-    `Install-Package Newegg.Marketplace.SDK -Version 0.1.1-beta`    
+    `Install-Package Newegg.Marketplace.SDK -Version 1.0.1`    
 - PackageReference  
-    `<PackageReference Include="Newegg.Marketplace.SDK" Version="0.1.1-beta" />`    
+    `<PackageReference Include="Newegg.Marketplace.SDK" Version="1.0.1" />`    
 - Paket CLI  
-    `paket add Newegg.Marketplace.SDK --version 0.1.1-beta`
+    `paket add Newegg.Marketplace.SDK --version 1.0.1`
 
 
 ## build
