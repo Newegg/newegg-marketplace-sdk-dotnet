@@ -15,13 +15,13 @@ The solution contains 2 library projects: Newegg.Marketplace.SDK.Base and Newegg
 ## Installation  
     The package is on Nuget. You can install it with the Nuget Package Manager, search for 'newegg.marketplace.sdk'. You can also install it with the following tools:    
 - Package Manager:  
-    `Install-Package Newegg.Marketplace.SDK -Version 1.0.1`    
+    `Install-Package Newegg.Marketplace.SDK -Version 1.0.2`    
 - .Net CLI       
-    `Install-Package Newegg.Marketplace.SDK -Version 1.0.1`    
+    `Install-Package Newegg.Marketplace.SDK -Version 1.0.2`    
 - PackageReference  
-    `<PackageReference Include="Newegg.Marketplace.SDK" Version="1.0.1" />`    
+    `<PackageReference Include="Newegg.Marketplace.SDK" Version="1.0.2" />`    
 - Paket CLI  
-    `paket add Newegg.Marketplace.SDK --version 1.0.1`
+    `paket add Newegg.Marketplace.SDK --version 1.0.2`
 
 
 ## build
@@ -79,7 +79,7 @@ var orderstatus = await ordercall.GetOrderStatus("105137040", 304);
     * Connection.RequestTimeoutMs: The number of milliseconds the system connection timed out. Optional, Default:10000.
     * Connection.AttemptsTimes: Number of retries after a failed connection. Optional, Default:3.
     * Connection.RetryIntervalMs: The number of milliseconds between retry attempts. Optional, Default:3000.
-    * BaseUrl: The base url of the Newegg marketplace API. Optional, Default: "https://apis.newegg.com/marketplace/"
+    * BaseUrl: The base url of the Newegg marketplace API. Optional, Default: "https://api.newegg.com/marketplace/"
     * APIFormat: Content type used to call API.  The options are XML and Json. Optional, Default: XML.
     * Platform: The platfrom of seller: There are three options: 
         * USA: seller on www.newegg.com
