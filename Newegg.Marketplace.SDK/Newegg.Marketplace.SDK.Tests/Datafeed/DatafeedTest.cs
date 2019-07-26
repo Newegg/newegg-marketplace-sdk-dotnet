@@ -52,12 +52,17 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
         {
             InventoryUpdateFeedRequest feed = new InventoryUpdateFeedRequest();
             feed.Message = new InventoryUpdateFeedRequestBody();
-            feed.Message.Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo();
-            feed.Message.Inventory.Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+            feed.Message.Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo()
             {
-                SellerPartNumber = "test123",
-                Inventory = 123,
-                WarehouseLocation = "USA"
+                Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem[]
+                {
+                    new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                    {
+                        SellerPartNumber = "test123",
+                        Inventory = 123,
+                        WarehouseLocation = "USA"
+                    }
+                }
             };
             XmlSerializer xmlSerializer = new XmlSerializer();
             JsonSerializer jsonSerializer = new JsonSerializer(true);
@@ -133,26 +138,29 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     MultiChannelOrder = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedBasicInfo()
                     {
-                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
+                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo[]
                         {
-                            OrderDate = "2000/02/02",
-                            SalesChannel = "3rd channel",
-                            SellerOrderID = "131163115",
-                            ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
-                            ShipToFirstName = "BIG",
-                            ShipToLastName = "MAMA",
-                            ShipToAddressLine1 = "Deep Blue",
-                            ShipToCity = "abc",
-                            ShipToState = "vvvvv",
-                            ShipToPostalCode = "61542",
-                            ShipToCountry = "USA",
-                            ShipToPhoneNumber = "000000000",
-                            ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
+                            new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
                             {
-                                new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                OrderDate = "2000/02/02",
+                                SalesChannel = "3rd channel",
+                                SellerOrderID = "131163115",
+                                ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
+                                ShipToFirstName = "BIG",
+                                ShipToLastName = "MAMA",
+                                ShipToAddressLine1 = "Deep Blue",
+                                ShipToCity = "abc",
+                                ShipToState = "vvvvv",
+                                ShipToPostalCode = "61542",
+                                ShipToCountry = "USA",
+                                ShipToPhoneNumber = "000000000",
+                                ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
                                 {
-                                    SellerPartNumber="test1111",
-                                    Quantity=10
+                                    new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                    {
+                                        SellerPartNumber="test1111",
+                                        Quantity=10
+                                    }
                                 }
                             }
                         }
@@ -366,16 +374,19 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo()
                     {
-                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            WarehouseLocation = "USA",
-                            Inventory = 50
+                            new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                WarehouseLocation = "USA",
+                                Inventory = 50
+                            }
                         }
                     }
                 }
             };
-            
+
             var feedstatus = await fakeApi_json.SubmitFeed_InventoryUpdateFeed(req);
             Assert.IsType<InventoryUpdateFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -392,16 +403,25 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo()
                     {
-                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            WarehouseLocation = "USA",
-                            Inventory = 50
+                            new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                WarehouseLocation = "USA",
+                                Inventory = 50
+                            },
+                            new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3896",
+                                WarehouseLocation = "USA",
+                                Inventory = 10
+                            }
                         }
                     }
                 }
             };
-
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_InventoryUpdateFeed(req);
             Assert.IsType<InventoryUpdateFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -417,14 +437,26 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Price = new PriceUpdateFeedRequestBody.PriceUpdateFeedBasicInfo()
                     {
-                        Item = new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
+                        Item = new PriceUpdateFeedRequestBody.PriceUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            CountryCode = "USA",
-                            Currency = "USD",
-                            SellingPrice = 50,
-                            Shipping = FeedShipping.Default,
-                            ActivationMark = FeedActivationMark.True
+                            new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
+                            {
+                                    NeweggItemNumber = "9SIA00602T3895",
+                                    CountryCode = "USA",
+                                    Currency = "USD",
+                                    SellingPrice = 50,
+                                    Shipping = FeedShipping.Default,
+                                    ActivationMark = FeedActivationMark.True
+                            },
+                            new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
+                            {
+                                    NeweggItemNumber = "9SIA00602T3896",
+                                    CountryCode = "USA",
+                                    Currency = "USD",
+                                    SellingPrice = 60,
+                                    Shipping = FeedShipping.Default,
+                                    ActivationMark = FeedActivationMark.True
+                            }
                         }
                     }
                 }
@@ -445,18 +477,29 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedBasicInfo()
                     {
-                        Item = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem()
+                        Item = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            Currency = "USD",
-                            SellingPrice = 50,
-                            Shipping = FeedShipping.Default,
-                            Inventory = 10
+                            new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                Currency = "USD",
+                                SellingPrice = 50,
+                                Shipping = FeedShipping.Default,
+                                Inventory = 10
+                            },
+                            new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3885",
+                                Currency = "USD",
+                                SellingPrice = 50,
+                                Shipping = FeedShipping.Default,
+                                Inventory = 10
+                            }
                         }
                     }
                 }
             };
-
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_InventoryAndPriceFeed(req);
             Assert.IsType<InventoryAndPriceFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -472,25 +515,43 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     ShipNotice = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedBasicInfo()
                     {
-                        Package = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo()
+                        Package = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo[]
                         {
-                            OrderNumber = 11213213,
-                            ActualShippingCarrier = "UPS",
-                            ActualShippingMethod = "UPS Ground",
-                            TrackingNumber = "20110922002",
-                            ItemInformation = new System.Collections.Generic.List<OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo>()
+                            new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo()
                             {
-                                new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo()
+                                OrderNumber = 11213213,
+                                ActualShippingCarrier = "UPS",
+                                ActualShippingMethod = "UPS Ground",
+                                TrackingNumber = "20110922002",
+                                ItemInformation = new System.Collections.Generic.List<OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo>()
                                 {
-                                    SellerPartNumber="data_MP_32900973",
-                                    ShippedQuantity=1
+                                    new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo()
+                                    {
+                                        SellerPartNumber="data_MP_32900973",
+                                        ShippedQuantity=1
+                                    }
+                                }
+                            },
+                            new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo()
+                            {
+                                OrderNumber = 112413213,
+                                ActualShippingCarrier = "UPS",
+                                ActualShippingMethod = "UPS Ground",
+                                TrackingNumber = "20110922002",
+                                ItemInformation = new System.Collections.Generic.List<OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo>()
+                                {
+                                    new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo()
+                                    {
+                                        SellerPartNumber="data_MP_3s2900973",
+                                        ShippedQuantity=1
+                                    }
                                 }
                             }
                         }
                     }
                 }
             };
-
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_OrderShipNoticeFeed(req);
             Assert.IsType<OrderShipNoticeFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -506,33 +567,59 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     MultiChannelOrder = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedBasicInfo()
                     {
-                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
+                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo[]
                         {
-                            OrderDate = "2000/02/02",
-                            SalesChannel = "3rd channel",
-                            SellerOrderID = "131163115",
-                            ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
-                            ShipToFirstName = "BIG",
-                            ShipToLastName = "MAMA",
-                            ShipToAddressLine1 = "Deep Blue",
-                            ShipToCity = "abc",
-                            ShipToState = "vvvvv",
-                            ShipToPostalCode = "61542",
-                            ShipToCountry = "USA",
-                            ShipToPhoneNumber = "000000000",
-                            ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
+                            new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
                             {
-                                new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                OrderDate = "2000/02/02",
+                                SalesChannel = "3rd channel",
+                                SellerOrderID = "131163115",
+                                ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
+                                ShipToFirstName = "BIG",
+                                ShipToLastName = "MAMA",
+                                ShipToAddressLine1 = "Deep Blue",
+                                ShipToCity = "abc",
+                                ShipToState = "vvvvv",
+                                ShipToPostalCode = "61542",
+                                ShipToCountry = "USA",
+                                ShipToPhoneNumber = "000000000",
+                                ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
                                 {
-                                    SellerPartNumber="test1111",
-                                    Quantity=10
+                                    new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                    {
+                                        SellerPartNumber="test1111",
+                                        Quantity=10
+                                    }
+                                }
+                            },
+                            new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
+                            {
+                                OrderDate = "2010/02/02",
+                                SalesChannel = "3rd channel",
+                                SellerOrderID = "13116315",
+                                ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
+                                ShipToFirstName = "BIG",
+                                ShipToLastName = "MAMA",
+                                ShipToAddressLine1 = "Deep Blue",
+                                ShipToCity = "abc",
+                                ShipToState = "vvvvv",
+                                ShipToPostalCode = "61542",
+                                ShipToCountry = "USA",
+                                ShipToPhoneNumber = "000000000",
+                                ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
+                                {
+                                    new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                    {
+                                        SellerPartNumber="test1a111",
+                                        Quantity=1
+                                    }
                                 }
                             }
                         }
                     }
                 }
             };
-
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_MultiChannelOrderFeed(req);
             Assert.IsType<MultiChannelOrderFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -619,9 +706,20 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 Message = new ItemPromotionFeedRequestBody()
                 {
                     Item = new ItemPromotionFeedRequestBody.ItemPromotionFeedItem[]
-                    { new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
+                    {
+                        new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
                         {
                             SellerPartNumber = "test11111",
+                            PromoMSRP = 55,
+                            PromoSellingPrice = 20.9m,
+                            PromoShipping = FeedShipping.Default,
+                            PromoStartDate = System.DateTime.Now,
+                            PromoEndDate = System.DateTime.Parse("2019/07/07"),
+                            InventoryLocked = FeedInventoryLocked.No
+                        },
+                        new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
+                        {
+                            SellerPartNumber = "test111aa11",
                             PromoMSRP = 55,
                             PromoSellingPrice = 20.9m,
                             PromoShipping = FeedShipping.Default,
@@ -670,13 +768,33 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
             {
                 Message = new ItemCAProp65FeedRequestBody()
                 {
-                    Itemfeed = new System.Collections.Generic.List<ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem>()
+                    Itemfeed = new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo[]
                     {
-                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo()
                         {
-                            SellerPartNumber="test113131313",
-                            WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
-                            ChemicalName_Carcinogen="dasdasdnlasndlnzlda"
+                            Item=new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem[]
+                            {
+                                new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                                {
+                                    SellerPartNumber="test113131313",
+                                    WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
+                                    ChemicalName_Carcinogen="dasdasdnlasndlnzlda"
+                                }
+                            }
+
+                        },
+                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo()
+                        {
+                            Item=new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem[]
+                            {
+                                new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                                {
+                                    SellerPartNumber="test1131ss31313",
+                                    WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
+                                    ChemicalName_Carcinogen="dasdasadnlasndlnzlda"
+                                }
+                            }
+
                         }
                     }
                 }
@@ -695,21 +813,36 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
             {
                 Message = new ItemChinaTaxSettingFeedRequestBody()
                 {
-                    ChinaTaxSetting = new System.Collections.Generic.List<ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem>()
+                    ChinaTaxSetting = new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo[]
                     {
-                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo()
                         {
-                            SellerPartNumber="test113131313",
-                            TaxDutyType=FeedTaxDutyType.DDP,
-                            ImportType=FeedImportType.EE
+                            Item=new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem[]
+                            {
+                                new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                                {
+                                    SellerPartNumber="test113131313",
+                                    TaxDutyType=FeedTaxDutyType.DDP,
+                                    ImportType=FeedImportType.EE
+                                }
+                            }
+                        },
+                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo()
+                        {
+                            Item=new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem[]
+                            {
+                                new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                                {
+                                    SellerPartNumber="test11313ss1313",
+                                    TaxDutyType=FeedTaxDutyType.ATI,
+                                    ImportType=FeedImportType.EE
+                                }
+                            }
                         }
                     }
                 }
             };
-            XmlSerializer xmlSerializer = new XmlSerializer();
-            string xmls = xmlSerializer.Serialize<ItemChinaTaxSettingFeedRequest>(req);
-            JsonSerializer jsonSerializer = new JsonSerializer(true);
-            string jsons = jsonSerializer.Serialize<ItemChinaTaxSettingFeedRequest>(req);
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_ItemChinaTaxSettingFeed(req);
             Assert.IsType<ItemChinaTaxSettingFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);
@@ -961,11 +1094,14 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo()
                     {
-                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            WarehouseLocation = "USA",
-                            Inventory = 50
+                            new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                WarehouseLocation = "USA",
+                                Inventory = 50
+                            }
                         }
                     }
                 }
@@ -987,11 +1123,14 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedBasicInfo()
                     {
-                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                        Item = new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            WarehouseLocation = "USA",
-                            Inventory = 50
+                            new InventoryUpdateFeedRequestBody.InventoryUpdateFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                WarehouseLocation = "USA",
+                                Inventory = 50
+                            }
                         }
                     }
                 }
@@ -1012,14 +1151,17 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Price = new PriceUpdateFeedRequestBody.PriceUpdateFeedBasicInfo()
                     {
-                        Item = new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
+                        Item = new PriceUpdateFeedRequestBody.PriceUpdateFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            CountryCode = "USA",
-                            Currency = "USD",
-                            SellingPrice = 50,
-                            Shipping = FeedShipping.Default,
-                            ActivationMark = FeedActivationMark.True
+                            new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
+                            {
+                                    NeweggItemNumber = "9SIA00602T3895",
+                                    CountryCode = "USA",
+                                    Currency = "USD",
+                                    SellingPrice = 50,
+                                    Shipping = FeedShipping.Default,
+                                    ActivationMark = FeedActivationMark.True
+                            }
                         }
                     }
                 }
@@ -1040,13 +1182,16 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     Inventory = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedBasicInfo()
                     {
-                        Item = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem()
+                        Item = new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem[]
                         {
-                            NeweggItemNumber = "9SIA00602T3895",
-                            Currency = "USD",
-                            SellingPrice = 50,
-                            Shipping = FeedShipping.Default,
-                            Inventory = 10
+                            new InventoryAndPriceFeedRequestBody.InventoryAndPriceFeedItem()
+                            {
+                                NeweggItemNumber = "9SIA00602T3895",
+                                Currency = "USD",
+                                SellingPrice = 50,
+                                Shipping = FeedShipping.Default,
+                                Inventory = 10
+                            }
                         }
                     }
                 }
@@ -1067,18 +1212,21 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     ShipNotice = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedBasicInfo()
                     {
-                        Package = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo()
+                        Package = new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo[]
                         {
-                            OrderNumber = 11213213,
-                            ActualShippingCarrier = "UPS",
-                            ActualShippingMethod = "UPS Ground",
-                            TrackingNumber = "20110922002",
-                            ItemInformation = new System.Collections.Generic.List<OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo>()
+                            new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo()
                             {
-                                new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo()
+                                OrderNumber = 11213213,
+                                ActualShippingCarrier = "UPS",
+                                ActualShippingMethod = "UPS Ground",
+                                TrackingNumber = "20110922002",
+                                ItemInformation = new System.Collections.Generic.List<OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo>()
                                 {
-                                    SellerPartNumber="data_MP_32900973",
-                                    ShippedQuantity=1
+                                    new OrderShipNoticeFeedRequestBody.OrderShipNoticeFeedPackageInfo.OrderShipNoticeFeedShipItemInfo()
+                                    {
+                                        SellerPartNumber="data_MP_32900973",
+                                        ShippedQuantity=1
+                                    }
                                 }
                             }
                         }
@@ -1101,26 +1249,29 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 {
                     MultiChannelOrder = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedBasicInfo()
                     {
-                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
+                        Order = new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo[]
                         {
-                            OrderDate = "2000/02/02",
-                            SalesChannel = "3rd channel",
-                            SellerOrderID = "131163115",
-                            ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
-                            ShipToFirstName = "BIG",
-                            ShipToLastName = "MAMA",
-                            ShipToAddressLine1 = "Deep Blue",
-                            ShipToCity = "abc",
-                            ShipToState = "vvvvv",
-                            ShipToPostalCode = "61542",
-                            ShipToCountry = "USA",
-                            ShipToPhoneNumber = "000000000",
-                            ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
+                            new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo()
                             {
-                                new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                OrderDate = "2000/02/02",
+                                SalesChannel = "3rd channel",
+                                SellerOrderID = "131163115",
+                                ShippingMethod = FeedShippingMethod.Expedited_Shipping_3to5_business_days,
+                                ShipToFirstName = "BIG",
+                                ShipToLastName = "MAMA",
+                                ShipToAddressLine1 = "Deep Blue",
+                                ShipToCity = "abc",
+                                ShipToState = "vvvvv",
+                                ShipToPostalCode = "61542",
+                                ShipToCountry = "USA",
+                                ShipToPhoneNumber = "000000000",
+                                ItemList = new System.Collections.Generic.List<MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo>()
                                 {
-                                    SellerPartNumber="test1111",
-                                    Quantity=10
+                                    new MultiChannelOrderFeedRequestBody.MultiChannelOrderFeedOrderInfo.MultiChannelOrderFeedItemInfo()
+                                    {
+                                        SellerPartNumber="test1111",
+                                        Quantity=10
+                                    }
                                 }
                             }
                         }
@@ -1214,7 +1365,8 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                 Message = new ItemPromotionFeedRequestBody()
                 {
                     Item = new ItemPromotionFeedRequestBody.ItemPromotionFeedItem[]
-                    { new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
+                    {
+                        new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
                         {
                             SellerPartNumber = "test11111",
                             PromoMSRP = 55,
@@ -1222,6 +1374,16 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                             PromoShipping = FeedShipping.Default,
                             PromoStartDate = System.DateTime.Now,
                             PromoEndDate = System.DateTime.Parse("2019/07/07"),
+                            InventoryLocked = FeedInventoryLocked.No
+                        },
+                        new ItemPromotionFeedRequestBody.ItemPromotionFeedItem()
+                        {
+                            SellerPartNumber = "test11ss111",
+                            PromoMSRP = 55,
+                            PromoSellingPrice = 20.9m,
+                            PromoShipping = FeedShipping.Default,
+                            PromoStartDate = System.DateTime.Now,
+                            PromoEndDate = System.DateTime.Parse("2019/07/10"),
                             InventoryLocked = FeedInventoryLocked.No
                         }
                     }
@@ -1265,13 +1427,33 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
             {
                 Message = new ItemCAProp65FeedRequestBody()
                 {
-                    Itemfeed = new System.Collections.Generic.List<ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem>()
+                    Itemfeed = new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo[]
                     {
-                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo()
                         {
-                            SellerPartNumber="test113131313",
-                            WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
-                            ChemicalName_Carcinogen="dasdasdnlasndlnzlda"
+                            Item=new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem[]
+                            {
+                                new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                                {
+                                    SellerPartNumber="test113131313",
+                                    WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
+                                    ChemicalName_Carcinogen="dasdasdnlasndlnzlda"
+                                }
+                            }
+
+                        },
+                        new ItemCAProp65FeedRequestBody.ItemCAProp65FeedInfo()
+                        {
+                            Item=new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem[]
+                            {
+                                new ItemCAProp65FeedRequestBody.ItemCAProp65FeedItem()
+                                {
+                                    SellerPartNumber="test1131ss31313",
+                                    WarningType_ID=FeedWarningTypeID.CONSUMER_PRODUCTS_For_exposures_to_both_listed_carcinogens_and_reproductive_toxicants__LongForm,
+                                    ChemicalName_Carcinogen="dasdasadnlasndlnzlda"
+                                }
+                            }
+
                         }
                     }
                 }
@@ -1290,21 +1472,36 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
             {
                 Message = new ItemChinaTaxSettingFeedRequestBody()
                 {
-                    ChinaTaxSetting = new System.Collections.Generic.List<ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem>()
+                    ChinaTaxSetting = new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo[]
                     {
-                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo()
                         {
-                            SellerPartNumber="test113131313",
-                            TaxDutyType=FeedTaxDutyType.DDP,
-                            ImportType=FeedImportType.EE
+                            Item=new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem[]
+                            {
+                                new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                                {
+                                    SellerPartNumber="test113131313",
+                                    TaxDutyType=FeedTaxDutyType.DDP,
+                                    ImportType=FeedImportType.EE
+                                }
+                            }
+                        },
+                        new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedInfo()
+                        {
+                            Item=new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem[]
+                            {
+                                new ItemChinaTaxSettingFeedRequestBody.ItemChinaTaxSettingFeedItem()
+                                {
+                                    SellerPartNumber="test11313ss1313",
+                                    TaxDutyType=FeedTaxDutyType.ATI,
+                                    ImportType=FeedImportType.EE
+                                }
+                            }
                         }
                     }
                 }
             };
-            XmlSerializer xmlSerializer = new XmlSerializer();
-            string xmls = xmlSerializer.Serialize<ItemChinaTaxSettingFeedRequest>(req);
-            JsonSerializer jsonSerializer = new JsonSerializer(true);
-            string jsons = jsonSerializer.Serialize<ItemChinaTaxSettingFeedRequest>(req);
+            CheckRequestString(req);
             var feedstatus = await fakeApi.SubmitFeed_ItemChinaTaxSettingFeed(req);
             Assert.IsType<ItemChinaTaxSettingFeedResponse>(feedstatus);
             Assert.True(feedstatus.IsSuccess);

@@ -36,10 +36,13 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
     public class InventoryAndPriceFeedRequestBody
     {
         public InventoryAndPriceFeedBasicInfo Inventory { get; set; }
+
         public class InventoryAndPriceFeedBasicInfo
         {
-            public InventoryAndPriceFeedItem Item { get; set; }
+            [XmlElement("Item")]
+            public InventoryAndPriceFeedItem[] Item { get; set; }
         }
+
         public class InventoryAndPriceFeedItem
         {
             public FeedOverwrite? Overwrite { get; set; }
@@ -92,7 +95,11 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
             public int Inventory { get; set; }
             
             public FeedFulfillmentOption? FulfillmentOption { get; set; }
-            
+            public bool ShouldSerializeFulfillmentOption()
+            {
+                return FulfillmentOption.HasValue;
+            }
+
             public FeedShipping? Shipping { get; set; }
             public bool ShouldSerializeShipping()
             {

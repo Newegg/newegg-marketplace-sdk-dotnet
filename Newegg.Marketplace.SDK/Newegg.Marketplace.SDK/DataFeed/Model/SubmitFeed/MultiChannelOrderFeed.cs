@@ -37,10 +37,13 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
     public class MultiChannelOrderFeedRequestBody
     {
         public MultiChannelOrderFeedBasicInfo MultiChannelOrder { get; set; }
+
         public class MultiChannelOrderFeedBasicInfo
         {
-            public MultiChannelOrderFeedOrderInfo Order { get; set; }
+            [XmlElement("Order")]
+            public MultiChannelOrderFeedOrderInfo[] Order { get; set; }
         }
+
         public class MultiChannelOrderFeedOrderInfo
         {
             public string OrderDate { get; set; }

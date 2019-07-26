@@ -36,10 +36,13 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
     public class PriceUpdateFeedRequestBody
     {
         public PriceUpdateFeedBasicInfo Price { get; set; }
+
         public class PriceUpdateFeedBasicInfo
         {
-            public PriceUpdateFeedItem Item { get; set; }
+            [XmlElement("Item")]
+            public PriceUpdateFeedItem[] Item { get; set; }
         }
+
         public class PriceUpdateFeedItem
         {
             [XmlIgnore]

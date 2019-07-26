@@ -37,10 +37,13 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
     public class OrderShipNoticeFeedRequestBody
     {
         public OrderShipNoticeFeedBasicInfo ShipNotice { get; set; }
+
         public class OrderShipNoticeFeedBasicInfo
         {
-            public OrderShipNoticeFeedPackageInfo Package { get; set; }
+            [XmlElement("Package")]
+            public OrderShipNoticeFeedPackageInfo[] Package { get; set; }
         }
+
         public class OrderShipNoticeFeedPackageInfo
         {
             public int OrderNumber { get; set; }

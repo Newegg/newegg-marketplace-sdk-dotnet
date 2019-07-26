@@ -36,9 +36,14 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
 
     public class ItemCAProp65FeedRequestBody
     {
-        [XmlArrayItem("Item")]
-        [JsonConverter(typeof(JsonMoreLevelSeConverter), "Item")]
-        public List<ItemCAProp65FeedItem> Itemfeed { get; set; }
+        [XmlElement("Itemfeed")]
+        public ItemCAProp65FeedInfo[] Itemfeed { get; set; }
+
+        public class ItemCAProp65FeedInfo
+        {
+            [XmlElement("Item")]
+            public ItemCAProp65FeedItem[] Item { get; set; }
+        }
 
         public class ItemCAProp65FeedItem
         {

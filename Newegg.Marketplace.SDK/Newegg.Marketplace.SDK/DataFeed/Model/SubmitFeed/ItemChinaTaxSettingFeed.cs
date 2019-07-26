@@ -36,9 +36,14 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
 
     public class ItemChinaTaxSettingFeedRequestBody
     {
-        [XmlArrayItem("Item")]
-        [JsonConverter(typeof(JsonMoreLevelSeConverter), "Item")]
-        public List<ItemChinaTaxSettingFeedItem> ChinaTaxSetting { get; set; }
+        [XmlElement("ChinaTaxSetting")]
+        public ItemChinaTaxSettingFeedInfo[] ChinaTaxSetting { get; set; }
+
+        public class ItemChinaTaxSettingFeedInfo
+        {
+            [XmlElement("Item")]
+            public ItemChinaTaxSettingFeedItem[] Item { get; set; }
+        }
 
         public class ItemChinaTaxSettingFeedItem
         {

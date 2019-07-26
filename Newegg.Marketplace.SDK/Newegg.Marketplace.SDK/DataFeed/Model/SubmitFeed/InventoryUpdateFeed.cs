@@ -36,10 +36,13 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
     public class InventoryUpdateFeedRequestBody
     {
         public InventoryUpdateFeedBasicInfo Inventory { get; set; }
+
         public class InventoryUpdateFeedBasicInfo
         {
-            public InventoryUpdateFeedItem Item { get; set; }
+            [XmlElement("Item")]
+            public InventoryUpdateFeedItem[] Item { get; set; }
         }
+
         public class InventoryUpdateFeedItem
         {
             [XmlIgnore]
