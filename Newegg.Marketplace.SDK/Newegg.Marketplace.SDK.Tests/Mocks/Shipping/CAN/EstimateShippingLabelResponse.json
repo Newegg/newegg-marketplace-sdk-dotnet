@@ -1,0 +1,30 @@
+{
+  "IsSuccess": true,
+  "OperationType": "EstimateShippingLabelResponse",
+  "SellerID": "BHHC",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 230316695,
+      "EstimatedDate": "02/10/2020",
+      "PackageList": {
+        "Package": [
+          {
+            "PackageWeight": 5,
+            "PackageLength": 5,
+            "PackageHeight": 4,
+            "PackageWidth": 3,
+            "SignatureOptions": "Regular",
+            "ProcessResult": "Success",
+            "EstimatedRate": {
+              "EstimatedArriveBy": "2020/02/11",
+              "EstimatedShippingAmount": 34.91,
+              "EstimatedSignatureOptions": 5,
+              "EstimatedTotal": 39.91,
+              "EstimatedShipWeight": 5
+            }
+          }
+        ]
+      }
+    }
+  }
+}

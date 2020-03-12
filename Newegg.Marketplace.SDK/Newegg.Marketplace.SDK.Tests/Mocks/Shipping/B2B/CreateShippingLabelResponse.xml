@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>CreateShippingLabelResponse</OperationType>
+  <SellerID>V01R</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>1250271860</OrderNumber>
+      <ShipDate>12/26/2019</ShipDate>
+      <PackageList>
+        <Package>
+          <TrackingNumber>1ZA813770370007746</TrackingNumber>
+          <ProcessResult>Success</ProcessResult>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007746.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/e6af45b7-da33-45e5-bd42-795a62a2f663.pdf</PackingListUrl>
+          <Rate>
+            <ShipWeight>0.00</ShipWeight>
+            <ArriveBy>2020/01/06</ArriveBy>
+            <ShippingAmount>26.00</ShippingAmount>
+            <SignatureOptions>0.00</SignatureOptions>
+            <Total>26.00</Total>
+          </Rate>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>v01r2018072502</SellerPartNumber>
+              <Quantity>2</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

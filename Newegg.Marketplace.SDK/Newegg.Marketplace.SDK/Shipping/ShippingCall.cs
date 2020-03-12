@@ -17,7 +17,9 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 using System.Threading.Tasks;
 
 using Newegg.Marketplace.SDK.Base;
-
+using Newegg.Marketplace.SDK.Shipping.CreateShippingLabel;
+using Newegg.Marketplace.SDK.Shipping.EstimateShippingLabel;
+using Newegg.Marketplace.SDK.Shipping.ReprintShippingLabel;
 
 namespace Newegg.Marketplace.SDK.Shipping.Model
 {
@@ -88,7 +90,35 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             return result;
         }
 
+        public async Task<CreateShippingLabelResponse> CreateShippingRequest(CreateShippingLabelRequest reqModel)
+        {
+            var request = CreateRequest<CreateShippingLabelRequest>(reqModel);
+            request.URI = "shippingservice/shippinglabel/CreateShippingLabel";
 
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<CreateShippingLabelResponse>(response);
+            return result;
+        }
+
+        public async Task<EstimateShippingLabelResponse> EstimateShippingRequest(EstimateShippingLabelRequest reqModel)
+        {
+            var request = CreateRequest<EstimateShippingLabelRequest>(reqModel);
+            request.URI = "shippingservice/shippinglabel/EstimateShippingLabel";
+
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<EstimateShippingLabelResponse>(response);
+            return result;
+        }
+
+        public async Task<ReprintShippingLabelResponse> ReprintShippingRequest(ReprintShippingLabelRequest reqModel)
+        {
+            var request = CreateRequest<ReprintShippingLabelRequest>(reqModel);
+            request.URI = "shippingservice/shippinglabel/ReprintShippingLabel";
+
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<ReprintShippingLabelResponse>(response);
+            return result;
+        }
 
     }
 }

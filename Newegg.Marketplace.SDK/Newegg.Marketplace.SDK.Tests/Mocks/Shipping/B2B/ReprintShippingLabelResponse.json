@@ -1,0 +1,45 @@
+{
+  "OperationType": "ReprintShippingLabelResponse",
+  "SellerID": "V01R",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 1250271860,
+      "OrderStatus": "Partially Shipped",
+      "PackageList": [
+        {
+          "TrackingNumber": "1ZA813770370007737",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007737.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/1b3cd6b2-4fc0-4fc0-a535-083fe63f4cfc.pdf",
+          "ItemList": [
+            {
+              "SellerPartNumber": "v01r2018072501",
+              "Quantity": 1
+            }
+          ]
+        },
+        {
+          "TrackingNumber": "1ZA813770370007746",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007746.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/e6af45b7-da33-45e5-bd42-795a62a2f663.pdf",
+          "ItemList": [
+            {
+              "SellerPartNumber": "v01r2018072502",
+              "Quantity": 2
+            }
+          ]
+        },
+        {
+          "TrackingNumber": "1ZA813770370007755",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007755.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/5efb4ebe-3405-481f-8c45-50a21a802028.pdf",
+          "ItemList": [
+            {
+              "SellerPartNumber": "v01r2018072501",
+              "Quantity": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

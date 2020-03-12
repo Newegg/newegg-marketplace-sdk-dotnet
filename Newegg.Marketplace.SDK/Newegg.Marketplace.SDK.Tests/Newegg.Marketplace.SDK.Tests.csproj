@@ -18,11 +18,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Newegg.Marketplace.SDK.Base\Newegg.Marketplace.SDK.Base.csproj" />
     <ProjectReference Include="..\Newegg.Marketplace.SDK\Newegg.Marketplace.SDK.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="configB2B_JSON.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="configB2BV047.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="configCAN_JSON.json">
@@ -34,6 +38,12 @@
     <None Update="configB2B_XML.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="configUSAA2GS_JSON.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="configUSAA3VV.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="configUSA_JSON.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -42,6 +52,12 @@
     </None>
     <None Update="configUSA_XML.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="configUSAA2GS.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="configUSAA2UE.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Nlog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -53,6 +69,7 @@
     <Folder Include="Mocks\Datafeed\CAN\" />
     <Folder Include="Mocks\RMA\B2B\" />
     <Folder Include="Mocks\RMA\CAN\" />
+    <Folder Include="Mocks\Shipping\CAN\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>

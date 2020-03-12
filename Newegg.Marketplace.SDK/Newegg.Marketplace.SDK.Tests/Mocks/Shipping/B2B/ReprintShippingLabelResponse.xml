@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <OperationType>ReprintShippingLabelResponse</OperationType>
+  <SellerID>V01R</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>1250271860</OrderNumber>
+      <OrderStatus>Partially Shipped</OrderStatus>
+      <PackageList>
+        <Package>
+          <TrackingNumber>1ZA813770370007737</TrackingNumber>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007737.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/1b3cd6b2-4fc0-4fc0-a535-083fe63f4cfc.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>v01r2018072501</SellerPartNumber>
+              <Quantity>1</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+        <Package>
+          <TrackingNumber>1ZA813770370007746</TrackingNumber>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007746.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/e6af45b7-da33-45e5-bd42-795a62a2f663.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>v01r2018072502</SellerPartNumber>
+              <Quantity>2</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+        <Package>
+          <TrackingNumber>1ZA813770370007755</TrackingNumber>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007755.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/5efb4ebe-3405-481f-8c45-50a21a802028.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>v01r2018072501</SellerPartNumber>
+              <Quantity>1</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

@@ -20,26 +20,34 @@ using Xunit;
 
 using Newegg.Marketplace.SDK.Shipping.Model;
 using Newegg.Marketplace.SDK.Base.Util;
+using Newegg.Marketplace.SDK.Shipping.CreateShippingLabel;
+using Newegg.Marketplace.SDK.Shipping.EstimateShippingLabel;
+using Newegg.Marketplace.SDK.Shipping.ReprintShippingLabel;
 
 namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
 {
     public class ShippingTest : TestBase
     {
 
-        private readonly ShippingCall B2Bapi, fadeAPI_B2B_XML, fadeAPI_CAN_XML;
+        private readonly ShippingCall USAapi, B2Bapi,CANapi, USAapi_Json, B2Bapi_Json, CANapi_Json,fadeAPI_B2B_XML, fadeAPI_CAN_XML;
         private readonly ShippingCall fadeAPI_USA_XML;
-        private readonly ShippingCall fadeAPI_USA_json;
+        private readonly ShippingCall fadeAPI_USA_Json, fadeAPI_B2B_Json, fadeAPI_CAN_Json;
         public object TestContext { get; private set; }
 
         public ShippingTest()
         {
-          
-
+            USAapi = new ShippingCall(USAClientXML);
             B2Bapi = new ShippingCall(B2BClientXML);
+            CANapi = new ShippingCall(CANClientXML);
+            USAapi_Json = new ShippingCall(USAClientJSON);
+            B2Bapi_Json = new ShippingCall(B2BClientJSON);
+            CANapi_Json = new ShippingCall(CANClientJSON);
             fadeAPI_USA_XML = new ShippingCall(fakeUSAClientXML);
-            fadeAPI_USA_json = new ShippingCall(fakeUSAClientJSON);
+            fadeAPI_USA_Json = new ShippingCall(fakeUSAClientJSON);
             fadeAPI_B2B_XML = new ShippingCall(fakeB2BClientXML);
+            fadeAPI_B2B_Json = new ShippingCall(fakeB2BClientJSON);
             fadeAPI_CAN_XML = new ShippingCall(fakeCANClientXML);
+            fadeAPI_CAN_Json = new ShippingCall(fakeCANClientJSON);
         }
         void CheckRequestString<T>(T req)
         {
@@ -329,6 +337,705 @@ namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
             Assert.IsType<SubmitShippingResponse>(body);
         }
 
+        [Fact]//11.1  USA_XML
+        public async Task CreateShippingRequest_USA_XML()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = USA_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316095,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 103,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "3612 Linda Vista Rd.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "Glendale",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91206",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=28.6M,
+                                    PackageLength=12M,
+                                    PackageWidth=12M,
+                                    PackageHeight=12M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="bank02",
+                                                    Quantity=4
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_XML.CreateShippingRequest(request);
+            //var body = await USAapi.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  USA_XML
+        public async Task EstimateShippingRequest_USA_XML()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = USA_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230315475,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 101,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "3612 Linda Vista Rd.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "Glendale",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91206",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="Test_SP1080923090607335",
+                                                    Quantity=4
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_XML.EstimateShippingRequest(request);
+            //var body = await USAapi.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  USA_XML
+        public async Task ReprintShippingRequest_USA_XML()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = USA_Config_XML.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 230315475                        
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_XML.ReprintShippingRequest(request);
+            //var body = await USAapi.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  B2B_XML
+        public async Task CreateShippingRequest_B2B_XML()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = B2B_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 1250271860,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 102,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "17708 Rowland St.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "City Of Industry",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91748",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=27.6M,
+                                    PackageLength=16.22M,
+                                    PackageWidth=15.22M,
+                                    PackageHeight=14.22M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="v01r2018072502",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_XML.CreateShippingRequest(request);
+            //var body = await B2Bapi.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  B2B_XML
+        public async Task EstimateShippingRequest_B2B_XML()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = B2B_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 1250271860,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 102,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "17708 Rowland St.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "City Of Industry",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91748",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=27.6M,
+                                    PackageLength=16.22M,
+                                    PackageWidth=15.22M,
+                                    PackageHeight=14.22M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="v01r2018072502",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_XML.EstimateShippingRequest(request);
+            //var body = await B2Bapi.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  B2B_XML
+        public async Task ReprintShippingRequest_B2B_XML()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = B2B_Config_XML.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 1250271860
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_XML.ReprintShippingRequest(request);
+            //var body = await B2Bapi.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_XML
+        public async Task CreateShippingRequest_CAN_XML()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = CAN_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316695,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 112,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "201 The Heights Dr",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "NORTH YORK",
+                        ShipFromStateCode = "ON",
+                        ShipFromZipCode = "M3C 1Y3",
+                        ShipFromCountryCode = "CAN",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="BHHC201805080001",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_XML.CreateShippingRequest(request);
+            //var body = await CANapi.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_XML
+        public async Task EstimateShippingRequest_CAN_XML()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = CAN_Config_XML.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316695,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 112,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "201 The Heights Dr",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "NORTH YORK",
+                        ShipFromStateCode = "ON",
+                        ShipFromZipCode = "M3C 1Y3",
+                        ShipFromCountryCode = "CAN",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="BHHC201805080001",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_XML.EstimateShippingRequest(request);
+            //var body = await CANapi.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_XML
+        public async Task ReprintShippingRequest_CAN_XML()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = CAN_Config_XML.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 230316695
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_XML.ReprintShippingRequest(request);
+            //var body = await CANapi.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
+        [Fact]//  USA_Json
+        public async Task CreateShippingRequest_USA_Json()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = USA_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316095,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 103,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "3612 Linda Vista Rd.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "Glendale",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91206",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=28.6M,
+                                    PackageLength=12M,
+                                    PackageWidth=12M,
+                                    PackageHeight=12M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="bank02",
+                                                    Quantity=4
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_Json.CreateShippingRequest(request);
+            //var body = await USAapi_Json.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  USA_Json
+        public async Task EstimateShippingRequest_USA_Json()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = USA_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230315475,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 101,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "3612 Linda Vista Rd.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "Glendale",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91206",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="Test_SP1080923090607335",
+                                                    Quantity=4
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_Json.EstimateShippingRequest(request);
+            //var body = await USAapi_Json.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+        [Fact] // USA_Json
+        public async Task ReprintShippingRequest_USA_Json()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = USA_Config_JSON.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 230315475
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_USA_Json.ReprintShippingRequest(request);
+            //var body = await USAapi_Json.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
+
+        [Fact]// B2B_Json
+        public async Task CreateShippingRequest_B2B_Json()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = B2B_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 1250271860,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 102,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "17708 Rowland St.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "City Of Industry",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91748",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=27.6M,
+                                    PackageLength=16.22M,
+                                    PackageWidth=15.22M,
+                                    PackageHeight=14.22M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="v01r2018072502",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_Json.CreateShippingRequest(request);
+            //var body = await B2Bapi_Json.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  B2B_Json
+        public async Task EstimateShippingRequest_B2B_Json()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = B2B_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 1250271860,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 102,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "17708 Rowland St.",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "City Of Industry",
+                        ShipFromStateCode = "CA",
+                        ShipFromZipCode = "91748",
+                        ShipFromCountryCode = "USA",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=27.6M,
+                                    PackageLength=16.22M,
+                                    PackageWidth=15.22M,
+                                    PackageHeight=14.22M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="v01r2018072502",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_Json.EstimateShippingRequest(request);
+            //var body = await B2Bapi_Json.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  B2B_Json
+        public async Task ReprintShippingRequest_B2B_Json()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = B2B_Config_JSON.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 1250271860
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_B2B_Json.ReprintShippingRequest(request);
+            //var body = await B2Bapi_Json.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_Json
+        public async Task CreateShippingRequest_CAN_Json()
+        {
+            var request = new CreateShippingLabelRequest()
+            {
+                SellerID = CAN_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316695,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 112,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "201 The Heights Dr",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "NORTH YORK",
+                        ShipFromStateCode = "ON",
+                        ShipFromZipCode = "M3C 1Y3",
+                        ShipFromCountryCode = "CAN",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="BHHC201805080001",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<CreateShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_Json.CreateShippingRequest(request);
+            //var body = await CANapi_Json.CreateShippingRequest(request);
+            Assert.IsType<CreateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_Json
+        public async Task EstimateShippingRequest_CAN_Json()
+        {
+            var request = new EstimateShippingLabelRequest()
+            {
+                SellerID = CAN_Config_JSON.SellerID,
+                RequestBody = new SubmitShippingRequestBody()
+                {
+                    Shipment = new SubmitShipment()
+                    {
+                        OrderNumber = 230316695,
+                        ShippingCarrierCode = 100,
+                        ShippingServiceCode = 112,
+                        ShippingLabelServiceCode = 0,
+                        ShipFromFirstName = "Richard",
+                        ShipFromLastName = "Chen",
+                        ShipFromPhoneNumber = "626-271-1420EXT123",
+                        ShipFromAddress1 = "201 The Heights Dr",
+                        ShipFromAddress2 = "",
+                        ShipFromCityName = "NORTH YORK",
+                        ShipFromStateCode = "ON",
+                        ShipFromZipCode = "M3C 1Y3",
+                        ShipFromCountryCode = "CAN",
+                        PackageList = new List<SubmitPackage>() {
+                                new SubmitPackage(){
+                                    PackageWeight=5M,
+                                    PackageLength=5.00M,
+                                    PackageWidth=4.00M,
+                                    PackageHeight=3.00M,
+                                    SignatureOptions="Regular",
+                                    ItemList=new List<SumbitPackageItemlist>(){
+                                        new SumbitPackageItemlist(){
+                                                    SellerPartNumber="BHHC201805080001",
+                                                    Quantity=2
+                                        }
+                                    }
+                                }
+                         }
+                    }
+                }
+            };
+
+            CheckRequestString<EstimateShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_Json.EstimateShippingRequest(request);
+            //var body = await CANapi_Json.EstimateShippingRequest(request);
+            Assert.IsType<EstimateShippingLabelResponse>(body);
+        }
+
+        [Fact]//11.1  CAN_Json
+        public async Task ReprintShippingRequest_CAN_Json()
+        {
+            var request = new ReprintShippingLabelRequest()
+            {
+                SellerID = CAN_Config_JSON.SellerID,
+                RequestBody = new ReprintShippingRequestBody()
+                {
+                    Shipment = new ReprintShipment()
+                    {
+                        OrderNumber = 230316695
+                    }
+                }
+            };
+
+            CheckRequestString<ReprintShippingLabelRequest>(request);
+            var body = await fadeAPI_CAN_Json.ReprintShippingRequest(request);
+            //var body = await CANapi_Json.ReprintShippingRequest(request);
+            Assert.IsType<ReprintShippingLabelResponse>(body);
+        }
     }
 
 }

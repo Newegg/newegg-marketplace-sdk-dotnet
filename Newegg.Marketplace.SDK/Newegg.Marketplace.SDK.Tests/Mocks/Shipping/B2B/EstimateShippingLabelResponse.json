@@ -1,0 +1,30 @@
+{
+  "IsSuccess": true,
+  "OperationType": "EstimateShippingLabelResponse",
+  "SellerID": "V01R",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 1250271860,
+      "EstimatedDate": "02/06/2020",
+      "PackageList": {
+        "Package": [
+          {
+            "PackageWeight": 27.6,
+            "PackageLength": 16.22,
+            "PackageHeight": 15.22,
+            "PackageWidth": 14.22,
+            "SignatureOptions": "Regular",
+            "ProcessResult": "Success",
+            "EstimatedRate": {
+              "EstimatedArriveBy": "2020/02/11",
+              "EstimatedShippingAmount": 9.29,
+              "EstimatedSignatureOptions": 3.46,
+              "EstimatedTotal": 12.75,
+              "EstimatedShipWeight": 28
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "IsSuccess": true,
+  "OperationType": "CreateShippingLabelResponse",
+  "SellerID": "BHHC",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 230316695,
+      "ShipDate": "02/10/2020",
+      "PackageList": [
+        {
+          "TrackingNumber": "1Z881F18D300001851",
+          "ProcessResult": "Success",
+          "SignatureOptions": "Regular",
+          "LabelUrl": "https://c1.neweggimages.com/Shipping/CrossDocking/MKPL/1Z881F18D300001851.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/d7cac863-fb2c-4822-9dfa-7b4242d8e208.pdf",
+          "Rate": {
+            "ShipWeight": 5,
+            "ArriveBy": "2020/02/11",
+            "ShippingAmount": 34.91,
+            "SignatureOptions": 5,
+            "Total": 39.91
+          },
+          "ItemList": [
+            {
+              "SellerPartNumber": "BHHC201805080001",
+              "Quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>EstimateShippingLabelResponse</OperationType>
+  <SellerID>BHHC</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>230316695</OrderNumber>
+      <EstimatedDate>02/10/2020</EstimatedDate>
+      <PackageList>
+        <Package>
+          <PackageWeight>5</PackageWeight>
+          <PackageLength>5</PackageLength>
+          <PackageHeight>4</PackageHeight>
+          <PackageWidth>3</PackageWidth>
+          <SignatureOptions>Regular</SignatureOptions>
+          <ProcessResult>Success</ProcessResult>
+          <ErrorMessage/>
+          <EstimatedRate>
+            <EstimatedArriveBy>2020/02/11</EstimatedArriveBy>
+            <EstimatedShippingAmount>34.91</EstimatedShippingAmount>
+            <EstimatedSignatureOptions>5.0</EstimatedSignatureOptions>
+            <EstimatedTotal>39.91</EstimatedTotal>
+            <EstimatedShipWeight>5.0</EstimatedShipWeight>
+          </EstimatedRate>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

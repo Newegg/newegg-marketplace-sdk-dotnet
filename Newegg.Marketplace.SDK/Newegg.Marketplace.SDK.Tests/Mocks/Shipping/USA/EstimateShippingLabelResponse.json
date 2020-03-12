@@ -1,0 +1,30 @@
+{
+  "IsSuccess": true,
+  "OperationType": "EstimateShippingLabelResponse",
+  "SellerID": "AWE5",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 230315475,
+      "EstimatedDate": "02/05/2020",
+      "PackageList": {
+        "Package": [
+          {
+            "PackageWeight": 5,
+            "PackageLength": 5,
+            "PackageHeight": 4,
+            "PackageWidth": 3,
+            "SignatureOptions": "Regular",
+            "ProcessResult": "Success",
+            "EstimatedRate": {
+              "EstimatedArriveBy": "2020/02/06",
+              "EstimatedShippingAmount": 8.66,
+              "EstimatedSignatureOptions": 3.3,
+              "EstimatedTotal": 11.96,
+              "EstimatedShipWeight": 5
+            }
+          }
+        ]
+      }
+    }
+  }
+}

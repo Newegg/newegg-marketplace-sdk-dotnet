@@ -1,0 +1,36 @@
+{
+  "OperationType": "ReprintShippingLabelResponse",
+  "SellerID": "AWE5",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 230316095,
+      "OrderStatus": "Shipped",
+      "PackageList": [
+        {
+          "TrackingNumber": "1ZA813774270006094",
+          "SignatureOptions": "Regular",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006094.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/cbd8a9d6-f058-4f8a-a954-a0b1c7c6dbad.pdf",
+          "ItemList": [
+            {
+              "SellerPartNumber": "bank02",
+              "Quantity": 2
+            }
+          ]
+        },
+        {
+          "TrackingNumber": "1ZA813774270006101",
+          "SignatureOptions": "Regular",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006101.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/43790836-a934-4845-b132-78901f887d47.pdf",
+          "ItemList": [
+            {
+              "SellerPartNumber": "bank02",
+              "Quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

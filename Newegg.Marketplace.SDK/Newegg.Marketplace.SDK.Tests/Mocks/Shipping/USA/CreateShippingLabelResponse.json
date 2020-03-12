@@ -1,0 +1,53 @@
+{
+  "IsSuccess": true,
+  "OperationType": "CreateShippingLabelResponse",
+  "SellerID": "AWE5",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 230316095,
+      "ShipDate": "12/18/2019",
+      "PackageList": [
+        {
+          "TrackingNumber": "1ZA813774270006094",
+          "ProcessResult": "Success",
+          "SignatureOptions": "Regular",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006094.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/cbd8a9d6-f058-4f8a-a954-a0b1c7c6dbad.pdf",
+          "Rate": {
+            "ShipWeight": 29,
+            "ArriveBy": "2019/12/20",
+            "ShippingAmount": 15.44,
+            "SignatureOptions": 3.3,
+            "Total": 18.74
+          },
+          "ItemList": [
+            {
+              "SellerPartNumber": "bank02",
+              "Quantity": 2
+            }
+          ]
+        },
+        {
+          "TrackingNumber": "1ZA813774270006101",
+          "ProcessResult": "Success",
+          "SignatureOptions": "Regular",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006101.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/43790836-a934-4845-b132-78901f887d47.pdf",
+          "Rate": {
+            "ShipWeight": 25,
+            "ArriveBy": "2019/12/20",
+            "ShippingAmount": 13.68,
+            "SignatureOptions": 3.3,
+            "Total": 16.98
+          },
+          "ItemList": [
+            {
+              "SellerPartNumber": "bank02",
+              "Quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

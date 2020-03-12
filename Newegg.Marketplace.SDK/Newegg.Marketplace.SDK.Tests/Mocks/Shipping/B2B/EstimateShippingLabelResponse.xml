@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <IsSuccess>true</IsSuccess>
+  <OperationType>EstimateShippingLabelResponse</OperationType>
+  <SellerID>V01R</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>1250271860</OrderNumber>
+      <EstimatedDate>02/06/2020</EstimatedDate>
+      <PackageList>
+        <Package>
+          <PackageWeight>27.6</PackageWeight>
+          <PackageLength>16.22</PackageLength>
+          <PackageHeight>15.22</PackageHeight>
+          <PackageWidth>14.22</PackageWidth>
+          <SignatureOptions>Regular</SignatureOptions>
+          <ProcessResult>Success</ProcessResult>
+          <ErrorMessage/>
+          <EstimatedRate>
+            <EstimatedArriveBy>2020/02/11</EstimatedArriveBy>
+            <EstimatedShippingAmount>9.29</EstimatedShippingAmount>
+            <EstimatedSignatureOptions>3.46</EstimatedSignatureOptions>
+            <EstimatedTotal>12.75</EstimatedTotal>
+            <EstimatedShipWeight>28.0</EstimatedShipWeight>
+          </EstimatedRate>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

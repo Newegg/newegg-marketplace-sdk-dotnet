@@ -86,6 +86,18 @@
   "POST USA shippingservice/shippinglabel/voidshippingrequest": "Shipping/USA/VoidShippingResponseBody",
   "POST B2B shippingservice/shippinglabel/voidshippingrequest": "Shipping/B2B/VoidShippingResponseBody",
 
+  "POST USA shippingservice/shippinglabel/EstimateShippingLabel": "Shipping/USA/EstimateShippingLabelResponse",
+  "POST B2B shippingservice/shippinglabel/EstimateShippingLabel": "Shipping/B2B/EstimateShippingLabelResponse",
+  "POST CAN shippingservice/shippinglabel/EstimateShippingLabel": "Shipping/CAN/EstimateShippingLabelResponse",
+
+  "POST USA shippingservice/shippinglabel/CreateShippingLabel": "Shipping/USA/CreateShippingLabelResponse",
+  "POST B2B shippingservice/shippinglabel/CreateShippingLabel": "Shipping/B2B/CreateShippingLabelResponse",
+  "POST CAN shippingservice/shippinglabel/CreateShippingLabel": "Shipping/CAN/CreateShippingLabelResponse",
+
+  "POST USA shippingservice/shippinglabel/ReprintShippingLabel": "Shipping/USA/ReprintShippingLabelResponse",
+  "POST B2B shippingservice/shippinglabel/ReprintShippingLabel": "Shipping/B2B/ReprintShippingLabelResponse",
+  "POST CAN shippingservice/shippinglabel/ReprintShippingLabel": "Shipping/CAN/ReprintShippingLabelResponse",
+
   "PUT USA sbnmgmt/inboundshipment/plansuggestion": "SBN/USA/GetInboundShipmentPlanResponse",
   "PUT B2B sbnmgmt/inboundshipment/plansuggestion": "SBN/B2B/GetInboundShipmentPlanResponse",
 

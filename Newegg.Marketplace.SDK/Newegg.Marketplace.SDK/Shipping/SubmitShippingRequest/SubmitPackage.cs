@@ -29,6 +29,7 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
         public decimal PackageLength { get; set; }
         public decimal PackageWidth { get; set; }
         public decimal PackageHeight { get; set; }
+        public string  SignatureOptions { get; set; }
 
         [XmlArrayItem("Item"), JsonConverter(typeof(JsonMoreLevelSeConverter), "Item")]  
         public List<SumbitPackageItemlist> ItemList { get; set; }

@@ -1,0 +1,32 @@
+{
+  "IsSuccess": true,
+  "OperationType": "CreateShippingLabelResponse",
+  "SellerID": "V01R",
+  "ResponseBody": {
+    "Shipment": {
+      "OrderNumber": 1250271860,
+      "ShipDate": "12/26/2019",
+      "PackageList": [
+        {
+          "TrackingNumber": "1ZA813770370007746",
+          "ProcessResult": "Success",
+          "LabelUrl": "http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813770370007746.pdf",
+          "PackingListUrl": "http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/e6af45b7-da33-45e5-bd42-795a62a2f663.pdf",
+          "Rate": {
+            "ShipWeight": 0,
+            "ArriveBy": "2020/01/06",
+            "ShippingAmount": 26,
+            "SignatureOptions": 0,
+            "Total": 26
+          },
+          "ItemList": [
+            {
+              "SellerPartNumber": "v01r2018072502",
+              "Quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

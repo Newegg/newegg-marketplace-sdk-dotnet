@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <OperationType>ReprintShippingLabelResponse</OperationType>
+  <SellerID>AWE5</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>230316095</OrderNumber>
+      <OrderStatus>Shipped</OrderStatus>
+      <PackageList>
+        <Package>
+          <TrackingNumber>1ZA813774270006094</TrackingNumber>
+          <SignatureOptions>Regular</SignatureOptions>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006094.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/cbd8a9d6-f058-4f8a-a954-a0b1c7c6dbad.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>bank02</SellerPartNumber>
+              <Quantity>2</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+        <Package>
+          <TrackingNumber>1ZA813774270006101</TrackingNumber>
+          <SignatureOptions>Regular</SignatureOptions>
+          <LabelUrl>http://dfis-gqc.newegg.space/Manifest/PurolatorReport/MKPL/1ZA813774270006101.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/43790836-a934-4845-b132-78901f887d47.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>bank02</SellerPartNumber>
+              <Quantity>2</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>

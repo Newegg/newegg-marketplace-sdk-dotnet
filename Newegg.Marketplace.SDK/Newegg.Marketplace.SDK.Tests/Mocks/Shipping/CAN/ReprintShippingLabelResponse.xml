@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+  <OperationType>ReprintShippingLabelResponse</OperationType>
+  <SellerID>BHHC</SellerID>
+  <ResponseBody>
+    <Shipment>
+      <OrderNumber>230316695</OrderNumber>
+      <OrderStatus>Partially Shipped</OrderStatus>
+      <PackageList>
+        <Package>
+          <TrackingNumber>1Z881F18D300001851</TrackingNumber>
+          <SignatureOptions>Regular</SignatureOptions>
+          <LabelUrl>https://c1.neweggimages.com/Shipping/CrossDocking/MKPL/1Z881F18D300001851.pdf</LabelUrl>
+          <PackingListUrl>http://dfis-gqc.newegg.space/SBNInbound/UPSShippingLabel/d7cac863-fb2c-4822-9dfa-7b4242d8e208.pdf</PackingListUrl>
+          <ItemList>
+            <Item>
+              <SellerPartNumber>BHHC201805080001</SellerPartNumber>
+              <Quantity>2</Quantity>
+            </Item>
+          </ItemList>
+        </Package>
+      </PackageList>
+    </Shipment>
+  </ResponseBody>
+</NeweggAPIResponse>
