@@ -67,6 +67,7 @@ namespace Newegg.Marketplace.SDK.Item.Model
         {
             return Condition.HasValue;
         }
+        public int? LimitQuantity { get; set; }
     }
 
     [XmlRoot("UpdateInventoryAndPriceResult")]
@@ -126,8 +127,8 @@ namespace Newegg.Marketplace.SDK.Item.Model
         }
 
         public FulfillmentOption EnableFreeShipping { set; get; }
-        
-      
-       
+
+        public int? LimitQuantity { get; set; }
+
     }
 }

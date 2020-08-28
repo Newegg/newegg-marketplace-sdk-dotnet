@@ -240,6 +240,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                         CheckoutMAP = FeedCheckoutMAP.True,
                         Shipping = FeedShipping.Default,
                         Inventory = 100,
+                        LimitQuantity=1,
                         ActivationMark = FeedActivationMark.True,
                         ItemImages = new System.Collections.Generic.List<ItemfeedItemBasicInfo.ItemfeedItemImage>()
                                     {
@@ -446,7 +447,8 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     Currency = "USD",
                                     SellingPrice = 50,
                                     Shipping = FeedShipping.Default,
-                                    ActivationMark = FeedActivationMark.True
+                                    ActivationMark = FeedActivationMark.True,
+                                    LimitQuantity=1
                             },
                             new PriceUpdateFeedRequestBody.PriceUpdateFeedItem()
                             {
@@ -493,7 +495,8 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                 Currency = "USD",
                                 SellingPrice = 50,
                                 Shipping = FeedShipping.Default,
-                                Inventory = 10
+                                Inventory = 10,
+                                LimitQuantity=1
                             }
                         }
                     }

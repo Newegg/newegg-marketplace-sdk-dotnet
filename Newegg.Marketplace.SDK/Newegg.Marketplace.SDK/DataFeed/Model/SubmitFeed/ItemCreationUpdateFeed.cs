@@ -221,7 +221,8 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
 
         public int Inventory { get; set; }
 
-        
+        public int? LimitQuantity { get; set; }
+
         public FeedActivationMark? ActivationMark { get; set; }
         public bool ShouldSerializeActivationMark()
         {

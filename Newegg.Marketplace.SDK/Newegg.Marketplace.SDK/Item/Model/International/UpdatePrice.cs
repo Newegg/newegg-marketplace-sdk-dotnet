@@ -66,6 +66,7 @@ namespace Newegg.Marketplace.SDK.Item.Model
             {
                 return EnableFreeShipping.HasValue;
             }
+            public int? LimitQuantity { get; set; }
         }
     }
 
@@ -134,7 +135,8 @@ namespace Newegg.Marketplace.SDK.Item.Model
             }
 
             public FreeShipping EnableFreeShipping { set; get; }
-           
+            public int? LimitQuantity { get; set; }
+
         }
     }
    

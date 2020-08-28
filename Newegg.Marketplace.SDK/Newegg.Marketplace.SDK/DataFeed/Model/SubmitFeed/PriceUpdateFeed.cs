@@ -82,6 +82,8 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
 
             public decimal SellingPrice { get; set; }
 
+            public int? LimitQuantity { get; set; }
+
             public FeedShipping? Shipping { get; set; }
             public bool ShouldSerializeShipping()
             {

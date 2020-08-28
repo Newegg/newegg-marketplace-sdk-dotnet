@@ -466,7 +466,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             };
 
             CheckRequestString<GetVolumeDiscountRequestResultRequest>(request);
-            var body = await fadeAPI_B2B_XML.GetVolumeDiscountRequestResult(request);
+            var body =  await fadeAPI_B2B_XML.GetVolumeDiscountRequestResult(request);
 
             Assert.IsType<GetVolumeDiscountRequestResultResponse>(body);
         }
@@ -701,8 +701,8 @@ namespace Newegg.Marketplace.SDK.Tests.Item
                         MAP=0M,
                        CheckoutMAP=0,
                         SellingPrice=1149.98M,
-                       EnableFreeShipping=FreeShipping.Default
-
+                       EnableFreeShipping=FreeShipping.Default,
+                       LimitQuantity=1
                      }
 
                  }

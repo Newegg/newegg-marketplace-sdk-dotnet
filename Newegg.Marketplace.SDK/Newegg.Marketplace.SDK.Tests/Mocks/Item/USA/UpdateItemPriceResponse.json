@@ -12,6 +12,7 @@
         "MAP": "25.99",
         "CheckoutMAP": "0",
         "SellingPrice": "20.92",
+        "LimitQuantity": 111,
         "EnableFreeShipping": "1"
       },
       {
@@ -22,6 +23,7 @@
         "MAP": "25.99",
         "CheckoutMAP": "0",
         "SellingPrice": "389.92",
+        "LimitQuantity": 99999,
         "EnableFreeShipping": "0"
       },
       {

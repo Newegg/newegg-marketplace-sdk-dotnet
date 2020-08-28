@@ -50,7 +50,9 @@ namespace Newegg.Marketplace.SDK.Base
         /// </summary>
         public APIPlatform Platform { get; set; } = APIPlatform.USA;
 
-        private string baseUrl = "https://api.newegg.com/marketplace/";
+        private string baseUrl = "http://api.newegg.com/marketplace/";
+        //private string baseUrl = "http://172.16.168.60/";
+        
 
         /// <summary>
         /// The base url of the Newegg marketplace API. Optional, Default: https://api.newegg.com/marketplace/

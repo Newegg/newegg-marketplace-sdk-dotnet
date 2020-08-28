@@ -93,7 +93,9 @@ namespace Newegg.Marketplace.SDK.DataFeed.Model
             }
 
             public int Inventory { get; set; }
-            
+
+            public int? LimitQuantity { get; set; }
+
             public FeedFulfillmentOption? FulfillmentOption { get; set; }
             public bool ShouldSerializeFulfillmentOption()
             {
