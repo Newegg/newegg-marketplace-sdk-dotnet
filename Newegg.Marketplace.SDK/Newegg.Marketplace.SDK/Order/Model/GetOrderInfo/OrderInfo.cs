@@ -82,6 +82,20 @@ namespace Newegg.Marketplace.SDK.Order.Model
             set { }
         }
 
+        [XmlElement("EHFAmount"), JsonProperty("EHFAmount")]
+        public string _EHFAmount { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? EHFAmount
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_EHFAmount))
+                    return null;
+                return decimal.Parse(_EHFAmount);
+            }
+            set { }
+        }
+
         public decimal RefundAmount { get; set; }
         [XmlElement("SalesTax"), JsonProperty("SalesTax")]
         public string _SalesTax { get; set; }
@@ -121,6 +135,20 @@ namespace Newegg.Marketplace.SDK.Order.Model
                 if (string.IsNullOrEmpty(_DutyTotal))
                     return null;
                 return decimal.Parse(_DutyTotal);
+            }
+            set { }
+        }
+
+        [XmlElement("RecyclingFeeAmount"), JsonProperty("RecyclingFeeAmount")]
+        public string _RecyclingFeeAmount { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? RecyclingFeeAmount
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_RecyclingFeeAmount))
+                    return null;
+                return decimal.Parse(_RecyclingFeeAmount);
             }
             set { }
         }
