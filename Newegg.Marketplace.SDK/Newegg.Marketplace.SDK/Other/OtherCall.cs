@@ -32,7 +32,7 @@ namespace Newegg.Marketplace.SDK.Other
             var request = CreateRequest();
             request.URI = string.Format("{0}/servicestatus", CommonManager.ToXmlEnumString<ServiceDomain>(domain));
 
-            var response = await client.GetAsync(request);
+            var response = await client.GetAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<VerifyServiceStatusResponse>(response);
             return result;
         }

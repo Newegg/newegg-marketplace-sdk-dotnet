@@ -36,7 +36,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitRMAResponse>(response);
             return result;
         }
@@ -48,7 +48,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<EditRMAResponse>(response);
             return result;
         }
@@ -60,7 +60,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<RejectRMAResponse>(response);
             return result;
         }
@@ -72,7 +72,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<VoidRMAResponse>(response);
             return result;
         }
@@ -84,7 +84,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<ReceiveRMAResponse>(response);
             return result;
         }
@@ -96,7 +96,7 @@ namespace Newegg.Marketplace.SDK.RMA
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetRMAInformationResponse>(response);
             return result;
         }
@@ -106,7 +106,7 @@ namespace Newegg.Marketplace.SDK.RMA
             var request = CreateRequest<IssueCourtesyRefundRequest>(reqModel);
             request.URI = "servicemgmt/courtesyrefund/new";
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<IssueCourtesyRefundResponse>(response);
             return result;
         }
@@ -116,7 +116,7 @@ namespace Newegg.Marketplace.SDK.RMA
             var request = CreateRequest<GetCourtesyRefundRequestStatusRequest>(reqModel);
             request.URI = "servicemgmt/courtesyrefund/requeststatus";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetCourtesyRefundRequestStatusResponse>(response);
             return result;
         }
@@ -126,7 +126,7 @@ namespace Newegg.Marketplace.SDK.RMA
             var request = CreateRequest<GetCourtesyRefundInformationRequest>(reqModel);
             request.URI = "servicemgmt/courtesyrefund/info";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetCourtesyRefundInformationResponse>(response);
             return result;
         }

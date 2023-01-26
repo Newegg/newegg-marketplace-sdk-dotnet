@@ -30,7 +30,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
     public class ItemTest : TestBase
     {
         private readonly ItemCall api, fadeAPI_USA_XML, api_json, B2BJSON, CANXML, CANJSON,
-        B2Bapi, fadeAPI_B2B_XML, fadeAPI_CAN_XML;
+        B2Bapi, fadeAPI_B2B_XML, fadeAPI_CAN_XML, fadeAPI_USA_Json, fadeAPI_B2B_Json, fadeAPI_CAN_Json;
 
         public object TestContext { get; private set; }
 
@@ -45,6 +45,10 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             fadeAPI_USA_XML = new ItemCall(fakeUSAClientXML);
             fadeAPI_B2B_XML = new ItemCall(fakeB2BClientXML);
             fadeAPI_CAN_XML = new ItemCall(fakeCANClientXML);
+            fadeAPI_USA_Json = new ItemCall(fakeUSAClientJSON);
+            fadeAPI_B2B_Json = new ItemCall(fakeB2BClientJSON);
+            fadeAPI_CAN_Json = new ItemCall(fakeCANClientJSON);
+
         }
         void CheckRequestString<T>(T req)
         {
@@ -434,7 +438,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             Assert.IsType<GetManufacturerRequestStatusResponse>(body);
         }
-
+        
 
         [Fact]//USA  XML 
         public async Task GetVolumeDiscountRequestResult_XML_USA()
@@ -558,7 +562,6 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             var body = await fadeAPI_B2B_XML.GetItemInventory(InventoryRequest, 304);//have  WarehouseCode
             Assert.IsType<GetItemInventoryResponse>(body);
 
-
         }
 
         [Fact]//B2B  XML 
@@ -584,7 +587,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
 
             GetInternationalItemPriceRequest PriceRequest = new GetInternationalItemPriceRequest()
             {
-                Condition = ItemCondition.Refurbished,
+                 Condition = ItemCondition.Refurbished,
                 Type = ItemQueryType.NewEggItemNumber,
                 Value = "9SIA0068KA0333"
 
@@ -678,7 +681,7 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             var body = await fadeAPI_USA_XML.UpdateItemInventory(UpdateItemInventoryRequest);
             Assert.IsType<UpdateInventoryResponse>(body);
         }
-
+       
 
         [Fact]//XML USA 
         public async Task UpdateItemPrice_XML_USA()
@@ -892,7 +895,131 @@ namespace Newegg.Marketplace.SDK.Tests.Item
             Assert.IsType<ItemWarrantyResponse>(body);
         }
 
+        /// <summary>
+        ///  Get Inventory List Xml USA
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetItemInternationalInventoryList_Json_USA()
+        {
+            GetItemsInventoryRequest InventoryRequest = new GetItemsInventoryRequest()
+            {
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
 
+            };
+            CheckRequestString<GetItemsInventoryRequest>(InventoryRequest);
+            var body = await fadeAPI_USA_Json.GetItemInternationalInventoryList(InventoryRequest);
+            Assert.IsType<GetItemsInventoryResponse>(body);
+
+        }
+
+
+        /// <summary>
+        ///  Get Inventory List JSON USB
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetItemInventoryList_Json_USB()
+        {
+            GetUsbOrCanItemInventoryRequest InventoryRequest = new GetUsbOrCanItemInventoryRequest()
+            {
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
+
+            };
+            CheckRequestString<GetUsbOrCanItemInventoryRequest>(InventoryRequest);
+            var body = await fadeAPI_B2B_Json.GetItemInventoryList(InventoryRequest);
+            Assert.IsType<GetUsbOrCanInventorysResponse>(body);
+
+        }
+
+
+        /// <summary>
+        ///  Get Inventory List Xml CAN
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetItemInventoryList_XML_CAN()
+        {
+            GetUsbOrCanItemInventoryRequest InventoryRequest = new GetUsbOrCanItemInventoryRequest()
+            {
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
+
+            };
+            CheckRequestString<GetUsbOrCanItemInventoryRequest>(InventoryRequest);
+            var body = await fadeAPI_CAN_XML.GetItemInventoryList(InventoryRequest);
+            Assert.IsType<GetUsbOrCanInventorysResponse>(body);
+
+        }
+
+
+        /// <summary>
+        ///  Get Inventory List Xml CAN
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetItemInventoryList_JSON_CAN()
+        {
+            GetUsbOrCanItemInventoryRequest InventoryRequest = new GetUsbOrCanItemInventoryRequest()
+            {
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
+
+            };
+            CheckRequestString<GetUsbOrCanItemInventoryRequest>(InventoryRequest);
+            var body = await fadeAPI_CAN_Json.GetItemInventoryList(InventoryRequest);
+            Assert.IsType<GetUsbOrCanInventorysResponse>(body);
+
+        }
+
+        /// <summary>
+        ///  Get Price List USA
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetInternationalItemPriceList_XML_USA()
+        {
+
+            GetInternationalItemPriceListRequest PriceRequest = new GetInternationalItemPriceListRequest()
+            {
+
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
+
+            };
+
+            CheckRequestString<GetInternationalItemPriceListRequest>(PriceRequest);
+            var body = await fadeAPI_USA_XML.GetInternationalItemPriceList(PriceRequest);
+
+            Assert.IsType<GetItemPriceListResponse>(body);
+
+        }
+
+
+
+        /// <summary>
+        ///  Get Price List USb
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async Task GetItemPriceList_XML_USB()
+        {
+
+            GetCanOrUsbItemPriceRequest PriceRequest = new GetCanOrUsbItemPriceRequest()
+            {
+
+                Type = ItemQueryType.NewEggItemNumber,
+                Values = new List<string>() { "9SIA0068KA0333" }
+            };
+
+            CheckRequestString<GetCanOrUsbItemPriceRequest>(PriceRequest);
+            var body = await fadeAPI_B2B_XML.GetItemPriceList(PriceRequest);
+
+            Assert.IsType<GetItemPriceListResponse>(body);
+
+        }
 
 
     }

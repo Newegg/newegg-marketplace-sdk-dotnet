@@ -411,11 +411,12 @@ namespace Newegg.Marketplace.SDK.Report.Model
         ITEM_CAPROP65_DATA,
 
         ITEM_CHINATAXSETTING_DATA,
-        ITEM_CHINATAXSETTING_REPORT
+        ITEM_CHINATAXSETTING_REPORT,
+        ITEM_BASIC_INFO_REPORT
     }
 
-  
-   
 
-   
+
+
+
 }

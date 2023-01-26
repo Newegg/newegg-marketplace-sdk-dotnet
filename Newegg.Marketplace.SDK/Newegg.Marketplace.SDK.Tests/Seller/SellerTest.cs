@@ -48,7 +48,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
         }
 
         [Fact]
-        public async void GetSellerStatusFadeTest()
+        public async Task GetSellerStatusFadeTest()
         {
             var sellerStatus = await fakeApi.SellerStatusCheck();
             var body = sellerStatus.GetResponseBody();
@@ -143,7 +143,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
         }
 
         [Fact]
-        public async void GetIndustryList()
+        public async Task GetIndustryList()
         {
             var response = await fakeApi.GetIndustryList();
             Assert.IsType<GetIndustryListResponse>(response);
@@ -151,7 +151,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
         }
 
         [Fact]
-        public async void GetSubcategoryStatus()
+        public async Task GetSubcategoryStatus()
         {
             var req = new GetSubcategoryStatusRequest(new List<string>() { "CH" });
             CheckRequestString<GetSubcategoryStatusRequest>(req);
@@ -160,7 +160,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
         }
         [Fact]
-        public async void GetSubcategoryStatus_Json()
+        public async Task GetSubcategoryStatus_Json()
         {
             var req = new GetSubcategoryStatusRequest(new List<string>() { "CH" });
             CheckRequestString<GetSubcategoryStatusRequest>(req);
@@ -170,7 +170,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
         }
 
         [Fact]
-        public async void GetSubcategoryStatusForInternationalCountry()
+        public async Task GetSubcategoryStatusForInternationalCountry()
         {
             var req = new GetSubcategoryStatusForInternationalCountryRequest("USA", new List<string>() { "CH" });
             CheckRequestString<GetSubcategoryStatusForInternationalCountryRequest>(req);
@@ -180,7 +180,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
         }
         [Fact]
-        public async void GetSubcategoryStatusForInternationalCountry_Json()
+        public async Task GetSubcategoryStatusForInternationalCountry_Json()
         {
             var req = new GetSubcategoryStatusForInternationalCountryRequest("USA", new List<string>() { "CH" });
             CheckRequestString<GetSubcategoryStatusForInternationalCountryRequest>(req);
@@ -190,23 +190,10 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
         }
 
-        //[Fact]
-        //public async void DownloadFeedSchema()
-        //{
-        //    var req = new DownloadFeedSchemaRequest(1, "CH");
-        //    CheckRequestString<DownloadFeedSchemaRequest>(req);
-        //    var response = await fakeApi.DownloadFeedSchema(@"D:\Application\DownloadFeedSchema.zip", req);
-        //}
-        //[Fact]
-        //public async void DownloadFeedSchema_Json()
-        //{
-        //    var req = new DownloadFeedSchemaRequest(1, "CH");
-        //    CheckRequestString<DownloadFeedSchemaRequest>(req);
-        //    var response = await fakeApi.DownloadFeedSchema(@"D:\Application\DownloadFeedSchema.zip", req);
-        //}
+
 
         [Fact]
-        public async void GetSubcategoryProperties()
+        public async Task GetSubcategoryProperties()
         {
             var req = new GetSubcategoryPropertiesRequest(1045);
             CheckRequestString<GetSubcategoryPropertiesRequest>(req);
@@ -215,7 +202,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.True(response.ResponseBody.SubcategoryPropertyList.Count > 0);
         }
         [Fact]
-        public async void GetSubcategoryProperties_Json()
+        public async Task GetSubcategoryProperties_Json()
         {
             var req = new GetSubcategoryPropertiesRequest(1045);
             CheckRequestString<GetSubcategoryPropertiesRequest>(req);
@@ -225,7 +212,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
         }
 
         [Fact]
-        public async void GetSubcategoryPropertyValues()
+        public async Task GetSubcategoryPropertyValues()
         {
             var req = new GetSubcategoryPropertyValuesRequest("Costume_Gender", 1045);
             CheckRequestString<GetSubcategoryPropertyValuesRequest>(req);
@@ -234,7 +221,7 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.True(response.ResponseBody.PropertyInfoList.Count > 0);
         }
         [Fact]
-        public async void GetSubcategoryPropertyValues_Json()
+        public async Task GetSubcategoryPropertyValues_Json()
         {
             var req = new GetSubcategoryPropertyValuesRequest("Costume_Gender", 1045);
             CheckRequestString<GetSubcategoryPropertyValuesRequest>(req);
@@ -242,143 +229,31 @@ namespace Newegg.Marketplace.SDK.Tests.Seller
             Assert.IsType<GetSubcategoryPropertyValuesResponse>(response);
             Assert.True(response.ResponseBody.PropertyInfoList.Count > 0);
         }
+
+
+        [Fact]
+        public async Task GetGetSubcategoryStatusV1_Json()
+        {
+            GetWebSiteSubcategoryRequest request = new GetWebSiteSubcategoryRequest()
+            {
+                RequestBody = new  GetWebSiteSubcategoryRequestBody()
+                {
+                    CountryCode = "USA",
+                    GetItemSubcategory = new  GetWebSiteSubcategory { Enabled = SellerSubcategoryStatusEnabled.Enabled }
+                }
+            };
+            CheckRequestString<GetWebSiteSubcategoryRequest>(request);
+            var response = await fakeApi.GetSubcategoryStatusV1(request);
+            Assert.IsType<GetWebSiteSubcategoryResponse>(response);
+
+        }
+
+        [Fact]
+        public async Task GetGetWarehouseList_Json()
+        {
+            var response = await fakeApi.GetWarehouseList();
+            Assert.IsType<GetWarehouseResponse>(response);
+        }
+
     }
-    //public class SellerFakeTest : TestBase
-    //{
-    //    private readonly SellerCall fakeApi, fakeApi_json;
-
-
-    //    public SellerFakeTest()
-    //    {
-    //        fakeApi = new SellerCall(fakeUSAClientXML);
-    //        fakeApi_json = new SellerCall(fakeUSAClientJSON);
-    //    }
-    //    void CheckRequestString<T>(T req)
-    //    {
-    //        XmlSerializer xmlSerializer = new XmlSerializer();
-    //        JsonSerializer jsonSerializer = new JsonSerializer(true);
-    //        string xmls = xmlSerializer.Serialize<T>(req);
-    //        string jsons = jsonSerializer.Serialize<T>(req);
-    //    }
-
-    //    [Fact]
-    //    public async void SellerStatusCheck()
-    //    {
-    //        var sellerStatus = await fakeApi.SellerStatusCheck("307");
-    //        var body = sellerStatus.GetResponseBody();
-    //        Assert.IsType<SellerStatusCheckResponseBody>(body);
-    //        Assert.Equal("Test_SandBox_MKTPLS", body.SellerName);
-    //        Assert.True(sellerStatus.IsSuccess);
-    //        Assert.Equal("Active", body.Status.ToString());
-    //    }
-
-    //    [Fact]
-    //    public async void SellerStatusCheck_Json()
-    //    {
-    //        var sellerStatus = await fakeApi_json.SellerStatusCheck("307");
-    //        var body = sellerStatus.GetResponseBody();
-    //        Assert.IsType<SellerStatusCheckResponseBody>(body);
-    //        Assert.Equal("Test_SandBox_MKTPLS", body.SellerName);
-    //        Assert.True(sellerStatus.IsSuccess);
-    //        Assert.Equal("Active", body.Status.ToString());
-    //    }
-
-    //    [Fact]
-    //    public async void GetIndustryList()
-    //    {
-    //        var response = await fakeApi.GetIndustryList();
-    //        Assert.IsType<GetIndustryListResponse>(response);
-    //        Assert.True(response.ResponseBody.IndustryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetIndustryList_Json()
-    //    {
-    //        var response = await fakeApi_json.GetIndustryList();
-    //        Assert.IsType<GetIndustryListResponse>(response);
-    //        Assert.True(response.ResponseBody.IndustryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryStatus()
-    //    {
-    //        var req = new GetSubcategoryStatusRequest(new List<string>() { "CH" }, new List<int>() { 397 });
-    //        CheckRequestString<GetSubcategoryStatusRequest>(req);
-    //        var response = await fakeApi.GetSubcategoryStatus(req);
-    //        Assert.IsType<GetSubcategoryStatusResponse>(response);
-    //        Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryStatus_Json()
-    //    {
-    //        var req = new GetSubcategoryStatusRequest(new List<string>() { "CH" }, new List<int>() { 397 });
-    //        CheckRequestString<GetSubcategoryStatusRequest>(req);
-    //        var response = await fakeApi_json.GetSubcategoryStatus(req);
-    //        Assert.IsType<GetSubcategoryStatusResponse>(response);
-    //        Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryStatusForInternationalCountry()
-    //    {
-    //        var req = new GetSubcategoryStatusForInternationalCountryRequest("USA", new List<string>() { "CH" });
-    //        CheckRequestString<GetSubcategoryStatusForInternationalCountryRequest>(req);
-    //        var response = await fakeApi.GetSubcategoryStatusForInternationalCountry(req);
-    //        Assert.IsType<GetSubcategoryStatusForInternationalCountryResponse>(response);
-    //        Assert.Equal("USA", response.ResponseBody.CountryCode);
-    //        Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryStatusForInternationalCountry_Json()
-    //    {
-    //        var req = new GetSubcategoryStatusForInternationalCountryRequest("USA", new List<string>() { "CH" });
-    //        CheckRequestString<GetSubcategoryStatusForInternationalCountryRequest>(req);
-    //        var response = await fakeApi_json.GetSubcategoryStatusForInternationalCountry(req);
-    //        Assert.IsType<GetSubcategoryStatusForInternationalCountryResponse>(response);
-    //        Assert.Equal("USA", response.ResponseBody.CountryCode);
-    //        Assert.True(response.ResponseBody.SubcategoryList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryProperties()
-    //    {
-    //        var req = new GetSubcategoryPropertiesRequest(1045);
-    //        CheckRequestString<GetSubcategoryPropertiesRequest>(req);
-    //        var response = await fakeApi.GetSubcategoryProperties(req);
-    //        Assert.IsType<GetSubcategoryPropertiesResponse>(response);
-    //        Assert.True(response.ResponseBody.SubcategoryPropertyList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryProperties_Json()
-    //    {
-    //        var req = new GetSubcategoryPropertiesRequest(1045);
-    //        CheckRequestString<GetSubcategoryPropertiesRequest>(req);
-    //        var response = await fakeApi_json.GetSubcategoryProperties(req);
-    //        Assert.IsType<GetSubcategoryPropertiesResponse>(response);
-    //        Assert.True(response.ResponseBody.SubcategoryPropertyList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryPropertyValues()
-    //    {
-    //        var req = new GetSubcategoryPropertyValuesRequest("Costume_Gender", 1045);
-    //        CheckRequestString<GetSubcategoryPropertyValuesRequest>(req);
-    //        var response = await fakeApi.GetSubcategoryPropertyValues(req);
-    //        Assert.IsType<GetSubcategoryPropertyValuesResponse>(response);
-    //        Assert.True(response.ResponseBody.PropertyInfoList.Count > 0);
-    //    }
-
-    //    [Fact]
-    //    public async void GetSubcategoryPropertyValues_Json()
-    //    {
-    //        var req = new GetSubcategoryPropertyValuesRequest("Costume_Gender", 1045);
-    //        CheckRequestString<GetSubcategoryPropertyValuesRequest>(req);
-    //        var response = await fakeApi_json.GetSubcategoryPropertyValues(req);
-    //        Assert.IsType<GetSubcategoryPropertyValuesResponse>(response);
-    //        Assert.True(response.ResponseBody.PropertyInfoList.Count > 0);
-    //    }
-    //}
 }

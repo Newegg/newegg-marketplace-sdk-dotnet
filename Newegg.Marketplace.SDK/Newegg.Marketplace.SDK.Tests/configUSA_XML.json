@@ -1,14 +1,11 @@
 {
   "SellerID": "****",
   "Credentials": {
-    "Authorization": "********************************",
-    "SecretKey": "*******-****-****-****-************"
+    "Authorization": "720ddc067f4d115bd544aff46bc75634",
+    "SecretKey": "21EC2020-3AEA-1069-A2DD-08002B30309D"
   },
   "MockPath": "../../../Mocks/",
-  "Connection": {
-    "RequestTimeoutMs": 5000,
-    "AttemptsTimes": 5,
-    "RetryIntervalMs": 1000
+  "Connection": {    
   },
   "APIFormat": "XML",
   "LogLevel": "Debug"

@@ -31,7 +31,7 @@ namespace Newegg.Marketplace.SDK.Item
         //{
         //    var request = CreateRequest<GetVolumeDiscountRequest>(reqModel);
         //    request.URI = "contentmgmt/Item/VolumeDiscount";
-        //    var response = await client.PutAsync(request);
+        //    var response = await client.PutAsync(request).ConfigureAwait(false);
         //    var result = await ProcessResponse<GetVolumeDiscountResponse>(response);
         //    return result;
         //}
@@ -40,7 +40,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<SubmitVolumeDiscountRequest>(reqModel);
             request.URI = "contentmgmt/Item/VolumeDiscount";
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitVolumeDiscountResponse>(response);
             return result;
         }
@@ -49,7 +49,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<SubmitManufacturerRequest>(reqModel);
             request.URI = "contentmgmt/manufacturer/creationrequest";
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitManufacturerResponse>(response);
             return result;
         }
@@ -59,7 +59,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<ManufacturerLookupRequest>(reqModel);
             request.URI = "contentmgmt/manufacturer/manufacturerinfo";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ManufacturerLookupResponse>(response);
             return result;
         }
@@ -68,7 +68,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<ManufacturerLookupForInternationalCountryRequest>(reqModel);
             request.URI = "contentmgmt/manufacturer/manufacturerinfo/V2";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ManufacturerLookupForInternationalCountryResponse>(response);
             return result;
         }
@@ -78,7 +78,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<GetManufacturerRequestStatusRequest>(reqModel);
             request.URI = "contentmgmt/manufacturer/creationrequeststatus";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetManufacturerRequestStatusResponse>(response);
             return result;
         }
@@ -88,7 +88,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<GetVolumeDiscountRequestResultRequest>(reqModel);
             request.URI = "contentmgmt/item/volumediscount";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetVolumeDiscountRequestResultResponse>(response);
             return result;
         }
@@ -100,7 +100,7 @@ namespace Newegg.Marketplace.SDK.Item
         {
             var request = CreateRequest<GetItemInternationalInventoryRequest>(reqModel);           
             request.URI = "contentmgmt/item/international/inventory";      
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetItemInternationalInventoryResponse>(response);
             
             return result;
@@ -113,7 +113,7 @@ namespace Newegg.Marketplace.SDK.Item
             request.URI = "contentmgmt/item/inventory";
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());//304
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetItemInventoryResponse>(response);
             return result;
         }
@@ -125,7 +125,7 @@ namespace Newegg.Marketplace.SDK.Item
             var request = CreateRequest<GetInternationalItemPriceRequest>(reqModel);
             request.URI = "contentmgmt/item/international/price";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetInternationalItemPriceResponse>(response);
             return result;
         }
@@ -136,7 +136,7 @@ namespace Newegg.Marketplace.SDK.Item
             var request = CreateRequest<GetItemPriceRequest>(reqModel);
             request.URI = "contentmgmt/item/price";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetItemPriceResponse>(response);
             return result;
         }
@@ -151,7 +151,7 @@ namespace Newegg.Marketplace.SDK.Item
             var request = CreateRequest<UpdateInventoryRequest>(reqModel);
             request.URI = "contentmgmt/item/international/inventory";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<UpdateInventoryResponse>(response);
             return result;
         }
@@ -165,7 +165,7 @@ namespace Newegg.Marketplace.SDK.Item
             var request = CreateRequest<UpdateItemPriceRequest>(reqModel);
             request.URI = "contentmgmt/item/international/price";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<UpdateItemPriceResponse>(response);
             return result;
         }
@@ -181,7 +181,7 @@ namespace Newegg.Marketplace.SDK.Item
 
             var request = CreateRequest<UpdateInventoryandPriceRequest>(reqModel);
             request.URI = "contentmgmt/item/inventoryandprice";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<UpdateInventoryandPriceResponse>(response);
             return result;
         }
@@ -194,9 +194,62 @@ namespace Newegg.Marketplace.SDK.Item
             var request = CreateRequest<ItemWarrantyRequest>(reqModel);
             request.URI = "contentmgmt/item/warranty";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ItemWarrantyResponse>(response);
             return result;
         }
+
+        /// <summary>
+        /// USA get inventory list
+        /// </summary>
+        /// <param name="reqModel"></param>
+        /// <returns></returns>
+        public async Task<GetItemsInventoryResponse> GetItemInternationalInventoryList(GetItemsInventoryRequest reqModel)
+        {
+            var request = CreateRequest<GetItemsInventoryRequest>(reqModel);
+            request.URI = "contentmgmt/item/international/inventorylist";
+            var response = await client.PostAsync(request);
+            return await ProcessResponse<GetItemsInventoryResponse>(response);
+        }
+        public async Task<GetUsbOrCanInventorysResponse> GetItemInventoryList(GetUsbOrCanItemInventoryRequest reqModel)
+        {
+            var request = CreateRequest<GetUsbOrCanItemInventoryRequest>(reqModel);
+            request.URI = "contentmgmt/item/inventorylist";
+
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<GetUsbOrCanInventorysResponse>(response);
+            return result;
+        }
+
+        /// <summary>
+        /// Batch track the price-related information of specified items for destination countries, including the United States.
+        /// </summary>
+        /// <param name="reqModel"></param>
+        /// <returns></returns>
+        public async Task<GetItemPriceListResponse> GetInternationalItemPriceList(GetInternationalItemPriceListRequest reqModel)
+        {
+
+            var request = CreateRequest<GetInternationalItemPriceListRequest>(reqModel);
+            request.URI = "contentmgmt/item/international/pricelist";
+
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<GetItemPriceListResponse>(response);
+            return result;
+        }
+        /// <summary>
+        /// Batch track the price-related information of items in the default warehouse.
+        /// </summary>
+        /// <param name="reqModel"></param>
+        /// <returns></returns>
+        public async Task<GetItemPriceListResponse> GetItemPriceList(GetCanOrUsbItemPriceRequest reqModel)
+        {
+            var request = CreateRequest<GetCanOrUsbItemPriceRequest>(reqModel);
+            request.URI = "contentmgmt/item/pricelist";
+
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<GetItemPriceListResponse>(response);
+            return result;
+        }
+
     }
 }

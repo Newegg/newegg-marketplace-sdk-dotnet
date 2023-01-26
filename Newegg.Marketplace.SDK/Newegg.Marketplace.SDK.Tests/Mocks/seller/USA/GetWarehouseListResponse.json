@@ -1,0 +1,27 @@
+﻿{
+  "IsSuccess": "true",
+  "OperationType": "GetSellerWarehouseResponse",
+  "SellerID": "A006",
+  "ResponseDate": "2022-09-20T13:48:24.2275901-07:00",
+  "ResponseBody": {
+    "WarehouseList": [
+      {
+        "WarehouseLocation": "USA",
+        "Status": 1,
+        "ShippingDestination": [
+          "USA",
+          "AUS",
+          "ARG"
+        ]
+      },
+      {
+        "WarehouseLocation": "CHN",
+        "Status": 1,
+        "ShippingDestination": [
+          "USA",
+          "AUS"
+        ]
+      }
+    ]
+  }
+}

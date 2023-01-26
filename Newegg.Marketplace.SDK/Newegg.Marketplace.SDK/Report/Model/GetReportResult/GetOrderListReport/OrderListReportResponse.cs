@@ -361,6 +361,8 @@ namespace Newegg.Marketplace.SDK.Report.Model
 
         public OrderReportStatus Status { get; set; }
         public string StatusDescription { get; set; }
+        public string AutoRegWarranty { get; set; }
+
     }
 
 

@@ -44,7 +44,7 @@ namespace Newegg.Marketplace.SDK.Seller
             if (!string.IsNullOrEmpty(version))
                 request.QueryParams.Add("version", version);
 
-            var response = await client.GetAsync(request, connectSetting);
+            var response = await client.GetAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<SellerStatusCheckResponse>(response);
             return result;
         }
@@ -54,7 +54,7 @@ namespace Newegg.Marketplace.SDK.Seller
             var request = CreateRequest();
             request.URI = "sellermgmt/seller/industry";
 
-            var response = await client.GetAsync(request, connectSetting);
+            var response = await client.GetAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetIndustryListResponse>(response);
             return result;
         }
@@ -64,7 +64,7 @@ namespace Newegg.Marketplace.SDK.Seller
             var request = CreateRequest<GetSubcategoryStatusRequest>(reqModel);
             request.URI = "sellermgmt/seller/subcategory";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetSubcategoryStatusResponse>(response);
             return result;
         }
@@ -84,7 +84,7 @@ namespace Newegg.Marketplace.SDK.Seller
             var request = CreateRequest<DownloadFeedSchemaRequest>(reqModel);
             request.URI = "sellermgmt/seller/feedschema";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             byte[] content = await response.RawResponse.Content.ReadAsByteArrayAsync();
             System.IO.File.WriteAllBytes(DownloadPath, content);
 
@@ -96,7 +96,7 @@ namespace Newegg.Marketplace.SDK.Seller
             var request = CreateRequest<GetSubcategoryPropertiesRequest>(reqModel);
             request.URI = "sellermgmt/seller/subcategoryproperty";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetSubcategoryPropertiesResponse>(response);
             return result;
         }
@@ -106,9 +106,28 @@ namespace Newegg.Marketplace.SDK.Seller
             var request = CreateRequest<GetSubcategoryPropertyValuesRequest>(reqModel);
             request.URI = "sellermgmt/seller/propertyvalue";
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetSubcategoryPropertyValuesResponse>(response);
             return result;
         }
+        public async Task<GetWebSiteSubcategoryResponse> GetSubcategoryStatusV1(GetWebSiteSubcategoryRequest reqModel, ConnectSetting connectSetting = null)
+        {
+            var request = CreateRequest<GetWebSiteSubcategoryRequest>(reqModel);
+            request.URI = "sellermgmt/seller/subcategory/v1.1";
+
+            var response = await client.PutAsync(request, connectSetting);
+            var result = await ProcessResponse<GetWebSiteSubcategoryResponse>(response);
+            return result;
+        }
+
+        public async Task<GetWarehouseResponse> GetWarehouseList(ConnectSetting connectSetting = null)
+        {
+            var request = CreateRequest();
+            request.URI = "sellermgmt/seller/warehouse";
+            var response = await client.GetAsync(request, connectSetting);
+            var result = await ProcessResponse<GetWarehouseResponse>(response);
+            return result;
+        }
+
     }
 }

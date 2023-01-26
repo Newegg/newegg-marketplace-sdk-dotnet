@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+	<IsSuccess>true</IsSuccess>
+	<OperationType>GetSellerWarehouseResponse</OperationType>
+	<SellerID>A006</SellerID>
+	<ResponseDate>2022-09-20T14:16:29.7872897-07:00</ResponseDate>
+	<ResponseBody>
+		<WarehouseList>
+			<Warehouse>
+				<WarehouseLocation>USA</WarehouseLocation>
+				<Status>1</Status>
+				<ShippingDestination>
+					<CountryCode>USA</CountryCode>
+					<CountryCode>AUS</CountryCode>
+					<CountryCode>ARG</CountryCode>
+				</ShippingDestination>
+			</Warehouse>
+			<Warehouse>
+				<WarehouseLocation>CHN</WarehouseLocation>
+				<Status>1</Status>
+				<ShippingDestination>
+					<CountryCode>USA</CountryCode>
+					<CountryCode>AUS</CountryCode>
+				</ShippingDestination>
+			</Warehouse>
+		</WarehouseList>
+	</ResponseBody>
+</NeweggAPIResponse>

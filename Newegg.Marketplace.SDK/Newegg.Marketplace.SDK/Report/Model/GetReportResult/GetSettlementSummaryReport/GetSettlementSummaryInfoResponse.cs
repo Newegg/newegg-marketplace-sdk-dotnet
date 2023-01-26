@@ -107,6 +107,174 @@ namespace Newegg.Marketplace.SDK.Report.Model
        
         public decimal TotalSettlement { get; set; }
 
+        [XmlElement("RecyclingFeeTotal"), JsonProperty("RecyclingFeeTotal")]
+        public string _RecyclingFeeTotal { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? RecyclingFeeTotal
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_RecyclingFeeTotal))
+                    return null;
+                return decimal.Parse(_RecyclingFeeTotal);
+            }
+        }
+        [XmlElement("TaxDuty"), JsonProperty("TaxDuty")]
+        public string _TaxDuty { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? TaxDuty
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_TaxDuty))
+                    return null;
+                return decimal.Parse(_TaxDuty);
+            }
+        }
+        [XmlElement("CourtesyRefund"), JsonProperty("CourtesyRefund")]
+        public string _CourtesyRefund { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? CourtesyRefund
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_CourtesyRefund))
+                    return null;
+                return decimal.Parse(_CourtesyRefund);
+            }
+        }
+
+        [XmlElement("CreditCardPayment"), JsonProperty("CreditCardPayment")]
+        public string _CreditCardPayment { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? CreditCardPayment
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_CreditCardPayment))
+                    return null;
+                return decimal.Parse(_CreditCardPayment);
+            }
+        }
+
+        [XmlElement("FulfillmentByNeweggFee"), JsonProperty("FulfillmentByNeweggFee")]
+        public string _FulfillmentByNeweggFee { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? FulfillmentByNeweggFee
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_FulfillmentByNeweggFee))
+                    return null;
+                return decimal.Parse(_FulfillmentByNeweggFee);
+            }
+        }
+
+        [XmlElement("MultiChannelFee"), JsonProperty("MultiChannelFee")]
+        public string _MultiChannelFee { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? MultiChannelFee
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_MultiChannelFee))
+                    return null;
+                return decimal.Parse(_MultiChannelFee);
+            }
+        }
+
+        [XmlElement("AdjustmentFee"), JsonProperty("AdjustmentFee")]
+        public string _AdjustmentFee { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? AdjustmentFee
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_AdjustmentFee))
+                    return null;
+                return decimal.Parse(_AdjustmentFee);
+            }
+        }
+
+        [XmlElement("MerchandisingFee"), JsonProperty("MerchandisingFee")]
+        public string _MerchandisingFee { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? MerchandisingFee
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_MerchandisingFee))
+                    return null;
+                return decimal.Parse(_MerchandisingFee);
+            }
+        }
+
+        [XmlElement("GSTAndHST"), JsonProperty("GSTAndHST")]
+        public string _GSTAndHST { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? GSTAndHST
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_GSTAndHST))
+                    return null;
+                return decimal.Parse(_GSTAndHST);
+            }
+        }
+
+        [XmlElement("PSTAndQST"), JsonProperty("PSTAndQST")]
+        public string _PSTAndQST { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? PSTAndQST
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_PSTAndQST))
+                    return null;
+                return decimal.Parse(_PSTAndQST);
+            }
+        }
+
+        [XmlElement("PSTTotal"), JsonProperty("PSTTotal")]
+        public string _PSTTotal { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? PSTTotal
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_PSTTotal))
+                    return null;
+                return decimal.Parse(_PSTTotal);
+            }
+        }
+
+        [XmlElement("ReservedBalance"), JsonProperty("ReservedBalance")]
+        public string _ReservedBalance { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? ReservedBalance
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_ReservedBalance))
+                    return null;
+                return decimal.Parse(_ReservedBalance);
+            }
+        }
+
+        [XmlElement("PreviousReservedBalance"), JsonProperty("PreviousReservedBalance")]
+        public string _PreviousReservedBalance { get; set; }
+        [XmlIgnore, JsonIgnore]
+        public decimal? PreviousReservedBalance
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_PreviousReservedBalance))
+                    return null;
+                return decimal.Parse(_PreviousReservedBalance);
+            }
+        }
+
+
         #endregion
 
     }

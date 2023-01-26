@@ -1,0 +1,42 @@
+﻿{
+  "ResponseBody": {
+    "ItemList": [
+      {
+        "ItemNumber": "9SIA00603V5190",
+        "SellerPartNumber": "A006-TestItem-001",
+        "FulfillmentOption": "0",
+        "Active": "1",
+        "AvailableQuantity": 10
+      },
+      {
+        "ItemNumber": "9SIA00603V5191",
+        "SellerPartNumber": "A006-TestItem-002",
+        "FulfillmentOption": "1",
+        "Active": "1",
+        "AvailableQuantity": 15,
+        "WarehouseAllocation": [
+          {
+            "WarehouseCode": "07",
+            "Quantity": 12
+          },
+          {
+            "WarehouseCode": "08",
+            "Quantity": 3
+          }
+        ]
+      },
+      {
+        "ItemNumber": "9SIA00603V5192",
+        "SellerPartNumber": "A006-TestItem-003",
+        "FulfillmentOption": "0",
+        "Active": "1",
+        "AvailableQuantity": 8
+      }
+    ],
+    "TotalCount": 3
+  },
+  "IsSuccess": true,
+  "OperationType": "GetInventoryList",
+  "SellerID": "A006",
+  "ResponseDate": "2022-04-20T23:46:41.7786361-07:00"
+}

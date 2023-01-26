@@ -1,0 +1,97 @@
+﻿{
+  "ResponseBody": {
+    "ItemList": [
+      {
+        "ItemNumber": "9SIA00603V5190",
+        "SellerPartNumber": "A006-TestItem-001",
+        "PriceList": [
+          {
+            "CountryCode": "USA",
+            "Currency": "USD",
+            "Active": 1,
+            "MAP": 25.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 80,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          },
+          {
+            "CountryCode": "CHN",
+            "Currency": "USD",
+            "Active": 0,
+            "MAP": 25.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 80,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          }
+        ]
+      },
+      {
+        "ItemNumber": "9SIA00603V5191",
+        "SellerPartNumber": "A006-TestItem-002",
+        "PriceList": [
+          {
+            "CountryCode": "USA",
+            "Currency": "USD",
+            "Active": 1,
+            "MAP": 50.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 100,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0,
+            "LimitQuantity": 20
+          },
+          {
+            "CountryCode": "CHN",
+            "Currency": "USD",
+            "Active": 0,
+            "MAP": 50.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 100,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0,
+            "LimitQuantity": 20
+          }
+        ]
+      },
+      {
+        "ItemNumber": "9SIA00603V5192",
+        "SellerPartNumber": "A006-TestItem-003",
+        "PriceList": [
+          {
+            "CountryCode": "USA",
+            "Currency": "USD",
+            "Active": 1,
+            "MAP": 75.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 120,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          },
+          {
+            "CountryCode": "CHN",
+            "Currency": "USD",
+            "Active": 0,
+            "MAP": 75.99,
+            "CheckoutMAP": 0,
+            "SellingPrice": 120,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          }
+        ]
+      }
+    ],
+    "TotalCount": 3
+  },
+  "IsSuccess": true,
+  "OperationType": "GetPriceList",
+  "SellerID": "A006",
+  "ResponseDate": "2022-04-20T23:46:41.7786361-07:00"
+}

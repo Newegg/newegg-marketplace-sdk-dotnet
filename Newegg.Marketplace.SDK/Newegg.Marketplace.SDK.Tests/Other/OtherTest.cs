@@ -81,7 +81,7 @@ namespace Newegg.Marketplace.SDK.Tests.Other
             var status = await fakeapi_json.VerifyServiceStatus(ServiceDomain.Order);
             Assert.IsType<VerifyServiceStatusResponse>(status);
             Assert.True(status.IsSuccess);
-            Assert.True(status.ResponseBody.Status == OtherServiceStatus.ServiceUnavailable);
+            Assert.True(status.ResponseBody.Status == OtherServiceStatus.ServiceAvailable);
         }
     }
 }

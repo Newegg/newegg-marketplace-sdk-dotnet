@@ -65,7 +65,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_GSTorHSTAmount);
             }
-            set { }
         }
 
         [XmlElement("PSTorQSTAmount"), JsonProperty("PSTorQSTAmount")]
@@ -108,7 +107,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_SalesTax);
             }
-            set { }
         }
 
         [XmlElement("VATTotal"), JsonProperty("VATTotal")]
@@ -122,7 +120,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_VATTotal);
             }
-            set { }
         }
 
         [XmlElement("DutyTotal"), JsonProperty("DutyTotal")]
@@ -136,7 +133,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_DutyTotal);
             }
-            set { }
         }
 
         [XmlElement("RecyclingFeeAmount"), JsonProperty("RecyclingFeeAmount")]
@@ -150,8 +146,9 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_RecyclingFeeAmount);
             }
-            set { }
         }
+
+      
 
         public decimal OrderTotalAmount { get; set; }
         public int OrderQty { get; set; }
@@ -184,7 +181,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
             {
                 return OrderedQty * UnitPrice;
             }
-            set { }
         }
 
         [XmlElement("UnitShippingCharge"), JsonProperty("UnitShippingCharge")]
@@ -198,7 +194,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_UnitShippingCharge);
             }
-            set { }
         }
 
         public decimal? ExtendShippingCharge
@@ -209,7 +204,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return OrderedQty * decimal.Parse(_UnitShippingCharge);
             }
-            set { }
         }
 
         [XmlElement("ExtendSalesTax"), JsonProperty("ExtendSalesTax")]
@@ -223,7 +217,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_ExtendSalesTax);
             }
-            set { }
         }
 
         [XmlElement("ExtendVAT"), JsonProperty("ExtendVAT")]
@@ -237,7 +230,6 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_ExtendVAT);
             }
-            set { }
         }
 
         [XmlElement("ExtendDuty"), JsonProperty("ExtendDuty")]
@@ -251,12 +243,13 @@ namespace Newegg.Marketplace.SDK.Order.Model
                     return null;
                 return decimal.Parse(_ExtendDuty);
             }
-            set { }
         }
 
         public int Status { get; set; }
 
         public string StatusDescription { get; set; }
+        public string AutoRegWarranty { get; set; }
+
     }
 
     public class OrderPackageInfo

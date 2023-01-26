@@ -37,7 +37,7 @@ namespace Newegg.Marketplace.SDK.Order
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.GetAsync(request, connectSetting);
+            var response = await client.GetAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetOrderStatusResponse>(response);
             return result;
         }
@@ -49,7 +49,7 @@ namespace Newegg.Marketplace.SDK.Order
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<CancelOrderResponse>(response);
             return result;
         }
@@ -61,7 +61,7 @@ namespace Newegg.Marketplace.SDK.Order
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<ShipOrderResponse>(response);
             return result;
         }
@@ -72,7 +72,7 @@ namespace Newegg.Marketplace.SDK.Order
             var request = CreateRequest<OrderConfirmationRequest>(reqModel);
             request.URI = "ordermgmt/orderstatus/orders/confirmation";
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<OrderConfirmationResponse>(response);
             return result;
         }
@@ -82,7 +82,7 @@ namespace Newegg.Marketplace.SDK.Order
             var request = CreateRequest<RemoveItemRequest>(reqModel);
             request.URI = string.Format("ordermgmt/killitem/orders/{0}", OrderNumber);
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<RemoveItemResponse>(response);
             return result;
         }
@@ -94,7 +94,7 @@ namespace Newegg.Marketplace.SDK.Order
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
 
-            var response = await client.PutAsync(request, connectSetting);
+            var response = await client.PutAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetOrderInformationResponse>(response);
             return result;
         }
@@ -104,7 +104,7 @@ namespace Newegg.Marketplace.SDK.Order
             var request = CreateRequest();
             request.URI = string.Format("ordermgmt/sbnorder/cancellationresult/{0}", OrderNumber);
 
-            var response = await client.GetAsync(request, connectSetting);
+            var response = await client.GetAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetSBNOrderCancellationRequestResultResponse>(response);
             return result;
         }
@@ -114,7 +114,7 @@ namespace Newegg.Marketplace.SDK.Order
             var request = CreateRequest<GetAdditionalOrderInformationRequest>(reqModel);
             request.URI = "ordermgmt/order/addorderinfo";
 
-            var response = await client.PostAsync(request, connectSetting);
+            var response = await client.PostAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetAdditionalOrderInformationResponse>(response);
             return result;
         }

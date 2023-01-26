@@ -1,0 +1,60 @@
+﻿{
+  "ResponseBody": {
+    "ItemList": [
+      {
+        "ItemNumber": "9SIA00603V5190",
+        "SellerPartNumber": "A006-TestItem-001",
+        "PriceList": [
+          {
+            "CountryCode": "USB",
+            "Active": 1,
+            "MAP": 12,
+            "CheckoutMAP": 1,
+            "SellingPrice": 22,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          }
+        ]
+      },
+      {
+        "ItemNumber": "9SIA00603V5191",
+        "SellerPartNumber": "A006-TestItem-002",
+        "PriceList": [
+          {
+            "CountryCode": "USB",
+            "Active": 1,
+            "MAP": 12,
+            "CheckoutMAP": 0,
+            "SellingPrice": 21,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 1,
+            "LimitQuantity": 20
+          }
+        ]
+      },
+      {
+        "ItemNumber": "9SIA00603V5192",
+        "SellerPartNumber": "A006-TestItem-003",
+        "PriceList": [
+          {
+            "CountryCode": "USB",
+            "Active": 1,
+            "MAP": 12,
+            "CheckoutMAP": 1,
+            "SellingPrice": 20,
+            "EnableFreeShipping": 0,
+            "OnPromotion": "0",
+            "ShipByNewegg": 0
+          }
+        ]
+      }
+    ],
+    "TotalCount": 3
+  },
+  "IsSuccess": true,
+  "OperationType": "GetPriceList",
+  "SellerID": "A006",
+  "ResponseDate": "2022-04-20T23:46:41.7786361-07:00"
+}

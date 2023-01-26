@@ -50,7 +50,7 @@ namespace Newegg.Marketplace.SDK.Base
         /// </summary>
         public APIPlatform Platform { get; set; } = APIPlatform.USA;
 
-        private string baseUrl = "https://api.newegg.com/marketplace/";        
+        private string baseUrl = "https://api.newegg.com/marketplace/";
         
 
         /// <summary>

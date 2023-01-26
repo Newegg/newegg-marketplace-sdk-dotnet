@@ -37,6 +37,8 @@ namespace Newegg.Marketplace.SDK.Item.Model
     {
         public string Name { get; set; }
         public string URL { get; set; }
+        public string CountryCode { get; set; }
+
         public string SupportEmail { get; set; }
         public string SupportPhone { get; set; }
         public string SupportURL { get; set; }

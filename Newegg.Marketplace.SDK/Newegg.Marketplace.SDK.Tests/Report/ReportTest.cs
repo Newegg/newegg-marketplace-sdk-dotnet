@@ -122,7 +122,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
 
         }
-      
+
 
 
         [Fact]//14.1-1: XML USA
@@ -215,7 +215,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
             Assert.IsType<SubmitOrderListReportResponse>(body);
 
         }
-     
+
 
 
 
@@ -298,7 +298,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
         }
 
-     
+
 
 
         [Fact]//14.1-3: XML USA
@@ -468,7 +468,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
         }
 
-     
+
 
 
         [Fact]//14.1-5:XML USA
@@ -880,8 +880,29 @@ namespace Newegg.Marketplace.SDK.Tests.Report
             Assert.IsType<ItemChinaTaxSettingReportResponse>(body);
         }
 
+        //
 
+        [Fact]//14.1-10:XML USA
+        public async Task SubmitItemBasicInformationReport_XML_USA()
+        {
+            var request = new SubmittemBasicInformationReportRequest()
+            {
 
+                RequestBody = new IttemBasicInformationReportBody()
+                {
+                    ItemBasicInfoReportCriteria = new IttemBasicInformationReportCriteria
+                    {
+                        FileType = ReportFileType.XLS,
+                        RequestType = ReportRequestType.ITEM_BASIC_INFO_REPORT.ToString(),
+                    }
+                }
+            };
+
+            CheckRequestString<SubmittemBasicInformationReportRequest>(request);
+            var body = await fadeAPI_USA_XML.SubmitItemBasicInformationReport(request);
+
+            Assert.IsType<SubmitItemBasicInformationReportResponse>(body);
+        }
 
         [Fact] //14.3-01: xml USA
         public async Task GetOrderListReport_XML_USA()
@@ -1215,7 +1236,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
         }
 
-    
+
 
 
         [Fact]// XML USA
@@ -1383,7 +1404,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
         }
 
-     
+
 
         [Fact]// XML USA
         public async Task GetDailyPriceReport_XML_USA()
@@ -1414,7 +1435,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
         }
 
 
-    
+
 
 
 
@@ -1474,7 +1495,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
         }
 
 
-     
+
 
 
         [Fact]// XML USA
@@ -1504,7 +1525,7 @@ namespace Newegg.Marketplace.SDK.Tests.Report
 
         }
 
-       
+
 
         [Fact]//XML USA
         public async Task GetCaliforniasProposition65WarningReport_XML_USA()
@@ -1586,6 +1607,32 @@ namespace Newegg.Marketplace.SDK.Tests.Report
             var body = await fadeAPI_USA_XML.GetTaxSettingReportforItemsEnabledforChina(request);
 
             Assert.IsType<GetTaxSettingReportResponse>(body);
+        }
+
+        [Fact]// XML USA
+        public async Task GetItemBasicInformationReport_XML_USA()
+        {
+            var request = new ItemBasicInformationReportRequest()
+            {
+
+                RequestBody = new ItemBasicInformationReportRequestBody()
+                {
+                    RequestID = "219O8NZS6DQV0",
+                    PageInfo = new PageInfo()
+                    {
+                        PageIndex = 1,
+
+                        PageSize = 10
+
+                    }
+                }
+            };
+
+
+            CheckRequestString<ItemBasicInformationReportRequest>(request);
+            var body = await fadeAPI_USA_XML.GetItemBasicInformationReport(request);
+
+            Assert.IsType<ItemBasicInformationReportResponse>(body);
         }
 
     }

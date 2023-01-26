@@ -14,6 +14,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 **/
 
+using System;
 using System.Threading.Tasks;
 
 using Newegg.Marketplace.SDK.Base;
@@ -31,7 +32,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
             var request = CreateRequest<GetReportStatusRequest>(reqModel);
             request.URI = "reportmgmt/report/status";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetReportStatusResponse>(response);
             return result;
         }
@@ -41,7 +42,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<SubmitOrderListReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";          
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitOrderListReportResponse>(response);
             return result;
         }
@@ -50,7 +51,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<SettlementSummaryReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";            
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SettlementSummaryReportResponse>(response);
             return result;
         }
@@ -60,7 +61,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<SettlementTransactionRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SettlementTransactionResponse>(response);
             return result;
         }
@@ -70,7 +71,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<SubmitRMAListReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";            
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitRMAListReportResponse>(response);
             return result;
         }
@@ -80,7 +81,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<ItemLookupRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";            
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ItemLookupResponse>(response);
             return result;
         }
@@ -92,7 +93,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
             request.URI = "reportmgmt/report/submitrequest";
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<DailyInventoryReportResponse>(response);
             return result;
         }
@@ -103,7 +104,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
             request.URI = "reportmgmt/report/submitrequest";
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<DailyInventoryReportB2BCANResponse>(response);
             return result;
         }
@@ -113,17 +114,17 @@ namespace Newegg.Marketplace.SDK.Report.Model
             request.URI = "reportmgmt/report/submitrequest";
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<DailyPriceReportResponse>(response);
             return result;
         }
 
-        //only USA
+        [Obsolete("not support")]
         public async Task<PremierItemReportResponse> SubmitNeweggPremierItemReport(PremierItemReportRequest reqModel)
         {
             var request = CreateRequest<PremierItemReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<PremierItemReportResponse>(response);
             return result;
         }
@@ -132,20 +133,30 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<CAProp65ReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<CAProp65ReportResponse>(response);
             return result;
         }
 
-        //only USA
+        [Obsolete("not support")]
         public async Task<ItemChinaTaxSettingReportResponse> SubmitTaxSettingReportforItemsEnabledforChina(ItemChinaTaxSettingReportRequest reqModel)
         {
             var request = CreateRequest<ItemChinaTaxSettingReportRequest>(reqModel);
             request.URI = "reportmgmt/report/submitrequest";            
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ItemChinaTaxSettingReportResponse>(response);
             return result;
         }
+
+        public async Task<SubmitItemBasicInformationReportResponse> SubmitItemBasicInformationReport(SubmittemBasicInformationReportRequest reqModel)
+        {
+            var request = CreateRequest<SubmittemBasicInformationReportRequest>(reqModel);
+            request.URI = "reportmgmt/report/submitrequest";
+            var response = await client.PostAsync(request);
+            var result = await ProcessResponse<SubmitItemBasicInformationReportResponse>(response);
+            return result;
+        }
+
 
         //GetReportResult
         public async Task<OrderListReportResponse> GetOrderListReport(OrderListReportRequest reqModel, int? Version = null)
@@ -153,16 +164,18 @@ namespace Newegg.Marketplace.SDK.Report.Model
             var request = CreateRequest<OrderListReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
             if (Version != null)
-                request.QueryParams.Add("version", Version.ToString());//305-309
+                request.QueryParams.Add("version", Version.ToString());//305-310
             var response = await client.PutAsync(request);
             var result = await ProcessResponse<OrderListReportResponse>(response);
             return result;
         }
 
-        public async Task<GetSettlementSummaryInfoResponse> GetSettlementSummaryReport(GetSettlementSummaryReportRequest reqModel)
+        public async Task<GetSettlementSummaryInfoResponse> GetSettlementSummaryReport(GetSettlementSummaryReportRequest reqModel, int? Version = null)
         {
             var request = CreateRequest<GetSettlementSummaryReportRequest>(reqModel);
-            request.URI = "reportmgmt/report/result";            
+            request.URI = "reportmgmt/report/result";
+            if (Version != null)
+                request.QueryParams.Add("version", Version.ToString());//
             var response = await client.PutAsync(request);
             var result = await ProcessResponse<GetSettlementSummaryInfoResponse>(response);
             return result;
@@ -172,7 +185,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<GetSettlementTransactionReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetSettlementTransactionReportResponse>(response);
             return result;
         }
@@ -183,7 +196,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
             request.URI = "reportmgmt/report/result";
             if (Version != null)
                 request.QueryParams.Add("version", Version.ToString());//305-309
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetRMAListReportResponse>(response);
             return result;
         }
@@ -192,7 +205,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<GetItemLookupReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";            
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetItemLookupReportResponse>(response);
             return result;
         }
@@ -201,7 +214,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<GetDailyInventoryReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetDailyInventoryReportResponse>(response);
             return result;
         }
@@ -210,7 +223,7 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<GetDailyPriceReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetDailyPriceReportResponse>(response);
             return result;
         }
@@ -219,16 +232,17 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<GetDailyInventoryReportB2bCanRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetDailyInventoryReportB2bCanResponse>(response);
             return result;
         }
 
+        [Obsolete("not support")]
         public async Task<GetNeweggPremierItemReportResponse> GetNeweggPremierItemReport(GetNeweggPremierItemReportRequest reqModel)
         {
             var request = CreateRequest<GetNeweggPremierItemReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetNeweggPremierItemReportResponse>(response);
             return result;
         }
@@ -237,18 +251,29 @@ namespace Newegg.Marketplace.SDK.Report.Model
         {
             var request = CreateRequest<CAProp65WarningReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<CAProp65WarningReportResponse>(response);
             return result;
         }
 
+        [Obsolete("not support")]
         public async Task<GetTaxSettingReportResponse> GetTaxSettingReportforItemsEnabledforChina(GetTaxSettingReportRequest reqModel)
         {
             var request = CreateRequest<GetTaxSettingReportRequest>(reqModel);
             request.URI = "reportmgmt/report/result";
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetTaxSettingReportResponse>(response);
             return result;
         }
+
+        public async Task<ItemBasicInformationReportResponse> GetItemBasicInformationReport(ItemBasicInformationReportRequest reqModel)
+        {
+            var request = CreateRequest<ItemBasicInformationReportRequest>(reqModel);
+            request.URI = "reportmgmt/report/result";
+            var response = await client.PutAsync(request);
+            var result = await ProcessResponse<ItemBasicInformationReportResponse>(response);
+            return result;
+        }
+
     }
 }

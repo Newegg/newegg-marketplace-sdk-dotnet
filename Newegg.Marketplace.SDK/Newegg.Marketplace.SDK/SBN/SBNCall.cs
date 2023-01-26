@@ -33,7 +33,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
                 var request = CreateRequest<GetInboundShipmentPlanRequest>(reqModel);
                 request.URI = "sbnmgmt/inboundshipment/plansuggestion";
 
-                var response = await client.PutAsync(request);
+                var response = await client.PutAsync(request).ConfigureAwait(false);
                 var result = await ProcessResponse<GetInboundShipmentPlanResponse>(response);
                 return result;
             }
@@ -44,7 +44,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
             var request = CreateRequest<SubmitInboundShipmentRequest>(reqModel);
             request.URI = "sbnmgmt/inboundshipment/shipmentrequest";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitInboundShipmentResponse>(response);
             return result;
         }
@@ -54,7 +54,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
             var request = CreateRequest<SubmitVoidInboundShipmentRequest>(reqModel);
             request.URI = "sbnmgmt/inboundshipment/shipmentrequest";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitVoidInboundShipmentResponse>(response);
             return result;
         }
@@ -64,7 +64,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
             var request = CreateRequest<GetShipmentStatusRequest>(reqModel);
             request.URI = "sbnmgmt/inboundshipment/shipmentstatus";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetShipmentStatusResponse>(response);
             return result;
         }
@@ -74,7 +74,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
         {
             var request = CreateRequest();
             request.URI = string.Format("sbnmgmt/inboundshipment/shipmentresult/{0}", Required);
-            var response = await client.GetAsync(request, connectSetting);
+            var response = await client.GetAsync(request, connectSetting).ConfigureAwait(false);
             var result = await ProcessResponse<GetInboundShipmentResultResponse>(response);
             return result;
             
@@ -85,7 +85,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
             var request = CreateRequest<GetShipmentListRequest>(reqModel);
             request.URI = "sbnmgmt/inboundshipment/shipmentlist";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetShipmentListResponse>(response);
             return result;
         }
@@ -96,7 +96,7 @@ namespace Newegg.Marketplace.SDK.SBN.Model
             var request = CreateRequest<GetWarehouseListRequest>(reqModel);
             request.URI = "sbnmgmt/inboundshipment/warehouse";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetWarehouseListResponse>(response);
             return result;
         }

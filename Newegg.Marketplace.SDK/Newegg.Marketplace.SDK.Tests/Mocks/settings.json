@@ -29,6 +29,7 @@
   "POST USB ordermgmt/orderstatus/orders/confirmation": "Order/USA/OrderConfirmationResponse",
   "POST CAN ordermgmt/orderstatus/orders/confirmation": "Order/USA/OrderConfirmationResponse",
   "PUT USB ordermgmt/order/orderinfo": "Order/USB/GetOrderInformationResponse",
+  "PUT B2B ordermgmt/order/orderinfo": "Order/B2B/GetOrderInformationResponse",
   "PUT CAN ordermgmt/order/orderinfo": "Order/CAN/GetOrderInformationResponse",
   "PUT USA ordermgmt/order/orderinfo": "Order/USA/GetOrderInformationResponse",
   "GET USA ordermgmt/sbnorder/cancellationresult": "Order/USA/GetSBNOrderCancellationRequestResultResponse",
@@ -241,7 +242,19 @@
 
   "POST USA contentmgmt/item/warranty": "Item/USA/ItemWarrantyResponse",
   "POST B2B contentmgmt/item/warranty": "Item/B2B/ItemWarrantyResponse",
-  "POST CAN contentmgmt/item/warranty": "Item/CAN/ItemWarrantyResponse"
+  "POST CAN contentmgmt/item/warranty": "Item/CAN/ItemWarrantyResponse",
+
+  "POST B2B contentmgmt/item/inventorylist": "Item/B2B/GetItemInventoryListResponse",
+  "POST CAN contentmgmt/item/inventorylist": "Item/CAN/GetItemInventoryListResponse",
+  "POST USA contentmgmt/item/international/pricelist": "Item/USA/GetInternationalItemPriceListResponse",
+  "POST B2B contentmgmt/item/pricelist": "Item/B2B/GetItemPriceListResponse",
+  "POST CAN contentmgmt/item/pricelist": "Item/CAN/GetItemPriceListResponse",
+  "POST USA contentmgmt/item/international/inventorylist": "Item/USA/GetItemInternationalInventoryListResponse",
+  "PUT USA sellermgmt/seller/subcategory/v1.1": "seller/USA/GetSubcategoryStatusV1Response",
+  "GET USA sellermgmt/seller/warehouse": "seller/USA/GetWarehouseListResponse"
+
+
+
 
 
 }

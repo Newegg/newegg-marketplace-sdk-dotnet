@@ -1,0 +1,27 @@
+﻿{
+  "IsSuccess": "true",
+  "OperationType": "GetSellerSubcategoryResponse",
+  "SellerID": "A006",
+  "ResponseBody": {
+    "SubcategoryList": [
+      {
+        "IndustryCode": "CE",
+        "IndustryName": "Consumer Electronics",
+        "SubcategoryID": 134,
+        "SubcategoryName": "Standard Batteries & Chargers",
+        "Enabled": 1,
+        "WebSiteCategoryID": 134,
+        "WebSiteCatalogName": "Standard Batteries & Chargers"
+      },
+      {
+        "IndustryCode": "CE",
+        "IndustryName": "Consumer Electronics",
+        "SubcategoryID": 402,
+        "SubcategoryName": "Camcorder Batteries & Chargers",
+        "Enabled": 1,
+        "WebSiteCategoryID": 402,
+        "WebSiteCatalogName": "Camcorder Batteries & Chargers"
+      }
+    ]
+  }
+}

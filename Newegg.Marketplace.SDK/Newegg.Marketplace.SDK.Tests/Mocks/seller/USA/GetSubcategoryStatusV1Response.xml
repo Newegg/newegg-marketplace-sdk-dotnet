@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NeweggAPIResponse>
+	<IsSuccess>true</IsSuccess>
+	<OperationType>GetSellerSubcategoryResponse</OperationType>
+	<SellerID>A006</SellerID>
+	<ResponseBody>
+		<SubcategoryList>
+			<Subcategory>
+				<IndustryCode>CE</IndustryCode>
+				<IndustryName>
+					<![CDATA[Consumer Electronics]]>
+				</IndustryName>
+				<SubcategoryID>134</SubcategoryID>
+				<SubcategoryName>
+					<![CDATA[Standard Batteries & Chargers]]>
+				</SubcategoryName>
+				<Enabled>1</Enabled>
+				<WebSiteCategoryID>134</WebSiteCategoryID>
+				<WebSiteCatalogName>
+					<![CDATA[Standard Batteries & Chargers]]>
+				</WebSiteCatalogName>
+			</Subcategory>
+			<Subcategory>
+				<IndustryCode>CE</IndustryCode>
+				<IndustryName>
+					<![CDATA[Consumer Electronics]]>
+				</IndustryName>
+				<SubcategoryID>402</SubcategoryID>
+				<SubcategoryName>
+					<![CDATA[Camcorder Batteries & Chargers]]>
+				</SubcategoryName>
+				<Enabled>1</Enabled>
+				<WebSiteCategoryID>402</WebSiteCategoryID>
+				<WebSiteCatalogName>
+					<![CDATA[Camcorder Batteries & Chargers]]>
+				</WebSiteCatalogName>
+			</Subcategory>
+		</SubcategoryList>
+	</ResponseBody>
+</NeweggAPIResponse>

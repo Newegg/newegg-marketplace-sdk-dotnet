@@ -1036,6 +1036,7 @@ namespace Newegg.Marketplace.SDK.Tests.Shipping.Model
             //var body = await CANapi_Json.ReprintShippingRequest(request);
             Assert.IsType<ReprintShippingLabelResponse>(body);
         }
+
     }
 
 }

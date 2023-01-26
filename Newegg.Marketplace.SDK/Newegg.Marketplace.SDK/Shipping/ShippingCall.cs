@@ -14,6 +14,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 **/
 
+using System;
 using System.Threading.Tasks;
 
 using Newegg.Marketplace.SDK.Base;
@@ -29,32 +30,35 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
         {
         }
 
+        [Obsolete("not support")]
         public async Task<VoidShippingResponse> VoidShippingRequest(VoidShippingRequest reqModel)
         {
             var request = CreateRequest<VoidShippingRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/voidshippingrequest";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<VoidShippingResponse>(response);
             return result;
         }
 
+        [Obsolete("not support")]
         public async Task<GetPackageListResponse> GetPackageList(GetPackageListRequest reqModel)
         {
             var request = CreateRequest<GetPackageListRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/packagelist";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetPackageListResponse>(response);
             return result;
         }
 
+        [Obsolete("not support")]
         public async Task<GetShippinLabelResponse> GetShippingLabel(GetShippingLabelRequest reqModel)
         {
             var request = CreateRequest<GetShippingLabelRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/shippinglabels";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetShippinLabelResponse>(response);
             return result;
         }
@@ -64,28 +68,29 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             var request = CreateRequest<confirmShipRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/confirmshippingrequest";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<confirmShipResponse>(response);
             return result;
         }
 
-
+        [Obsolete("not support")]
         public async Task<GetShippingDetailResponse> GetShippingRequestDetail(GetShippingDetailRequest reqModel)
         {
             var request = CreateRequest<GetShippingDetailRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/shippingdetail";
 
-            var response = await client.PutAsync(request);
+            var response = await client.PutAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<GetShippingDetailResponse>(response);
             return result;
         }
 
+        [Obsolete("not support")]
         public async Task<SubmitShippingResponse> SubmitShippingRequest(SubmitShippingRequest reqModel)
         {
             var request = CreateRequest<SubmitShippingRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/shippingrequest";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<SubmitShippingResponse>(response);
             return result;
         }
@@ -95,7 +100,7 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             var request = CreateRequest<CreateShippingLabelRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/CreateShippingLabel";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<CreateShippingLabelResponse>(response);
             return result;
         }
@@ -105,7 +110,7 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             var request = CreateRequest<EstimateShippingLabelRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/EstimateShippingLabel";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<EstimateShippingLabelResponse>(response);
             return result;
         }
@@ -115,7 +120,7 @@ namespace Newegg.Marketplace.SDK.Shipping.Model
             var request = CreateRequest<ReprintShippingLabelRequest>(reqModel);
             request.URI = "shippingservice/shippinglabel/ReprintShippingLabel";
 
-            var response = await client.PostAsync(request);
+            var response = await client.PostAsync(request).ConfigureAwait(false);
             var result = await ProcessResponse<ReprintShippingLabelResponse>(response);
             return result;
         }

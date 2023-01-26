@@ -44,7 +44,7 @@ namespace Newegg.Marketplace.SDK.Base.Http.Retry
         {
             for (var i = 0; i < RetryCount; i++)
             {                              
-                if (await ExecuteOnce(extractor, request))
+                if (await ExecuteOnce(extractor, request).ConfigureAwait(false))
                     return response;
 
                 if (DelayMs > 0)

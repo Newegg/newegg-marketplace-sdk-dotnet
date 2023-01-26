@@ -49,7 +49,7 @@ namespace Newegg.Marketplace.SDK.Base.Http
             try
             {
                 request.GetReady();
-                HttpResponseMessage result = await client.SendAsync(await CloneRequestMessageAsync(request.HttpRequest));
+                HttpResponseMessage result = await client.SendAsync(await CloneRequestMessageAsync(request.HttpRequest).ConfigureAwait(false)).ConfigureAwait(false);
                 if (result.StatusCode != HttpStatusCode.OK)
                 {
                     ExceptionInfo info = await GetInfromationFromResponseAsync(result, request.GetAPIFormat());
@@ -58,6 +58,7 @@ namespace Newegg.Marketplace.SDK.Base.Http
                         case HttpStatusCode.ServiceUnavailable:
                             throw new GatewayException("Can not connect to Server.");
                         case HttpStatusCode.Forbidden:
+                        case HttpStatusCode.Unauthorized:
                             throw new AuthenticationException("Authentication Failed.");
                         case (HttpStatusCode)429:
                             throw new ThrottleException("Too many requests in the time period.");

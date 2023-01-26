@@ -101,6 +101,10 @@ namespace Newegg.Marketplace.SDK.Report.Model
 
         [XmlArrayItem("RMATransaction"), JsonConverter(typeof(JsonMoreLevelDeConverter), "RMATransaction")]
         public List<RMATransactionInfo> RMATransactionList { get; set; }
+
+        [XmlArrayItem("Label")]
+        public List<Label> ReturnShippingLabel { set; get; }
+
         public class RMATransactionInfo
         {
             public string SellerPartNumber { get; set; }
@@ -251,4 +255,13 @@ namespace Newegg.Marketplace.SDK.Report.Model
 
 
     }
+
+    public class Label
+    {
+        public string TrackingNumber { get; set; }
+        public string TrackingURL { get; set; }
+        public decimal LabelEstimateCost { get; set; }
+        public string PaidBy { get; set; }
+    }
+
 }

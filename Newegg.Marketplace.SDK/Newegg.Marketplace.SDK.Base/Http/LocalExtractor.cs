@@ -93,8 +93,10 @@ namespace Newegg.Marketplace.SDK.Base.Http
 
         override public Task<IResponse> ExecuteAsync(IRequest request, ConnectSetting connectSetting = null)
         {
-            var fullKey = request.Method.Method + " " + config.Platform + " " + request.URI + request.QueryString;
-            var partKey= request.Method.Method + " " + config.Platform + " " + request.URI;
+            var requestModel = (Request)request;
+
+            var fullKey = request.Method.Method + " " + requestModel.Config.Platform + " " + request.URI + request.QueryString;
+            var partKey= request.Method.Method + " " + requestModel.Config.Platform + " " + request.URI;
             var matches = mapping.Where(d => fullKey == d.Key).ToList();
             if (matches.Count == 0)
                 matches = mapping.Where(d => partKey == d.Key).ToList();

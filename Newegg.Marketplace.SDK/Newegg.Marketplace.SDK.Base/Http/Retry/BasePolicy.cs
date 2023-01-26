@@ -32,7 +32,7 @@ namespace Newegg.Marketplace.SDK.Base.Http.Retry
         {
             try
             {
-                response = await extractor.ExecuteAsync(request);
+                response = await extractor.ExecuteAsync(request).ConfigureAwait(false);
                 return true;
             }
             catch (Exception.HttpException ex)
