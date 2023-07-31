@@ -246,7 +246,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://images17.newegg.com/is/image/newegg/17-182-073-TS?$S640W$",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     },
@@ -303,7 +303,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://10.1.24.143:4567/images/20.gif",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     }
@@ -341,7 +341,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://10.1.24.143:4567/images/20.gif",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     },
@@ -965,7 +965,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://images17.newegg.com/is/image/newegg/17-182-073-TS?$S640W$",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     },
@@ -1023,7 +1023,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://10.1.24.143:4567/images/20.gif",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     }
@@ -1062,7 +1062,7 @@ namespace Newegg.Marketplace.SDK.Tests.Datafeed
                                     {
                                         new ItemfeedItemBasicInfo.ItemfeedItemImage()
                                         {
-                                            ImageUrl ="http://10.1.24.143:4567/images/20.gif",
+                                            ImageUrl ="http://127.0.0.1/images/20.gif",
                                             IsPrimary=true
                                         }
                                     },
