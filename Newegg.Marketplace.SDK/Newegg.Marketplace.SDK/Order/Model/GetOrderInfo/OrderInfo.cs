@@ -148,13 +148,16 @@ namespace Newegg.Marketplace.SDK.Order.Model
             }
         }
 
-      
+
 
         public decimal OrderTotalAmount { get; set; }
         public int OrderQty { get; set; }
         public bool IsAutoVoid { get; set; }
         public OrderSalesChannel? SalesChannel { set; get; }
         public OrderFulfillmentOption? FulfillmentOption { set; get; }
+
+        public string OnTimeShipDueDate { get; set; }
+        public string DeliverDueDate { get; set; }
 
         [XmlArrayItem("ItemInfo")]
         [JsonConverter(typeof(JsonMoreLevelDeConverter), "ItemInfo")]
@@ -249,7 +252,7 @@ namespace Newegg.Marketplace.SDK.Order.Model
 
         public string StatusDescription { get; set; }
         public string AutoRegWarranty { get; set; }
-
+        
     }
 
     public class OrderPackageInfo
