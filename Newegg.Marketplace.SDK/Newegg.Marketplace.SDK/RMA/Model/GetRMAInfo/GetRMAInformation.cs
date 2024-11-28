@@ -21,6 +21,7 @@ using Newtonsoft.Json;
 using Newegg.Marketplace.SDK.Model;
 using Newegg.Marketplace.SDK.Base.Util;
 using System.Collections.Generic;
+using Newegg.Marketplace.SDK.Report.Model;
 
 namespace Newegg.Marketplace.SDK.RMA.Model
 {
@@ -150,6 +151,9 @@ namespace Newegg.Marketplace.SDK.RMA.Model
                 }
                 set { }
             }
+
+            [XmlArrayItem("Label"), JsonConverter(typeof(JsonMoreLevelDeConverter), "Label")]
+            public List<Label> ReturnShippingLabel { get; set; }
 
             [XmlArrayItem("RMATransaction"), JsonConverter(typeof(JsonMoreLevelDeConverter), "RMATransaction")]
             public List<RMATransactionInfo> RMATransactionList { get; set; }

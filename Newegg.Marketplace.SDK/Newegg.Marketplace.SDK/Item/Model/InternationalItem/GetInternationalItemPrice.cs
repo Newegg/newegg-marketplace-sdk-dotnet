@@ -65,6 +65,10 @@ namespace Newegg.Marketplace.SDK.Item.Model
             public decimal SellingPrice { set; get; }
             public FulfillmentOption EnableFreeShipping { set; get; }
             public string OnPromotion { set; get; }
+
+            public int ShipByNewegg { get; set; }
+
+            public int? LimitQuantity { get; set; }
         }
 
 
