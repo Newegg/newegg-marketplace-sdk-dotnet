@@ -20,6 +20,7 @@ namespace Newegg.Marketplace.SDK.Item.Model
         public string CountryCode { set; get; }
         public string Currency { set; get; }
         public int Active { set; get; }
+        public decimal MSRP { set; get; }
 
         [XmlElement("MAP"), JsonProperty("MAP")]
         public string _MAP { get; set; }
